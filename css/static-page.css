@@ -1,0 +1,13 @@
+.post img{background:#f9f9f9;height:auto;max-width:95%;border:0;margin-bottom:2.0px;box-shadow:none;transition:all 0.6s ease-out;}
+.post img:hover {opacity:0.98;}
+.post-information {display:none;}
+.author-info, .time-info, .label-info, .review-info, .post-information a {color:#fff;}
+.breadcrumbs{opacity:0;visibility:hidden;width:0;height:0;}
+
+@media print {
+body{padding:0}
+#outer-wrapper {border-right:none;border-left:none;}
+#post-wrapper{width:100%;margin:0 auto;}
+.post {background:#fff;margin:0 0 15px;padding:15px;}
+.post blockquote{background:transparent;color:#666;border:none;}
+.breadcrumbs,.simplepage,#blog-pager,#comments,#footer-wrapper,#header-wrapper{display:none;visibility:hidden;width:0;height:0;}}

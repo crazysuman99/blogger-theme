@@ -1,0 +1,86 @@
+/* CSS Post Wrapper */
+.post{background:transparent;color:#404040;margin:0;padding:0;}
+.post-body{overflow:hidden;text-overflow:ellipsis;height:150px;max-height:150px;font-size:95%;padding:15px 0;color:#999}
+.simple-thumbnail{overflow:hidden;background:#eee;position:relative;width:100%;height:auto;margin:auto;padding:0;}
+.simple-thumbnail img{width:100%;height:auto;vertical-align:middle;}
+.simple-thumbnail a.label-info{position:absolute;top:0;left:0;background-color:rgba(239,72,36,.8);padding:5px 8px;color:#fff;text-transform:uppercase;font-size:11px}
+.simple-thumbnail a.label-info:hover{background-color:rgba(239,72,36,1);color:#fff;text-decoration:underline}
+.simple-thumbnail a.label-info:nth-child(n+3) {display:none;}
+.simple-thumbnail a.comment-info{position:absolute;top:5px;right:8px;color:#fff;text-transform:uppercase;font-size:13px}
+.simple-thumbnail a.comment-info:hover{color:#fff;}
+h3.post-title a, h2.post-title a, h1.post-title a, h3.post-title, h2.post-title, h1.post-title {text-align:left;font-size:22px;text-transform:none;font-weight:400;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+.breadcrumbs {display:none;}
+.post-outer {width:31.2%;float:left;margin:20px 10px;}
+.post-information {font-weight:400;padding:10px 0;text-transform:none;text-align:left;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+.time-info {float:right;margin-right:initial;}
+
+/* CSS Homepage Responsive */
+@media only screen and (max-width:960px){
+.post-outer {width:47%;float:none;}}
+
+@media only screen and (max-width:640px){
+.post-outer {width:100%;float:none;margin:0;}
+#content-wrapper {padding:0;}
+h3.post-title a, h2.post-title a, h1.post-title a, h3.post-title, h2.post-title, h1.post-title,.post-information,.post-information span {text-overflow:initial;white-space:normal;overflow:visible;width:initial}
+h2.post-title, h1.post-title, h2.post-title a, h1.post-title a, h2.post-title, h1.post-title {margin:0 0 20px 0;clear:both;padding:0;}
+.post {padding:0 10px 30px 10px;}
+.post-body {margin-bottom:10px;text-overflow:ellipsis;visibility:visible;width:initial;height:initial;opacity:1;}}
+
+@media only screen and (max-width:320px){
+h2.post-title, h1.post-title, h2.post-title a, h1.post-title a, h2.post-title, h1.post-title {font-size:18px;}}
+
+/* Corrected Responsive Post Cards */
+.post-outer {
+  box-sizing: border-box;
+  width: calc(33.333% - 24px);
+  float: left;
+  margin: 12px;
+  border: 1px solid #e1e5ea;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease;
+}
+
+.post-outer:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+.post-outer .post {
+  padding: 12px;
+}
+
+.simple-thumbnail {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #e1e5ea;
+  box-sizing: border-box;
+  background: #f5f7fa;
+}
+
+.simple-thumbnail img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* Tablet: 2 columns */
+@media only screen and (max-width: 960px) {
+  .post-outer {
+    width: calc(50% - 24px);
+    float: left;
+    margin: 12px;
+  }
+}
+
+/* Mobile: 1 column */
+@media only screen and (max-width: 640px) {
+  .post-outer {
+    width: calc(100% - 24px);
+    float: none;
+    margin: 12px;
+  }
+}
