@@ -111,3 +111,8 @@
   #main .blog-posts.hfeed.all-posts-one-page > .post-outer,
   #main .blog-posts.hfeed.all-posts-one-page .simple-thumbnail img{transition:none!important}
 }
+
+/* Space between the homepage label list and the post feed */
+#main #Label2 + #Blog1{
+  margin-top:24px!important;
+}
