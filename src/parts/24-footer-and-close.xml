@@ -62,7 +62,7 @@
 </div>
 <div class='footer-widget' id='footx3'>
 <b:section class='footer' id='footer3'>
-<b:widget id='HTML3' locked='false' title='About &amp; Connect' type='HTML' version='2' visible='true'>
+<b:widget id='HTML4' locked='false' title='About &amp; Connect' type='HTML' version='2' visible='true'>
 <b:widget-settings>
 <b:widget-setting name='content'><![CDATA[
 <div class="footer-about">
