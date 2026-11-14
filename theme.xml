@@ -1149,7 +1149,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
                 <b:if cond='data:top.showAuthor'>
                   <b:if cond='data:post.authorProfileUrl'>
                     <span class='fn' itemprop='author' itemscope='itemscope' itemtype='https://schema.org/Person'>
-                      <meta expr:content='data:post.authorProfileUrl'/>
+                      <meta expr:content='data:post.authorProfileUrl' itemprop='url'/>
                       <a expr:href='data:post.authorProfileUrl' rel='author' title='author profile'>
                         <span itemprop='name'><data:post.author/></span>
                       </a>
@@ -1165,7 +1165,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
                 <b:if cond='data:top.showTimestamp'>
                   <data:top.timestampLabel/>
                   <b:if cond='data:post.url'>
-                    <meta expr:content='data:post.canonicalUrl'/>
+                    <meta expr:content='data:post.canonicalUrl' itemprop='url'/>
                     <a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'><abbr class='published' expr:title='data:post.timestampISO8601' itemprop='datePublished'><data:post.timestamp/></abbr></a>
                   </b:if>
                 </b:if>
