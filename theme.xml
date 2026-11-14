@@ -286,6 +286,7 @@ loadCSS("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");lo
 <a class='menu-trigger' href='#'><i class='fa fa-list'/> Menu</a>
 <b:section class='main-menu-section' id='main-menu' maxwidgets='1' name='Main Navigation (Edit in Layout)' showaddelement='yes'>
 <b:widget id='LinkList99' locked='false' title='Main Navigation' type='LinkList' version='2' visible='true'>
+																									<!--CHANGE NAVIGATION MENU-->
 <b:widget-settings>
 <b:widget-setting name='text-9'>2nd Sem</b:widget-setting>
 <b:widget-setting name='text-8'>_Mathematics-I</b:widget-setting>
@@ -1368,7 +1369,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
       <a expr:href='data:post.url'>
      
         
-        
+																												<!--CHANGE THUMBNAIL-->        
         <div class='simple-thumbnail'>
   <img expr:alt='data:post.title' expr:title='data:post.title' src='https://foe.tu.edu.np/assets/logo.png'/>
 </div>
