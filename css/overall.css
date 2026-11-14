@@ -525,3 +525,113 @@ a.blog-pager-newer-link,a.blog-pager-older-link,a.home-link{font-family:Fontawes
 @media(max-width:960px){.blog-posts.all-posts-one-page{gap:20px!important}.blog-posts.all-posts-one-page .post-title{font-size:18px!important}}
 @media(max-width:560px){.blog-posts.all-posts-one-page{gap:17px!important}.blog-posts.all-posts-one-page .post-outer{border-radius:12px}.blog-posts.all-posts-one-page .post-title{margin:14px 14px 8px!important;font-size:18px!important}.blog-posts.all-posts-one-page .post-information{margin:0 14px 10px!important}.blog-posts.all-posts-one-page .post-body{margin:0 14px 15px!important;font-size:13px}}
 @media(prefers-reduced-motion:reduce){.blog-posts.all-posts-one-page .post-outer,.blog-posts.all-posts-one-page .simple-thumbnail img,.blog-posts.all-posts-one-page .simple-thumbnail:after{transition:none!important}.blog-posts.all-posts-one-page .post-outer:hover{transform:none}}
+
+
+/* =========================================================
+   VISIBLE MAGAZINE CARDS — stronger card + image treatment
+   ========================================================= */
+#main .blog-posts.all-posts-one-page{
+  align-items:stretch!important;
+  gap:28px!important;
+}
+#main .blog-posts.all-posts-one-page>.post-outer{
+  position:relative!important;
+  display:block!important;
+  min-width:0!important;
+  height:100%!important;
+  padding:0!important;
+  overflow:hidden!important;
+  box-sizing:border-box!important;
+  background:#fff!important;
+  border:1px solid #cbd5e1!important;
+  border-radius:16px!important;
+  box-shadow:0 4px 12px rgba(15,23,42,.09),0 1px 3px rgba(15,23,42,.06)!important;
+  transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease!important;
+}
+#main .blog-posts.all-posts-one-page>.post-outer:before{
+  content:"";
+  position:absolute;
+  z-index:3;
+  top:0;left:0;right:0;
+  height:3px;
+  background:linear-gradient(90deg,#e94335,#f59e0b);
+  opacity:0;
+  transform:scaleX(.35);
+  transform-origin:left;
+  transition:opacity .28s ease,transform .35s ease;
+}
+#main .blog-posts.all-posts-one-page>.post-outer:hover{
+  transform:translateY(-7px)!important;
+  border-color:#9aaabd!important;
+  box-shadow:0 18px 38px rgba(15,23,42,.16),0 5px 12px rgba(15,23,42,.08)!important;
+}
+#main .blog-posts.all-posts-one-page>.post-outer:hover:before{opacity:1;transform:scaleX(1)}
+#main .blog-posts.all-posts-one-page>.post-outer>.post{
+  display:flex!important;
+  flex-direction:column!important;
+  min-height:100%!important;
+  padding:0!important;
+  margin:0!important;
+  background:#fff!important;
+}
+#main .blog-posts.all-posts-one-page .simple-thumbnail{
+  position:relative!important;
+  display:block!important;
+  flex:0 0 auto!important;
+  width:calc(100% - 20px)!important;
+  aspect-ratio:16/9!important;
+  height:auto!important;
+  margin:10px 10px 0!important;
+  padding:0!important;
+  overflow:hidden!important;
+  border:1px solid #d5deea!important;
+  border-radius:11px!important;
+  background:#eef2f7!important;
+  box-sizing:border-box!important;
+}
+#main .blog-posts.all-posts-one-page .simple-thumbnail img{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  min-height:100%!important;
+  max-width:none!important;
+  max-height:none!important;
+  margin:0!important;
+  padding:0!important;
+  object-fit:cover!important;
+  object-position:center!important;
+  border:0!important;
+  border-radius:10px!important;
+  transform:scale(1)!important;
+  transition:transform .65s cubic-bezier(.2,.7,.25,1),filter .4s ease!important;
+}
+#main .blog-posts.all-posts-one-page>.post-outer:hover .simple-thumbnail img{
+  transform:scale(1.09)!important;
+  filter:brightness(1.04) saturate(1.12)!important;
+}
+#main .blog-posts.all-posts-one-page .simple-thumbnail:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  border-radius:10px;
+  background:linear-gradient(135deg,rgba(255,255,255,.12),transparent 48%,rgba(15,23,42,.12));
+  opacity:.55;
+  transition:opacity .35s ease;
+}
+#main .blog-posts.all-posts-one-page>.post-outer:hover .simple-thumbnail:after{opacity:1}
+#main .blog-posts.all-posts-one-page .post-title{padding-top:2px!important}
+@media(max-width:560px){
+  #main .blog-posts.all-posts-one-page{gap:19px!important}
+  #main .blog-posts.all-posts-one-page>.post-outer{border-radius:13px!important}
+  #main .blog-posts.all-posts-one-page .simple-thumbnail{width:calc(100% - 16px)!important;margin:8px 8px 0!important}
+}
+@media(hover:none){
+  #main .blog-posts.all-posts-one-page>.post-outer:hover{transform:none!important}
+  #main .blog-posts.all-posts-one-page>.post-outer:active{transform:scale(.985)!important}
+}
+@media(prefers-reduced-motion:reduce){
+  #main .blog-posts.all-posts-one-page>.post-outer,
+  #main .blog-posts.all-posts-one-page .simple-thumbnail img,
+  #main .blog-posts.all-posts-one-page .simple-thumbnail:after{transition:none!important}
+}
