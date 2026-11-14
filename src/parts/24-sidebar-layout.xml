@@ -365,7 +365,7 @@
 <div id='footer-sgwidget'>
 <div class='footer-widget' id='footx1'>
 <b:section class='footer' id='footer1'>
-<b:widget id='Label1' locked='false' title='Label' type='Label' version='1'>
+<b:widget id='Label1' locked='false' title='Explore Topics' type='Label' version='1'>
 <b:widget-settings>
 <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
 <b:widget-setting name='display'>LIST</b:widget-setting>
