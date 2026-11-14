@@ -954,3 +954,91 @@ body.item #sidebar-wrapper .BlogSearch input.gsc-search-button{
     padding:12px;border-left:0;border-top:1px solid #e5e9f0
   }
 }
+
+
+/* =========================================================
+   POST SHARE BAR + AUTHOR PROFILE CARD
+   ========================================================= */
+body.item .tombol-berbagi-simple{
+  display:flex!important;flex-wrap:wrap;align-items:center;gap:10px;
+  width:100%;box-sizing:border-box;margin:28px 0 20px!important;
+  padding:16px!important;background:#f8fafc;border:1px solid #e7ebf1;
+  border-radius:12px
+}
+body.item .tombol-berbagi-simple>div{
+  display:flex;align-items:center;justify-content:center;gap:7px;
+  flex:1 1 170px;min-width:0;margin:0!important;padding:0!important;
+  box-sizing:border-box
+}
+body.item .tombol-berbagi-simple a{
+  display:inline-flex;align-items:center;justify-content:center;
+  box-sizing:border-box;min-height:40px;padding:9px 13px;
+  border:1px solid #e2e7ef;border-radius:7px;background:#fff;
+  color:#344054!important;font-size:13px;font-weight:700;
+  line-height:1.25;text-decoration:none!important;transition:all .18s ease
+}
+body.item .tombol-berbagi-simple a[class$="-label"]{flex:1 1 auto}
+body.item .tombol-berbagi-simple .tombol-berbagi-fb,
+body.item .tombol-berbagi-simple .tombol-berbagi-tw,
+body.item .tombol-berbagi-simple .tombol-berbagi-lin{
+  width:40px;min-width:40px;padding:0;font-size:0
+}
+body.item .tombol-berbagi-simple .tombol-berbagi-fb:before{content:"f";font-family:Arial,sans-serif;font-size:20px;font-weight:800}
+body.item .tombol-berbagi-simple .tombol-berbagi-tw:before{content:"𝕏";font-size:17px;font-weight:800}
+body.item .tombol-berbagi-simple .tombol-berbagi-lin:before{content:"in";font-size:15px;font-weight:800}
+body.item .tombol-berbagi-simple .tombol-berbagi-simple-fb a:hover{background:#1877f2;border-color:#1877f2;color:#fff!important}
+body.item .tombol-berbagi-simple .tombol-berbagi-simple-tw a:hover{background:#171717;border-color:#171717;color:#fff!important}
+body.item .tombol-berbagi-simple .tombol-berbagi a:hover{background:#0a66c2;border-color:#0a66c2;color:#fff!important}
+body.item .authorboxwrap{
+  display:block!important;clear:both;box-sizing:border-box;width:100%;
+  margin:22px 0 30px!important;padding:0!important
+}
+body.item .authorboxfull{
+  display:flex!important;align-items:center;gap:22px;
+  box-sizing:border-box;width:100%;min-width:0;margin:0!important;
+  padding:24px!important;background:linear-gradient(135deg,#fff 0%,#f8fafc 100%);
+  border:1px solid #e5eaf1;border-left:4px solid #e94335;
+  border-radius:14px;box-shadow:0 7px 24px rgba(23,32,51,.06)
+}
+body.item .authorboxfull .avatar-container{
+  flex:0 0 104px;width:104px;height:104px;margin:0!important;
+  padding:0!important
+}
+body.item .authorboxfull .author_avatar{
+  display:block;width:104px!important;height:104px!important;
+  max-width:100%;object-fit:cover;border-radius:50%;
+  border:4px solid #fff;box-shadow:0 2px 12px rgba(23,32,51,.16)
+}
+body.item .authorboxfull .author_description_container{
+  flex:1 1 auto;min-width:0;margin:0!important;padding:0!important
+}
+body.item .authorboxfull .author_description_container h4{
+  margin:0 0 8px!important;padding:0!important;color:#172033;
+  font-size:19px;font-weight:800;line-height:1.3
+}
+body.item .authorboxfull .author_description_container h4 a{
+  color:#172033!important;text-decoration:none!important
+}
+body.item .authorboxfull .author_description_container p{
+  margin:0 0 12px!important;color:#667085;font-size:13px;line-height:1.75
+}
+body.item .authorboxfull .authorsocial{
+  display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:10px
+}
+body.item .authorboxfull .authorsocial a{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:34px;height:34px;margin:0!important;border:1px solid #e3e8ef;
+  border-radius:50%;background:#fff;color:#475467!important;
+  text-decoration:none!important;transition:all .18s ease
+}
+body.item .authorboxfull .authorsocial a:hover{
+  transform:translateY(-2px);background:#e94335;border-color:#e94335;color:#fff!important
+}
+@media(max-width:600px){
+  body.item .tombol-berbagi-simple{gap:8px;padding:12px!important}
+  body.item .tombol-berbagi-simple>div{flex:1 1 100%}
+  body.item .authorboxfull{flex-direction:column;text-align:center;gap:14px;padding:20px!important}
+  body.item .authorboxfull .avatar-container{flex-basis:88px;width:88px;height:88px}
+  body.item .authorboxfull .author_avatar{width:88px!important;height:88px!important}
+  body.item .authorboxfull .authorsocial{justify-content:center}
+}
