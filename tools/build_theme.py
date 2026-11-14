@@ -17,6 +17,7 @@ PARTS = [
     ROOT / "src/parts/21-header-navigation.xml",
     ROOT / "src/parts/22-homepage-signature.xml",
     ROOT / "src/parts/23-content-layout.xml",
+    ROOT / "src/parts/24-sidebar-layout.xml",
     ROOT / "src/parts/24-footer-and-close.xml",
 ]
 OUTPUT = ROOT / "theme.xml"
