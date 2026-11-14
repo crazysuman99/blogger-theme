@@ -1,0 +1,81 @@
+<div class='footer-widget' id='footx2'>
+<b:section class='footer' id='footer2'>
+<b:widget id='PopularPosts1' locked='false' title='Popular' type='PopularPosts' version='1'>
+<b:widget-settings>
+<b:widget-setting name='numItemsToShow'>3</b:widget-setting>
+<b:widget-setting name='showThumbnails'>true</b:widget-setting>
+<b:widget-setting name='showSnippets'>true</b:widget-setting>
+<b:widget-setting name='timeRange'>LAST_YEAR</b:widget-setting>
+</b:widget-settings>
+<b:includable id='main'>
+<b:if cond='data:title'><h3><data:title/></h3></b:if>
+<div class='widget-content popular-posts'>
+<ul>
+<b:loop values='data:posts' var='post'>
+<li>
+<b:if cond='data:showThumbnails == &quot;false&quot;'>
+<b:if cond='data:showSnippets == &quot;false&quot;'>
+            <!-- (1) No snippet/thumbnail -->
+            <a expr:href='data:post.href' expr:title='data:post.title'><data:post.title/></a>
+<b:else/>
+            <!-- (2) Show only snippets -->
+            <div class='item-title'><a expr:href='data:post.href' expr:title='data:post.title'><data:post.title/></a></div>
+<div class='item-snippet'><data:post.snippet/></div>
+</b:if>
+<b:else/>
+<b:if cond='data:showSnippets == &quot;false&quot;'>
+            <!-- (3) Show only thumbnails -->
+            <div class='item-thumbnail-only'>
+<b:if cond='data:post.thumbnail'>
+<div class='item-thumbnail'>
+<a expr:href='data:post.href' target='_blank'>
+<img expr:alt='data:post.title' expr:height='data:thumbnailSize' expr:src='data:post.thumbnail' expr:title='data:post.title' expr:width='data:thumbnailSize'/>
+</a>
+</div>
+</b:if>
+<div class='item-title'><a expr:href='data:post.href' expr:title='data:post.title'><data:post.title/></a></div>
+</div>
+<div style='clear: both;'/>
+<b:else/>
+            <!-- (4) Show snippets and thumbnails -->
+            <div class='item-content'>
+<b:if cond='data:post.thumbnail'>
+<div class='item-thumbnail'>
+<a expr:href='data:post.href' target='_blank'>
+<img expr:alt='data:post.title' expr:height='data:thumbnailSize' expr:src='data:post.thumbnail' expr:title='data:post.title' expr:width='data:thumbnailSize'/>
+</a>
+</div>
+</b:if>
+<div class='item-title'><a expr:href='data:post.href' expr:title='data:post.title'><data:post.title/></a></div>
+<div class='item-snippet'><data:post.snippet/></div>
+</div>
+<div style='clear: both;'/>
+</b:if>
+</b:if>
+</li>
+</b:loop>
+</ul>
+</div>
+</b:includable>
+</b:widget>
+</b:section>
+</div>
+<div class='footer-widget' id='footx3'>
+<b:section class='footer' id='footer3'/>
+</div>
+</div>
+</div>
+<div id='footer-credit'>
+<div class='tscredit' id='tscredit'>
+@ksumanadhikari
+</div>
+</div>
+</footer>
+</div>
+<div class='clear'/>
+<b:if cond='data:blog.pageType != &quot;index&quot;'>
+<div class='back-to-simple' id='back-to-simple' title='Back to top'><i class='fa fa-chevron-up'/></div>
+</b:if>
+<b:include data='blog' name='google-analytics'/>
+</body>
+</html>

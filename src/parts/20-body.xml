@@ -1,0 +1,13 @@
+<body>
+<amp-auto-ads data-ad-client='ca-pub-3386340410780049' type='adsense'>
+</amp-auto-ads>
+<b:if cond='data:blog.pageType == &quot;error_page&quot;'>
+<div id='oopss'>
+<div id='error-text'>
+<span>404</span>
+<p>PAGE NOT FOUND!</p>
+<p class='hmpg'>Back To Homepage <a href='/'><i class='fa fa-arrow-right'/></a></p>
+</div>
+</div>
+</b:if>
+<div id='outer-wrapper'>

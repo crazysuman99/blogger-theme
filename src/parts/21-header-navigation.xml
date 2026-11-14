@@ -1,0 +1,255 @@
+<div class='simpletop-wrapper'>
+<header class='header-wrapper2'>
+<div class='top-wrappers'>
+<nav class='top-gridnav'>
+<ul>
+<li><a href='https://www.youtube.com/@ksumanadhikari' title='About Us'><i class='fa fa-user'/> About</a></li>
+<li><a href='/sitemap.xml' title='Our Sitemap'><i class='fa fa-list'/> Sitemap</a></li>
+<li><a href='https://www.ksumanadhikari.com.np' title='Contact us'><i class='fa fa-envelope'/> Contact</a></li>
+<li><a href='/p/disclaimer.html' title='Disclaimer'><i class='fa fa-check-circle'/> Disclaimer</a></li>
+<li class='sosmed pinterest'><a class='simple-tooltip simple-tooltip-left' data-simple-tooltip='Follow us on Pinterest' href='#' rel='nofollow' target='_blank'><i class='fa fa-pinterest'/><span class='inv'/></a></li>
+<li class='sosmed'><a class='simple-tooltip simple-tooltip-left' data-simple-tooltip='Follow us on Google+' href='https://www.youtube.com/@ksumanadhikari' rel='nofollow' target='_blank'><i class='fa fa-google-plus'/><span class='inv'/></a></li>
+<li class='sosmed'><a class='simple-tooltip simple-tooltip-left' data-simple-tooltip='Follow us on Facebook' href='https://www.facebook.com/profile.php?id=61595246783060' rel='nofollow' target='_blank'><i class='fa fa-facebook'/><span class='inv'/></a></li>
+<li class='sosmed'><a class='simple-tooltip simple-tooltip-left' data-simple-tooltip='Follow us on instagram' href='https://www.instagram.com/ksumanadhikari' rel='nofollow' target='_blank'><i class='fa fa-instagram'/><span class='inv'/></a></li>
+<li class='sosmed twitter'><a class='simple-tooltip simple-tooltip-left' data-simple-tooltip='Follow us on Twitter' href='https://x.com/ksumanadhikari' rel='nofollow' target='_blank'><i class='fa fa-twitter'/><span class='inv'/></a></li>
+</ul>
+<a href='#' id='pull'>MENU</a>
+</nav>
+</div>
+</header>
+</div>
+<div class='clear'/>
+<div id='header-wrapper' itemscope='itemscope' itemtype='http://schema.org/WPHeader'>
+<b:section class='header section' id='header' maxwidgets='1' name='Site Logo' showaddelement='yes'>
+<b:widget id='Header1' locked='false' title='BICTE with ksumanadhikari (Header)' type='Header' version='1'>
+<b:widget-settings>
+<b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUk0fbwM3V7QQeSJxwtSR7U_tyDNC_mDMtyV1_sHU5rbswFwT02tmyTSXxmflh15-EdlKyhPWWbK_VKYtBHdXklwIUOwcNPyQCP6_5tIjW6HWXp1cB2bx0ZxWaQX0IF3iBfPjdB9o_DfyqPCgtPI2P9bYl1q4UU_XCtZVF-vE4cGN69yJPCTQK0nitf5I/s1600/Suman%20Adhikari.PNG</b:widget-setting>
+<b:widget-setting name='displayHeight'>225</b:widget-setting>
+<b:widget-setting name='sectionWidth'>150</b:widget-setting>
+<b:widget-setting name='useImage'>true</b:widget-setting>
+<b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+<b:widget-setting name='imagePlacement'>REPLACE</b:widget-setting>
+<b:widget-setting name='displayWidth'>1600</b:widget-setting>
+</b:widget-settings>
+<b:includable id='main'>
+<b:if cond='data:useImage'>
+<b:if cond='data:imagePlacement == &quot;BEHIND&quot;'>
+      <!--
+      Show image as background to text. You can't really calculate the width
+      reliably in JS because margins are not taken into account by any of
+      clientWidth, offsetWidth or scrollWidth, so we don't force a minimum
+      width if the user is using shrink to fit.
+      This results in a margin-width's worth of pixels being cropped. If the
+      user is not using shrink to fit then we expand the header.
+      -->
+      <b:if cond='data:mobile'>
+<div id='header-inner'>
+<div class='titlewrapper' style='background: transparent'>
+<b:include name='title'/>
+</div>
+<b:include name='description'/>
+</div>
+<b:else/>
+<div expr:style='&quot;background-image: url(\&quot;&quot; + data:sourceUrl + &quot;\&quot;); &quot;                        + &quot;background-position: &quot;                        + data:backgroundPositionStyleStr + &quot;; &quot;                        + data:widthStyleStr                        + &quot;min-height: &quot; + data:height                        + &quot;_height: &quot; + data:height                        + &quot;background-repeat: no-repeat; &quot;' id='header-inner'>
+<div class='titlewrapper' style='background: transparent'>
+<b:include name='title'/>
+</div>
+<b:include name='description'/>
+</div>
+</b:if>
+<b:else/>
+      <!--Show the image only-->
+      <div id='header-inner'>
+<a expr:href='data:blog.homepageUrl' style='display: block'>
+<img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_headerimg&quot;' expr:src='data:sourceUrl' expr:width='data:width' style='display: block'/>
+</a>
+        <!--Show the description-->
+        <b:if cond='data:imagePlacement == &quot;BEFORE_DESCRIPTION&quot;'>
+<b:include name='description'/>
+</b:if>
+</div>
+</b:if>
+<b:else/>
+    <!--No header image -->
+    <div id='header-inner'>
+<div class='titlewrapper'>
+<b:include name='title'/>
+</div>
+<b:include name='description'/>
+</div>
+</b:if>
+</b:includable>
+<b:includable id='description'>
+<div class='descriptionwrapper'>
+<p class='description'><span><data:description/></span></p>
+</div>
+</b:includable>
+<b:includable id='shrinkToFitStyle'>
+</b:includable>
+<b:includable id='title'>
+<b:if cond='data:blog.pageType != &quot;item&quot;'>
+<b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+<h1 class='title'>
+<a expr:href='data:blog.homepageUrl' expr:title='data:blog.title' itemprop='url'>
+<span itemprop='name'><data:title/></span>
+</a>
+</h1>
+<b:else/>
+<h2 class='title'>
+<a expr:href='data:blog.homepageUrl' expr:title='data:blog.title' itemprop='url'>
+<span itemprop='name'><data:title/></span>
+</a>
+</h2>
+</b:if>
+<b:else/>
+<h2 class='title'>
+<a expr:href='data:blog.homepageUrl' expr:title='data:blog.title' itemprop='url'>
+<span itemprop='name'><data:title/></span>
+</a>
+</h2>
+</b:if>
+</b:includable>
+</b:widget>
+</b:section>
+</div>
+<div class='clear'/>
+<nav id='nav' itemscope='itemscope' itemtype='http://schema.org/SiteNavigationElement' role='navigation'>
+<a class='menu-trigger' href='#'><i class='fa fa-list'/> Menu</a>
+<b:section class='main-menu-section' id='main-menu' maxwidgets='1' name='Main Navigation (Edit in Layout)' showaddelement='yes'>
+<b:widget id='LinkList99' locked='false' title='Main Navigation' type='LinkList' version='2' visible='true'>
+<b:widget-settings>
+<b:widget-setting name='text-9'>2nd Sem</b:widget-setting>
+<b:widget-setting name='text-8'>_Mathematics-I</b:widget-setting>
+<b:widget-setting name='text-1'>Entrance Preparation</b:widget-setting>
+<b:widget-setting name='text-0'>Home</b:widget-setting>
+<b:widget-setting name='text-3'>_स&#2366;ध&#2366;रण न&#2375;प&#2366;ल&#2368;-१</b:widget-setting>
+<b:widget-setting name='text-2'>1st Sem</b:widget-setting>
+<b:widget-setting name='text-5'>_Fundamental of Education</b:widget-setting>
+<b:widget-setting name='text-4'>_General English</b:widget-setting>
+<b:widget-setting name='text-7'>_Programming Concept with C</b:widget-setting>
+<b:widget-setting name='text-6'>_Introduction to Information Technology</b:widget-setting>
+<b:widget-setting name='text-55'>_Big Data Analysis</b:widget-setting>
+<b:widget-setting name='text-51'>_Teaching Practicum in ICT Education</b:widget-setting>
+<b:widget-setting name='text-52'>_Artificial Intelligence in Education</b:widget-setting>
+<b:widget-setting name='text-53'>_System Administration using Linux</b:widget-setting>
+<b:widget-setting name='text-54'>_Cloud Computing</b:widget-setting>
+<b:widget-setting name='text-50'>_Classroom Pedagogy</b:widget-setting>
+<b:widget-setting name='link-17'>https://</b:widget-setting>
+<b:widget-setting name='link-16'>#</b:widget-setting>
+<b:widget-setting name='link-19'>https://</b:widget-setting>
+<b:widget-setting name='link-18'>https://</b:widget-setting>
+<b:widget-setting name='link-1'>/p/entrance.html</b:widget-setting>
+<b:widget-setting name='link-13'>https://</b:widget-setting>
+<b:widget-setting name='text-48'>_Educational Project</b:widget-setting>
+<b:widget-setting name='link-2'>#</b:widget-setting>
+<b:widget-setting name='link-12'>/p/general-english-ii.html</b:widget-setting>
+<b:widget-setting name='text-49'>8th Sem</b:widget-setting>
+<b:widget-setting name='link-15'>https://</b:widget-setting>
+<b:widget-setting name='link-0'>/</b:widget-setting>
+<b:widget-setting name='link-14'>https://cpp.ksumanadhikari.com.np</b:widget-setting>
+<b:widget-setting name='text-44'>_GIS</b:widget-setting>
+<b:widget-setting name='text-45'>_Multimedia in Education</b:widget-setting>
+<b:widget-setting name='link-11'>/p/blog-page_08.html</b:widget-setting>
+<b:widget-setting name='text-46'>_Python Programming</b:widget-setting>
+<b:widget-setting name='link-10'>https://</b:widget-setting>
+<b:widget-setting name='text-47'>_Teaching Method in ICT Education</b:widget-setting>
+<b:widget-setting name='link-9'>#</b:widget-setting>
+<b:widget-setting name='text-40'>_Network Security</b:widget-setting>
+<b:widget-setting name='text-41'>_Digital Pedagogy</b:widget-setting>
+<b:widget-setting name='link-7'>https://c.ksumanadhikari.com.np</b:widget-setting>
+<b:widget-setting name='text-42'>7th Sem</b:widget-setting>
+<b:widget-setting name='link-8'>https://</b:widget-setting>
+<b:widget-setting name='text-43'>_Research Project</b:widget-setting>
+<b:widget-setting name='link-5'>https://</b:widget-setting>
+<b:widget-setting name='link-6'>https://</b:widget-setting>
+<b:widget-setting name='link-3'>/p/blog-page.html</b:widget-setting>
+<b:widget-setting name='link-4'>/p/general-english-i.html</b:widget-setting>
+<b:widget-setting name='link-28'>https://</b:widget-setting>
+<b:widget-setting name='link-27'>https://</b:widget-setting>
+<b:widget-setting name='link-29'>https://</b:widget-setting>
+<b:widget-setting name='link-24'>https://</b:widget-setting>
+<b:widget-setting name='text-37'>_Research in Education</b:widget-setting>
+<b:widget-setting name='link-23'>#</b:widget-setting>
+<b:widget-setting name='text-38'>_Visual Programming</b:widget-setting>
+<b:widget-setting name='link-26'>https://</b:widget-setting>
+<b:widget-setting name='text-39'>_Computer Graphics</b:widget-setting>
+<b:widget-setting name='link-25'>https://</b:widget-setting>
+<b:widget-setting name='link-20'>https://</b:widget-setting>
+<b:widget-setting name='text-33'>_Data Communication and Networks</b:widget-setting>
+<b:widget-setting name='text-34'>_Software Engineering and Project Management</b:widget-setting>
+<b:widget-setting name='link-22'>https://</b:widget-setting>
+<b:widget-setting name='text-35'>_Discrete Mathematics</b:widget-setting>
+<b:widget-setting name='link-21'>https://</b:widget-setting>
+<b:widget-setting name='text-36'>6th Sem</b:widget-setting>
+<b:widget-setting name='text-30'>5th Sem</b:widget-setting>
+<b:widget-setting name='text-31'>_Assessment and Evaluation in Education</b:widget-setting>
+<b:widget-setting name='text-32'>_Java Programming</b:widget-setting>
+<b:widget-setting name='link-39'>https://</b:widget-setting>
+<b:widget-setting name='link-38'>https://</b:widget-setting>
+<b:widget-setting name='text-26'>_Operating System</b:widget-setting>
+<b:widget-setting name='link-35'>https://</b:widget-setting>
+<b:widget-setting name='text-27'>_Database Management System</b:widget-setting>
+<b:widget-setting name='link-34'>https://</b:widget-setting>
+<b:widget-setting name='text-28'>_System Analysis and Design</b:widget-setting>
+<b:widget-setting name='link-37'>/p/research-in-education_01268197903.html</b:widget-setting>
+<b:widget-setting name='text-29'>_Numerical Analysis</b:widget-setting>
+<b:widget-setting name='link-36'>#</b:widget-setting>
+<b:widget-setting name='text-22'>_Probability and Statistics</b:widget-setting>
+<b:widget-setting name='link-31'>https://</b:widget-setting>
+<b:widget-setting name='text-23'>4th Sem</b:widget-setting>
+<b:widget-setting name='link-30'>#</b:widget-setting>
+<b:widget-setting name='text-24'>_Fundamental of Curriculum</b:widget-setting>
+<b:widget-setting name='link-33'>https://</b:widget-setting>
+<b:widget-setting name='text-25'>_Educational Leadership in Digital Era</b:widget-setting>
+<b:widget-setting name='link-32'>https://java.ksumanadhikari.com.np</b:widget-setting>
+<b:widget-setting name='text-20'>_Computer Architecture and Organization</b:widget-setting>
+<b:widget-setting name='link-40'>/p/network-security_0365064969.html</b:widget-setting>
+<b:widget-setting name='text-21'>_Data Structure and Algorithms</b:widget-setting>
+<b:widget-setting name='text-19'>_21st Century Skill</b:widget-setting>
+<b:widget-setting name='link-49'>#</b:widget-setting>
+<b:widget-setting name='text-15'>_Mathematics II</b:widget-setting>
+<b:widget-setting name='link-46'>https://</b:widget-setting>
+<b:widget-setting name='text-16'>3rd Sem</b:widget-setting>
+<b:widget-setting name='link-45'>https://</b:widget-setting>
+<b:widget-setting name='text-17'>_Learning Psychology</b:widget-setting>
+<b:widget-setting name='link-48'>https://</b:widget-setting>
+<b:widget-setting name='text-18'>_Web Technology</b:widget-setting>
+<b:widget-setting name='link-47'>https://</b:widget-setting>
+<b:widget-setting name='text-11'>_स&#2366;ध&#2366;रण न&#2375;प&#2366;ल&#2368;-२</b:widget-setting>
+<b:widget-setting name='link-42'>#</b:widget-setting>
+<b:widget-setting name='text-12'>_General English II</b:widget-setting>
+<b:widget-setting name='link-41'>https://</b:widget-setting>
+<b:widget-setting name='text-13'>_Digital Logic</b:widget-setting>
+<b:widget-setting name='link-44'>https://</b:widget-setting>
+<b:widget-setting name='text-14'>_Object Oriented Programming With C++</b:widget-setting>
+<b:widget-setting name='link-43'>https://</b:widget-setting>
+<b:widget-setting name='link-51'>https://</b:widget-setting>
+<b:widget-setting name='text-10'>_Developmental Psychology</b:widget-setting>
+<b:widget-setting name='link-50'>https://</b:widget-setting>
+<b:widget-setting name='sorting'>NONE</b:widget-setting>
+<b:widget-setting name='link-53'>https://</b:widget-setting>
+<b:widget-setting name='link-52'>https://</b:widget-setting>
+<b:widget-setting name='link-55'>https://</b:widget-setting>
+<b:widget-setting name='link-54'>https://</b:widget-setting>
+</b:widget-settings>
+<b:includable id='main'>
+<b:include name='content'/>
+</b:includable>
+<b:includable id='content'>
+<ul class='shnav simple-mainmenu' id='main-menu-nav' role='menubar'>
+<b:loop values='data:links' var='link'>
+<li><a expr:href='data:link.target' role='menuitem'><data:link.name/></a></li>
+</b:loop>
+</ul>
+</b:includable>
+</b:widget>
+</b:section>
+<form action='/search' id='search-form' method='get'>
+<table><tbody><tr><td class='search-box'>
+<input id='search-box' name='q' type='text' value='Search...'/>
+<input id='search-button' type='submit' value='Search'/>
+</td></tr></tbody></table>
+</form>
+</nav>
+<div class='clear'/>
+<b:if cond='data:blog.url == data:blog.homepageUrl'>
