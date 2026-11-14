@@ -51,8 +51,19 @@
   box-shadow:0 18px 34px rgba(15,23,42,.22)!important;
 }
 
-#main .blog-posts.all-posts-one-page .simple-thumbnail{
+/* The thumbnail DIV is wrapped in an anchor in Blogger's actual markup.
+   Style and reorder the anchor (the real flex item), not only its child. */
+#main .blog-posts.all-posts-one-page > .post-outer > .post > a:has(> .simple-thumbnail){
+  display:block!important;
   order:-1!important;
+  flex:0 0 auto!important;
+  width:100%!important;
+  min-width:0!important;
+  margin:0!important;
+  padding:0!important;
+  line-height:0!important;
+}
+#main .blog-posts.all-posts-one-page .simple-thumbnail{
   position:relative!important;
   display:block!important;
   flex:0 0 auto!important;
@@ -90,6 +101,10 @@
   transform:scale(1.07)!important;
 }
 
+#main .blog-posts.all-posts-one-page > .post-outer > .post > .post-header,
+#main .blog-posts.all-posts-one-page > .post-outer > .post > a[content]{
+  display:none!important;
+}
 #main .blog-posts.all-posts-one-page .post-title{
   order:0!important;
   margin:0 0 10px!important;
