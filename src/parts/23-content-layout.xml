@@ -1,4 +1,4 @@
-<div id='content-wrapper' itemscope='itemscope' itemtype='http://schema.org/Blog' role='main'>
+<div id='content-wrapper' itemscope='itemscope' itemtype='https://schema.org/Blog' role='main'>
 <div id='post-wrapper'>
 <div class='post-inner'>
 <b:section class='main' id='main' maxwidgets='30' showaddelement='yes'>
@@ -210,9 +210,9 @@
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
 <b:loop values='data:posts' var='post'>
 <b:if cond='data:post.labels'>
-<div class='breadcrumbs'><span itemscope='' itemtype='http://data-vocabulary.org/Breadcrumb'><a expr:href='data:blog.homepageUrl' itemprop='url'><span itemprop='title'>
+<div class='breadcrumbs'><span><a expr:href='data:blog.homepageUrl'><span>
 <data:title/></span></a></span>
-<b:loop values='data:post.labels' var='label'><span itemscope='' itemtype='http://data-vocabulary.org/Breadcrumb'><a expr:href='data:label.url + &quot;?&amp;amp;max-results=6&quot;' itemprop='url'><span itemprop='title'><data:label.name/></span></a></span><b:if cond='data:label.isLast != &quot;true&quot;'>
+<b:loop values='data:post.labels' var='label'><span><a expr:href='data:label.url + &quot;?&amp;amp;max-results=6&quot;'><span><data:label.name/></span></a></span><b:if cond='data:label.isLast != &quot;true&quot;'>
 </b:if>
 </b:loop>
 <span><data:post.title/></span>
@@ -283,7 +283,7 @@
 <div class='goog-inline-block comment-action-icon'/>
 </div>
 <b:else/>
-<a class='comment-delete' expr:href='&quot;http://www.blogger.com/delete-comment.g?blogID=&quot; + data:blog.blogId + &quot;&amp;amp;postID=&quot; + data:comment.id' title='delete comment'>delete</a>
+<a class='comment-delete' expr:href='&quot;https://www.blogger.com/delete-comment.g?blogID=&quot; + data:blog.blogId + &quot;&amp;amp;postID=&quot; + data:comment.id' title='delete comment'>delete</a>
 </b:if>
 </span>
 </b:includable>
@@ -314,7 +314,7 @@
 <b:else/>
 <data:comment.author/>
 </b:if>
-<div class='comments' id='comments' itemscope='itemscope' itemtype='http://schema.org/Comment'>
+<div class='comments' id='comments' itemscope='itemscope' itemtype='https://schema.org/Comment'>
 <meta expr:content='data:post.title' itemprop='about'/>
 <meta expr:content='data:post.canonicalUrl' itemprop='discussionUrl'/>
 <b:if cond='data:post.allowComments'>
@@ -350,10 +350,10 @@
 <div class='clear'/>
 <div id='comment_block'>
 <b:loop values='data:post.comments' var='comment'>
-<div data-level='0' expr:class='data:comment.adminClass' expr:id='data:comment.anchorName' itemprop='comment' itemscope='itemscope' itemtype='http://schema.org/UserComments'>
+<div data-level='0' expr:class='data:comment.adminClass' expr:id='data:comment.anchorName' itemprop='comment' itemscope='itemscope' itemtype='https://schema.org/UserComments'>
 <b:if cond='data:comment.isDeleted'>
 <span class='deleted-comment'>
-<data:comment.body/> - <a class='comment_hapus' expr:href='&quot;http://www.blogger.com/delete-comment.g?blogID=&quot; + data:blog.blogId + &quot;&amp;amp;postID=&quot; + data:comment.id' expr:title='data:top.deleteCommentMsg'>Hapus</a></span>
+<data:comment.body/> - <a class='comment_hapus' expr:href='&quot;https://www.blogger.com/delete-comment.g?blogID=&quot; + data:blog.blogId + &quot;&amp;amp;postID=&quot; + data:comment.id' expr:title='data:top.deleteCommentMsg'>Hapus</a></span>
 <b:else/>
 <b:if cond='data:post.adminClass == data:comment.adminClass'>
 &lt;div class=&#39;comment_inner comment_admin&#39;&gt;
@@ -384,8 +384,8 @@
 </a>
 </div>
 </div>
-<a class='comment-delete' expr:href='&quot;http://www.blogger.com/delete-comment.g?blogID=&quot; + data:blog.blogId + &quot;&amp;amp;postID=&quot; + data:comment.id' expr:title='data:top.deleteCommentMsg'>
-<img alt='delete' src='http://2.bp.blogspot.com/-d-5BS0YCkho/UOKe2UIw0rI/AAAAAAAAC4w/md_iYNVHaHk/s1600/delete4.png' title='Hapus Komentar'/>
+<a class='comment-delete' expr:href='&quot;https://www.blogger.com/delete-comment.g?blogID=&quot; + data:blog.blogId + &quot;&amp;amp;postID=&quot; + data:comment.id' expr:title='data:top.deleteCommentMsg'>
+<img alt='delete' src='https://2.bp.blogspot.com/-d-5BS0YCkho/UOKe2UIw0rI/AAAAAAAAC4w/md_iYNVHaHk/s1600/delete4.png' title='Hapus Komentar'/>
 </a>
 </div>
 <p itemprop='commentText'><data:comment.body/></p>
@@ -471,21 +471,21 @@
 
         //Pengaturan Emoticon
         Emo_List = [
-        ':)'  ,'http://2.bp.blogspot.com/-eeLWBWx7zaI/VJNbnR-JhoI/AAAAAAAAH8E/4vUZ3j_GoEg/s1600/shy.png',
-        ':('  ,'http://4.bp.blogspot.com/-RDtah-TXteU/VJNblptXyEI/AAAAAAAAH70/GGZg4MMUVxA/s1600/sad.png',
-        ' =('  ,'http://2.bp.blogspot.com/-F-ATl2dVex0/VJNbgm8anmI/AAAAAAAAH7A/G2OZMUs51hg/s1600/hate.png',
-        '^_^'  ,'http://2.bp.blogspot.com/-rvM5sSYqd2k/VJNbjkemjyI/AAAAAAAAH7k/QcT_8JETczs/s1600/noprob.png',
-        ' :D'  ,'http://2.bp.blogspot.com/-rvM5sSYqd2k/VJNbjkemjyI/AAAAAAAAH7k/QcT_8JETczs/s1600/noprob.png',
-        '=D'  ,'http://1.bp.blogspot.com/-DB0TS3jw6n8/VJNbgab1A_I/AAAAAAAAH7I/4Cr8aYd6AmU/s1600/happy.png',
-        '=)D' ,'http://3.bp.blogspot.com/-WZ352_DPpck/VJNblq2WFVI/AAAAAAAAH74/h9PAx0BeLJQ/s1600/rapt.png',
-        '|o|'  ,'http://1.bp.blogspot.com/-VzxVDD6dmB4/Usv09aIonRI/AAAAAAAAax0/ETH5TeQiIpA/s1600/applause-yahoo-emoticon.gif',
-        '@@,'  ,'http://4.bp.blogspot.com/-Y2KF1cqsEiQ/VJNbolnNw1I/AAAAAAAAH8Y/mzpdmmt9lp4/s1600/sigh.png',
-        ' ;)'  ,'http://2.bp.blogspot.com/-EvSfZMZuwKo/U6tMVvRUL1I/AAAAAAAAD9w/1zzRy8EUC5A/s1600/cool.png',
-        ':-bd'  ,'http://3.bp.blogspot.com/-_lM3w2ZD7K8/VJNbiIf2PII/AAAAAAAAH7g/U5qLOVDZg8c/s1600/like.png',
-        ':-d'  ,'http://3.bp.blogspot.com/-_lM3w2ZD7K8/VJNbiIf2PII/AAAAAAAAH7g/U5qLOVDZg8c/s1600/like.png',
-        ' :p'  ,'http://2.bp.blogspot.com/-TMShyHWtK9o/VJNbrl_cRZI/AAAAAAAAH80/jFKnRysFupo/s1600/unbelieve.png',
-        ':ng'  ,'http://4.bp.blogspot.com/-SLdFsLn7w00/U6tMXp7KTGI/AAAAAAAAD-I/MFuTw6CkbfI/s1600/ngakak.gif',
-        ':lv'  ,'http://2.bp.blogspot.com/-A_W5lI-_J8I/VJNbi2oXwjI/AAAAAAAAH7c/wlxM7CETbhI/s1600/love.png',   
+        ':)'  ,'https://2.bp.blogspot.com/-eeLWBWx7zaI/VJNbnR-JhoI/AAAAAAAAH8E/4vUZ3j_GoEg/s1600/shy.png',
+        ':('  ,'https://4.bp.blogspot.com/-RDtah-TXteU/VJNblptXyEI/AAAAAAAAH70/GGZg4MMUVxA/s1600/sad.png',
+        ' =('  ,'https://2.bp.blogspot.com/-F-ATl2dVex0/VJNbgm8anmI/AAAAAAAAH7A/G2OZMUs51hg/s1600/hate.png',
+        '^_^'  ,'https://2.bp.blogspot.com/-rvM5sSYqd2k/VJNbjkemjyI/AAAAAAAAH7k/QcT_8JETczs/s1600/noprob.png',
+        ' :D'  ,'https://2.bp.blogspot.com/-rvM5sSYqd2k/VJNbjkemjyI/AAAAAAAAH7k/QcT_8JETczs/s1600/noprob.png',
+        '=D'  ,'https://1.bp.blogspot.com/-DB0TS3jw6n8/VJNbgab1A_I/AAAAAAAAH7I/4Cr8aYd6AmU/s1600/happy.png',
+        '=)D' ,'https://3.bp.blogspot.com/-WZ352_DPpck/VJNblq2WFVI/AAAAAAAAH74/h9PAx0BeLJQ/s1600/rapt.png',
+        '|o|'  ,'https://1.bp.blogspot.com/-VzxVDD6dmB4/Usv09aIonRI/AAAAAAAAax0/ETH5TeQiIpA/s1600/applause-yahoo-emoticon.gif',
+        '@@,'  ,'https://4.bp.blogspot.com/-Y2KF1cqsEiQ/VJNbolnNw1I/AAAAAAAAH8Y/mzpdmmt9lp4/s1600/sigh.png',
+        ' ;)'  ,'https://2.bp.blogspot.com/-EvSfZMZuwKo/U6tMVvRUL1I/AAAAAAAAD9w/1zzRy8EUC5A/s1600/cool.png',
+        ':-bd'  ,'https://3.bp.blogspot.com/-_lM3w2ZD7K8/VJNbiIf2PII/AAAAAAAAH7g/U5qLOVDZg8c/s1600/like.png',
+        ':-d'  ,'https://3.bp.blogspot.com/-_lM3w2ZD7K8/VJNbiIf2PII/AAAAAAAAH7g/U5qLOVDZg8c/s1600/like.png',
+        ' :p'  ,'https://2.bp.blogspot.com/-TMShyHWtK9o/VJNbrl_cRZI/AAAAAAAAH80/jFKnRysFupo/s1600/unbelieve.png',
+        ':ng'  ,'https://4.bp.blogspot.com/-SLdFsLn7w00/U6tMXp7KTGI/AAAAAAAAD-I/MFuTw6CkbfI/s1600/ngakak.gif',
+        ':lv'  ,'https://2.bp.blogspot.com/-A_W5lI-_J8I/VJNbi2oXwjI/AAAAAAAAH7c/wlxM7CETbhI/s1600/love.png',   
         ];
              
 //Config Force tag list, define all in lower case
@@ -619,15 +619,15 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
     </b:if>
     <div class='date-posts'>
       <div class='post-outer'>
-        <div class='post hentry uncustomized-post-template' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+        <div class='post hentry uncustomized-post-template' itemscope='itemscope' itemtype='https://schema.org/BlogPosting'>
           <b:if cond='data:post.thumbnailUrl'>
-            <meta expr:content='data:post.thumbnailUrl' itemprop='image_url'/>
+            <meta expr:content='data:post.thumbnailUrl' itemprop='image'/>
           </b:if>
           <meta expr:content='data:blog.blogId' itemprop='blogId'/>
           <meta expr:content='data:post.id' itemprop='postId'/>
           <a expr:name='data:post.id'/>
           <b:if cond='data:post.title'>
-            <h3 class='post-title entry-title' itemprop='name'>
+            <h3 class='post-title entry-title' itemprop='headline'>
               <b:if cond='data:post.link'>
                 <a expr:href='data:post.link'><data:post.title/></a>
               <b:elseif cond='data:post.url and data:blog.url != data:post.url'/>
@@ -649,14 +649,14 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
               <span class='post-author vcard'>
                 <b:if cond='data:top.showAuthor'>
                   <b:if cond='data:post.authorProfileUrl'>
-                    <span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+                    <span class='fn' itemprop='author' itemscope='itemscope' itemtype='https://schema.org/Person'>
                       <meta expr:content='data:post.authorProfileUrl' itemprop='url'/>
                       <a expr:href='data:post.authorProfileUrl' rel='author' title='author profile'>
                         <span itemprop='name'><data:post.author/></span>
                       </a>
                     </span>
                   <b:else/>
-                    <span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+                    <span class='fn' itemprop='author' itemscope='itemscope' itemtype='https://schema.org/Person'>
                       <span itemprop='name'><data:post.author/></span>
                     </span>
                   </b:if>
@@ -789,7 +789,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
             <b:if cond='data:post.authorProfileUrl'>
 			  <span class='author-info'>
                 <i class='fa fa-user'/>
-			  <span class='vcard' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+			  <span class='vcard' itemprop='author' itemscope='itemscope' itemtype='https://schema.org/Person'>
 			  <span class='fn'> 
                 <a class='g-profile' expr:href='data:post.authorProfileUrl' rel='author' title='author profile'>
                   <span itemprop='name'><data:post.author/></span>
@@ -827,7 +827,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 
     <div class='post-header'>
     <div class='post-header-line-1'/>
-<span class='post-author vcard' itemscope='itemscope' itemtype='http://schema.org/Person'> 
+<span class='post-author vcard' itemscope='itemscope' itemtype='https://schema.org/Person'> 
                 <b:if cond='data:top.showAuthor'> 
                   <b:if cond='data:post.authorProfileUrl'> 
                     <span class='fn author'> 
@@ -910,20 +910,16 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
 <div class='tombol-berbagi-simple'>
 <div class='tombol-berbagi-simple-fb'>
-<a class='tombol-berbagi-fb' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:post.url + &quot;&amp;title=&quot; + data:post.title' rel='nofollow' target='_blank'/>
-<a class='tombol-berbagi-fb-label' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:post.url + &quot;&amp;title=&quot; + data:post.title' rel='nofollow' target='_blank'> Share on Facebook</a>
+<a class='tombol-berbagi-fb' expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:post.url + &quot;&amp;title=&quot; + data:post.title' rel='nofollow' target='_blank'/>
+<a class='tombol-berbagi-fb-label' expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:post.url + &quot;&amp;title=&quot; + data:post.title' rel='nofollow' target='_blank'> Share on Facebook</a>
 </div>
 <div class='tombol-berbagi-simple-tw'>
-<a class='tombol-berbagi-tw' expr:data-text='data:post.title' expr:data-url='data:post.url' href='http://twitter.com/share' rel='nofollow' target='_blank'/>
-<a class='tombol-berbagi-tw-label' expr:data-text='data:post.title' expr:data-url='data:post.url' href='http://twitter.com/share' rel='nofollow' target='_blank'>Share on Twitter</a>
+<a class='tombol-berbagi-tw' expr:data-text='data:post.title' expr:data-url='data:post.url' href='https://twitter.com/share' rel='nofollow' target='_blank'/>
+<a class='tombol-berbagi-tw-label' expr:data-text='data:post.title' expr:data-url='data:post.url' href='https://twitter.com/share' rel='nofollow' target='_blank'>Share on Twitter</a>
 </div>
 <div class='tombol-berbagi'>
-<a class='tombol-berbagi-gp' expr:href='&quot;https://plus.google.com/share?url=&quot; + data:post.url' rel='nofollow' target='_blank'/>
-<a class='tombol-berbagi-gp-label' expr:href='&quot;https://plus.google.com/share?url=&quot; + data:post.url' rel='nofollow' target='_blank'>Share on Google+</a>
-</div>
-<div class='tombol-berbagi'>
-<a class='tombol-berbagi-lin' expr:href='&quot;http://www.linkedin.com/shareArticle?mini=true&amp;amp;url=&quot; + data:post.url + &quot;&amp;amp;title=&quot; + data:post.title + &quot;&amp;amp;summary=&quot; + data:post.snippets' rel='nofollow' target='_blank'/>
-<a class='tombol-berbagi-lin-label' expr:href='&quot;http://www.linkedin.com/shareArticle?mini=true&amp;amp;url=&quot; + data:post.url + &quot;&amp;amp;title=&quot; + data:post.title + &quot;&amp;amp;summary=&quot; + data:post.snippets' rel='nofollow' target='_blank'>Share on LinkedIn</a>
+<a class='tombol-berbagi-lin' expr:href='&quot;https://www.linkedin.com/shareArticle?mini=true&amp;amp;url=&quot; + data:post.url + &quot;&amp;amp;title=&quot; + data:post.title + &quot;&amp;amp;summary=&quot; + data:post.snippets' rel='nofollow' target='_blank'/>
+<a class='tombol-berbagi-lin-label' expr:href='&quot;https://www.linkedin.com/shareArticle?mini=true&amp;amp;url=&quot; + data:post.url + &quot;&amp;amp;title=&quot; + data:post.title + &quot;&amp;amp;summary=&quot; + data:post.snippets' rel='nofollow' target='_blank'>Share on LinkedIn</a>
 </div>
 </div>
 <div style='clear:both;'/>

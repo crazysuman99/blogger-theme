@@ -194,8 +194,8 @@ div.comment_inner.comment_admin {background:#fff;}
 .comment_header{float:left;width:67px}
 .cm_head{position:relative;margin:-10px -10px 0;padding:5px 10px 0px;}
 .comment_avatar{border-radius:55px;margin:0;padding:5px;}
-.comment_avatar img{border-radius:55px;width:55px;height:55px;padding:0;text-align:center;margin:0;background:url(http://4.bp.blogspot.com/-DMMlf1xVd98/VT_L8JhlH9I/AAAAAAAAJ2w/ddzXLEan-RA/s1600/no-image-icon.png) no-repeat #eee}
-div.comment_avatar img[src="http://img1.blogblog.com/img/openid16-rounded.gif"]{content:url(http://4.bp.blogspot.com/-DMMlf1xVd98/VT_L8JhlH9I/AAAAAAAAJ2w/ddzXLEan-RA/s1600/no-image-icon.png)}
+.comment_avatar img{border-radius:55px;width:55px;height:55px;padding:0;text-align:center;margin:0;background:url(https://4.bp.blogspot.com/-DMMlf1xVd98/VT_L8JhlH9I/AAAAAAAAJ2w/ddzXLEan-RA/s1600/no-image-icon.png) no-repeat #eee}
+div.comment_avatar img[src="https://img1.blogblog.com/img/openid16-rounded.gif"]{content:url(https://4.bp.blogspot.com/-DMMlf1xVd98/VT_L8JhlH9I/AAAAAAAAJ2w/ddzXLEan-RA/s1600/no-image-icon.png)}
 .comment_name,.comment_name a{padding:0;margin:0;font-weight:bold;color:#404040;}
 .comment_service{margin-top:0}
 .comment_date{margin:0 0 0 5px;color:#999;font-size:12px;font-weight:400}
@@ -213,7 +213,7 @@ div.comment_avatar img[src="http://img1.blogblog.com/img/openid16-rounded.gif"]{
 .comment_hapus:hover{text-decoration:none;color:#333!important}
 .unneeded-paging-control{display:none}
 .comment-form{max-width:100%!important}
-#comment-editor{width:100%!important;background:#fff url('http://4.bp.blogspot.com/-jSUS8v5kwpQ/U8Z_6Ufr-PI/AAAAAAAAEYY/o4cQPKvt8vQ/s1600/loading.gif') no-repeat 50% 40%;margin-bottom:0;margin-top:5px}
+#comment-editor{width:100%!important;background:#fff url('https://4.bp.blogspot.com/-jSUS8v5kwpQ/U8Z_6Ufr-PI/AAAAAAAAEYY/o4cQPKvt8vQ/s1600/loading.gif') no-repeat 50% 40%;margin-bottom:0;margin-top:5px}
 .comment_form a{text-decoration:none;}
 .comment-form p{background:#fff none repeat scroll 0% 0%;padding:0;margin:0;color:#404040;position:relative}
 .comment_reply_form{padding:0 0 0 70px}

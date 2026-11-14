@@ -31,3 +31,8 @@ python tools/build_theme.py --check
 ```
 
 See [docs/theme-modules.md](docs/theme-modules.md) for the source map and workflow.
+
+
+## SEO and Blogger settings
+
+See [docs/seo-and-blogger-settings.md](docs/seo-and-blogger-settings.md) for the theme-level SEO changes and the separate Blogger settings required for robots.txt and AdSense ads.txt.

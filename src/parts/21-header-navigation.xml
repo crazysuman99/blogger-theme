@@ -7,8 +7,6 @@
 <li><a href='/sitemap.xml' title='Our Sitemap'><i class='fa fa-list'/> Sitemap</a></li>
 <li><a href='https://www.ksumanadhikari.com.np' title='Contact us'><i class='fa fa-envelope'/> Contact</a></li>
 <li><a href='/p/disclaimer.html' title='Disclaimer'><i class='fa fa-check-circle'/> Disclaimer</a></li>
-<li class='sosmed pinterest'><a class='simple-tooltip simple-tooltip-left' data-simple-tooltip='Follow us on Pinterest' href='#' rel='nofollow' target='_blank'><i class='fa fa-pinterest'/><span class='inv'/></a></li>
-<li class='sosmed'><a class='simple-tooltip simple-tooltip-left' data-simple-tooltip='Follow us on Google+' href='https://www.youtube.com/@ksumanadhikari' rel='nofollow' target='_blank'><i class='fa fa-google-plus'/><span class='inv'/></a></li>
 <li class='sosmed'><a class='simple-tooltip simple-tooltip-left' data-simple-tooltip='Follow us on Facebook' href='https://www.facebook.com/profile.php?id=61595246783060' rel='nofollow' target='_blank'><i class='fa fa-facebook'/><span class='inv'/></a></li>
 <li class='sosmed'><a class='simple-tooltip simple-tooltip-left' data-simple-tooltip='Follow us on instagram' href='https://www.instagram.com/ksumanadhikari' rel='nofollow' target='_blank'><i class='fa fa-instagram'/><span class='inv'/></a></li>
 <li class='sosmed twitter'><a class='simple-tooltip simple-tooltip-left' data-simple-tooltip='Follow us on Twitter' href='https://x.com/ksumanadhikari' rel='nofollow' target='_blank'><i class='fa fa-twitter'/><span class='inv'/></a></li>
@@ -19,7 +17,7 @@
 </header>
 </div>
 <div class='clear'/>
-<div id='header-wrapper' itemscope='itemscope' itemtype='http://schema.org/WPHeader'>
+<div id='header-wrapper' itemscope='itemscope' itemtype='https://schema.org/WPHeader'>
 <b:section class='header section' id='header' maxwidgets='1' name='Site Logo' showaddelement='yes'>
 <b:widget id='Header1' locked='false' title='BICTE with ksumanadhikari (Header)' type='Header' version='1'>
 <b:widget-settings>
@@ -113,7 +111,7 @@
 </b:section>
 </div>
 <div class='clear'/>
-<nav id='nav' itemscope='itemscope' itemtype='http://schema.org/SiteNavigationElement' role='navigation'>
+<nav id='nav' itemscope='itemscope' itemtype='https://schema.org/SiteNavigationElement' role='navigation'>
 <a class='menu-trigger' href='#'><i class='fa fa-list'/> Menu</a>
 <b:section class='main-menu-section' id='main-menu' maxwidgets='1' name='Main Navigation (Edit in Layout)' showaddelement='yes'>
 <b:widget id='LinkList99' locked='false' title='Main Navigation' type='LinkList' version='2' visible='true'>

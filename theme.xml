@@ -3,89 +3,79 @@
 <html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 <head>
   <script async='async' crossorigin='anonymous' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3386340410780049'/>
-<!-- [ Meta Tag SEO ] -->
+<!-- SEO: canonical, page title and description -->
 <meta charset='utf-8'/>
 <meta content='width=device-width, initial-scale=1' name='viewport'/>
-<meta content='blogger' name='generator'/>
 <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
-<link href='http://www.blogger.com/openid-server.g' rel='openid.server'/>
-<link expr:href='data:blog.homepageUrl' rel='openid.delegate'/>
-<link expr:href='data:blog.url' rel='canonical'/>
+<link expr:href='data:blog.canonicalUrl' rel='canonical'/>
 <b:if cond='data:blog.pageType == &quot;index&quot;'>
 <title><data:blog.pageTitle/></title>
 <b:else/>
 <b:if cond='data:blog.pageType != &quot;error_page&quot;'>
 <title><data:blog.pageName/> - <data:blog.title/></title>
-</b:if></b:if>
+</b:if>
+</b:if>
 <b:if cond='data:blog.pageType == &quot;error_page&quot;'>
 <title>Page Not Found - <data:blog.title/></title>
 </b:if>
-
-<b:if cond='data:blog.pageType != &quot;error_page&quot;'>
+<b:if cond='data:blog.metaDescription'>
 <meta expr:content='data:blog.metaDescription' name='description'/>
-<b:if cond='data:blog.homepageUrl != data:blog.url'>
-<meta expr:content='data:blog.pageName + &quot;, &quot; + data:blog.pageTitle + &quot;, &quot; + data:blog.title' name='keywords'/>
-</b:if></b:if>
-<b:if cond='data:blog.url == data:blog.homepageUrl'>
-<meta content='Suman Adhikari, computer education, programming, BICTE, computer operator, IT education, Nepal' name='keywords'/></b:if>
+<b:else/>
+<meta content='Suman Adhikari: computer education, programming tutorials, BICTE learning resources, computer operator exam preparation and IT education in Nepal.' name='description'/>
+</b:if>
+<meta content='Suman Adhikari' name='author'/>
 <link expr:href='data:blog.homepageUrl + &quot;feeds/posts/default&quot;' expr:title='data:blog.title + &quot; - Atom&quot;' rel='alternate' type='application/atom+xml'/>
 <link expr:href='data:blog.homepageUrl + &quot;feeds/posts/default?alt=rss&quot;' expr:title='data:blog.title + &quot; - RSS&quot;' rel='alternate' type='application/rss+xml'/>
-<link expr:href='&quot;http://www.blogger.com/feeds/&quot; + data:blog.blogId + &quot;/posts/default&quot;' expr:title='data:blog.title + &quot; - Atom&quot;' rel='alternate' type='application/atom+xml'/>
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
-<b:if cond='data:blog.postImageThumbnailUrl'>
-<link expr:href='data:blog.postImageThumbnailUrl' rel='image_src'/>
-</b:if></b:if>
-<link href='/favicon.ico' rel='icon' type='image/x-icon'/>
-<link href='https://plus.google.com/xxxxx/posts' rel='publisher'/>
-<link href='https://plus.google.com/xxxxx/about' rel='author'/>
-<link href='https://plus.google.com/xxxxx' rel='me'/>
-<meta content='xxxxx' name='google-site-verification'/>
-<meta content='xxxxx' name='msvalidate.01'/>
-<meta content='xxxxx' name='alexaVerifyID'/>
-<meta content='Nepal' name='geo.country'/>
-<meta content='Suman Adhikari' name='Author'/>
-<meta content='general' name='rating'/>
-<meta content='id' name='geo.country'/>
-
-<!-- [ Social Media meta tag ] -->
-<b:if cond='data:blog.url == data:blog.homepageUrl'> 
-<b:if cond='data:blog.pageType == &quot;item&quot;'> 
-<b:if cond='data:blog.pageType == &quot;static_page&quot;'>  
-<b:if cond='data:blog.url'>
-<meta expr:content='data:blog.url' property='og:url'/>
+<b:if cond='data:blog.postImageUrl'>
+<link expr:href='data:blog.postImageUrl' rel='image_src'/>
 </b:if>
-<meta expr:content='data:blog.title' property='og:site_name'/>
-<b:if cond='data:blog.pageName'>
-<meta expr:content='data:blog.pageName' property='og:title'/>
-</b:if></b:if></b:if></b:if>
+</b:if>
+<link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+<!-- Open Graph: one consistent set of values per page -->
 <meta expr:content='data:blog.pageTitle' property='og:title'/>
+<meta expr:content='data:blog.canonicalUrl' property='og:url'/>
+<meta expr:content='data:blog.title' property='og:site_name'/>
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
 <meta content='article' property='og:type'/>
 <b:else/>
 <meta content='website' property='og:type'/>
 </b:if>
-<meta expr:content='data:blog.canonicalUrl' property='og:url'/>
 <b:if cond='data:blog.postImageUrl'>
 <meta expr:content='data:blog.postImageUrl' property='og:image'/>
 <b:else/>
 <b:if cond='data:blog.postImageThumbnailUrl'>
 <meta expr:content='data:blog.postImageThumbnailUrl' property='og:image'/>
-  <b:else/>
+<b:else/>
 <meta expr:content='data:blog.blogspotFaviconUrl' property='og:image'/>
-</b:if></b:if>
+</b:if>
+</b:if>
 <b:if cond='data:blog.metaDescription'>
 <meta expr:content='data:blog.metaDescription' property='og:description'/>
 <b:else/>
-<meta content='Suman Adhikari&apos;s personal learning space for programming, IT education, BICTE resources, computer operator preparation, career guidance and projects.' property='og:description'/></b:if>
-<meta expr:content='data:blog.title' property='og:site_name'/>
-<meta content='562901580420523' property='fb:app_id'/>
-<meta content='100005787193074' property='fb:admins'/>
+<meta content='Computer education, programming tutorials, BICTE resources, computer operator exam preparation and IT learning resources from Nepal.' property='og:description'/>
+</b:if>
 <meta content='en_US' property='og:locale'/>
-<meta content='en_GB' property='og:locale:alternate'/>
 <meta content='ne_NP' property='og:locale:alternate'/>
-<meta content='summary' name='twitter:card'/>
-<meta expr:content='data:blog.pageTitle' name='twitter:title'/>
 
+<!-- X/Twitter Cards -->
+<meta content='summary_large_image' name='twitter:card'/>
+<meta expr:content='data:blog.pageTitle' name='twitter:title'/>
+<b:if cond='data:blog.metaDescription'>
+<meta expr:content='data:blog.metaDescription' name='twitter:description'/>
+<b:else/>
+<meta content='Computer education, programming tutorials, BICTE resources and IT learning resources from Nepal.' name='twitter:description'/>
+</b:if>
+<b:if cond='data:blog.postImageUrl'>
+<meta expr:content='data:blog.postImageUrl' name='twitter:image'/>
+<b:else/>
+<b:if cond='data:blog.postImageThumbnailUrl'>
+<meta expr:content='data:blog.postImageThumbnailUrl' name='twitter:image'/>
+<b:else/>
+<meta expr:content='data:blog.blogspotFaviconUrl' name='twitter:image'/>
+</b:if>
+</b:if>
 
 <b:skin><![CDATA[
 /* CSS moved to external skin-base.css. Keep this Blogger skin block. */
@@ -139,7 +129,7 @@ body#layout #banner .add_widget,#layout #banner2 .add_widget{width:80%;margin:5p
 //<![CDATA[
 //CSS Ready
 function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }
-loadCSS("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");loadCSS("http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700");loadCSS("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+loadCSS("https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");loadCSS("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700");loadCSS("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 //]]>
 </script>
 <b:if cond='data:blog.pageType != &quot;item&quot;'>
@@ -176,8 +166,6 @@ loadCSS("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");lo
 <li><a href='/sitemap.xml' title='Our Sitemap'><i class='fa fa-list'/> Sitemap</a></li>
 <li><a href='https://www.ksumanadhikari.com.np' title='Contact us'><i class='fa fa-envelope'/> Contact</a></li>
 <li><a href='/p/disclaimer.html' title='Disclaimer'><i class='fa fa-check-circle'/> Disclaimer</a></li>
-<li class='sosmed pinterest'><a class='simple-tooltip simple-tooltip-left' data-simple-tooltip='Follow us on Pinterest' href='#' rel='nofollow' target='_blank'><i class='fa fa-pinterest'/><span class='inv'/></a></li>
-<li class='sosmed'><a class='simple-tooltip simple-tooltip-left' data-simple-tooltip='Follow us on Google+' href='https://www.youtube.com/@ksumanadhikari' rel='nofollow' target='_blank'><i class='fa fa-google-plus'/><span class='inv'/></a></li>
 <li class='sosmed'><a class='simple-tooltip simple-tooltip-left' data-simple-tooltip='Follow us on Facebook' href='https://www.facebook.com/profile.php?id=61595246783060' rel='nofollow' target='_blank'><i class='fa fa-facebook'/><span class='inv'/></a></li>
 <li class='sosmed'><a class='simple-tooltip simple-tooltip-left' data-simple-tooltip='Follow us on instagram' href='https://www.instagram.com/ksumanadhikari' rel='nofollow' target='_blank'><i class='fa fa-instagram'/><span class='inv'/></a></li>
 <li class='sosmed twitter'><a class='simple-tooltip simple-tooltip-left' data-simple-tooltip='Follow us on Twitter' href='https://x.com/ksumanadhikari' rel='nofollow' target='_blank'><i class='fa fa-twitter'/><span class='inv'/></a></li>
@@ -188,7 +176,7 @@ loadCSS("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");lo
 </header>
 </div>
 <div class='clear'/>
-<div id='header-wrapper' itemscope='itemscope' itemtype='http://schema.org/WPHeader'>
+<div id='header-wrapper' itemscope='itemscope' itemtype='https://schema.org/WPHeader'>
 <b:section class='header section' id='header' maxwidgets='1' name='Site Logo' showaddelement='yes'>
 <b:widget id='Header1' locked='false' title='BICTE with ksumanadhikari (Header)' type='Header' version='1'>
 <b:widget-settings>
@@ -282,11 +270,10 @@ loadCSS("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");lo
 </b:section>
 </div>
 <div class='clear'/>
-<nav id='nav' itemscope='itemscope' itemtype='http://schema.org/SiteNavigationElement' role='navigation'>
+<nav id='nav' itemscope='itemscope' itemtype='https://schema.org/SiteNavigationElement' role='navigation'>
 <a class='menu-trigger' href='#'><i class='fa fa-list'/> Menu</a>
 <b:section class='main-menu-section' id='main-menu' maxwidgets='1' name='Main Navigation (Edit in Layout)' showaddelement='yes'>
 <b:widget id='LinkList99' locked='false' title='Main Navigation' type='LinkList' version='2' visible='true'>
-																									<!--CHANGE NAVIGATION MENU-->
 <b:widget-settings>
 <b:widget-setting name='text-9'>2nd Sem</b:widget-setting>
 <b:widget-setting name='text-8'>_Mathematics-I</b:widget-setting>
@@ -510,7 +497,7 @@ loadCSS("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");lo
 <div class='clear'/>
 <b:section class='banner section' id='banner' maxwidgets='1' showaddelement='yes'/>
 <div class='clear'/>
-<div id='content-wrapper' itemscope='itemscope' itemtype='http://schema.org/Blog' role='main'>
+<div id='content-wrapper' itemscope='itemscope' itemtype='https://schema.org/Blog' role='main'>
 <div id='post-wrapper'>
 <div class='post-inner'>
 <b:section class='main' id='main' maxwidgets='30' showaddelement='yes'>
@@ -722,9 +709,9 @@ loadCSS("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");lo
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
 <b:loop values='data:posts' var='post'>
 <b:if cond='data:post.labels'>
-<div class='breadcrumbs'><span itemscope='' itemtype='http://data-vocabulary.org/Breadcrumb'><a expr:href='data:blog.homepageUrl' itemprop='url'><span itemprop='title'>
+<div class='breadcrumbs'><span><a expr:href='data:blog.homepageUrl'><span>
 <data:title/></span></a></span>
-<b:loop values='data:post.labels' var='label'><span itemscope='' itemtype='http://data-vocabulary.org/Breadcrumb'><a expr:href='data:label.url + &quot;?&amp;amp;max-results=6&quot;' itemprop='url'><span itemprop='title'><data:label.name/></span></a></span><b:if cond='data:label.isLast != &quot;true&quot;'>
+<b:loop values='data:post.labels' var='label'><span><a expr:href='data:label.url + &quot;?&amp;amp;max-results=6&quot;'><span><data:label.name/></span></a></span><b:if cond='data:label.isLast != &quot;true&quot;'>
 </b:if>
 </b:loop>
 <span><data:post.title/></span>
@@ -795,7 +782,7 @@ loadCSS("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");lo
 <div class='goog-inline-block comment-action-icon'/>
 </div>
 <b:else/>
-<a class='comment-delete' expr:href='&quot;http://www.blogger.com/delete-comment.g?blogID=&quot; + data:blog.blogId + &quot;&amp;amp;postID=&quot; + data:comment.id' title='delete comment'>delete</a>
+<a class='comment-delete' expr:href='&quot;https://www.blogger.com/delete-comment.g?blogID=&quot; + data:blog.blogId + &quot;&amp;amp;postID=&quot; + data:comment.id' title='delete comment'>delete</a>
 </b:if>
 </span>
 </b:includable>
@@ -826,7 +813,7 @@ loadCSS("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");lo
 <b:else/>
 <data:comment.author/>
 </b:if>
-<div class='comments' id='comments' itemscope='itemscope' itemtype='http://schema.org/Comment'>
+<div class='comments' id='comments' itemscope='itemscope' itemtype='https://schema.org/Comment'>
 <meta expr:content='data:post.title' itemprop='about'/>
 <meta expr:content='data:post.canonicalUrl' itemprop='discussionUrl'/>
 <b:if cond='data:post.allowComments'>
@@ -862,10 +849,10 @@ loadCSS("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");lo
 <div class='clear'/>
 <div id='comment_block'>
 <b:loop values='data:post.comments' var='comment'>
-<div data-level='0' expr:class='data:comment.adminClass' expr:id='data:comment.anchorName' itemprop='comment' itemscope='itemscope' itemtype='http://schema.org/UserComments'>
+<div data-level='0' expr:class='data:comment.adminClass' expr:id='data:comment.anchorName' itemprop='comment' itemscope='itemscope' itemtype='https://schema.org/UserComments'>
 <b:if cond='data:comment.isDeleted'>
 <span class='deleted-comment'>
-<data:comment.body/> - <a class='comment_hapus' expr:href='&quot;http://www.blogger.com/delete-comment.g?blogID=&quot; + data:blog.blogId + &quot;&amp;amp;postID=&quot; + data:comment.id' expr:title='data:top.deleteCommentMsg'>Hapus</a></span>
+<data:comment.body/> - <a class='comment_hapus' expr:href='&quot;https://www.blogger.com/delete-comment.g?blogID=&quot; + data:blog.blogId + &quot;&amp;amp;postID=&quot; + data:comment.id' expr:title='data:top.deleteCommentMsg'>Hapus</a></span>
 <b:else/>
 <b:if cond='data:post.adminClass == data:comment.adminClass'>
 &lt;div class=&#39;comment_inner comment_admin&#39;&gt;
@@ -896,8 +883,8 @@ loadCSS("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");lo
 </a>
 </div>
 </div>
-<a class='comment-delete' expr:href='&quot;http://www.blogger.com/delete-comment.g?blogID=&quot; + data:blog.blogId + &quot;&amp;amp;postID=&quot; + data:comment.id' expr:title='data:top.deleteCommentMsg'>
-<img alt='delete' src='http://2.bp.blogspot.com/-d-5BS0YCkho/UOKe2UIw0rI/AAAAAAAAC4w/md_iYNVHaHk/s1600/delete4.png' title='Hapus Komentar'/>
+<a class='comment-delete' expr:href='&quot;https://www.blogger.com/delete-comment.g?blogID=&quot; + data:blog.blogId + &quot;&amp;amp;postID=&quot; + data:comment.id' expr:title='data:top.deleteCommentMsg'>
+<img alt='delete' src='https://2.bp.blogspot.com/-d-5BS0YCkho/UOKe2UIw0rI/AAAAAAAAC4w/md_iYNVHaHk/s1600/delete4.png' title='Hapus Komentar'/>
 </a>
 </div>
 <p itemprop='commentText'><data:comment.body/></p>
@@ -983,21 +970,21 @@ loadCSS("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");lo
 
         //Pengaturan Emoticon
         Emo_List = [
-        ':)'  ,'http://2.bp.blogspot.com/-eeLWBWx7zaI/VJNbnR-JhoI/AAAAAAAAH8E/4vUZ3j_GoEg/s1600/shy.png',
-        ':('  ,'http://4.bp.blogspot.com/-RDtah-TXteU/VJNblptXyEI/AAAAAAAAH70/GGZg4MMUVxA/s1600/sad.png',
-        ' =('  ,'http://2.bp.blogspot.com/-F-ATl2dVex0/VJNbgm8anmI/AAAAAAAAH7A/G2OZMUs51hg/s1600/hate.png',
-        '^_^'  ,'http://2.bp.blogspot.com/-rvM5sSYqd2k/VJNbjkemjyI/AAAAAAAAH7k/QcT_8JETczs/s1600/noprob.png',
-        ' :D'  ,'http://2.bp.blogspot.com/-rvM5sSYqd2k/VJNbjkemjyI/AAAAAAAAH7k/QcT_8JETczs/s1600/noprob.png',
-        '=D'  ,'http://1.bp.blogspot.com/-DB0TS3jw6n8/VJNbgab1A_I/AAAAAAAAH7I/4Cr8aYd6AmU/s1600/happy.png',
-        '=)D' ,'http://3.bp.blogspot.com/-WZ352_DPpck/VJNblq2WFVI/AAAAAAAAH74/h9PAx0BeLJQ/s1600/rapt.png',
-        '|o|'  ,'http://1.bp.blogspot.com/-VzxVDD6dmB4/Usv09aIonRI/AAAAAAAAax0/ETH5TeQiIpA/s1600/applause-yahoo-emoticon.gif',
-        '@@,'  ,'http://4.bp.blogspot.com/-Y2KF1cqsEiQ/VJNbolnNw1I/AAAAAAAAH8Y/mzpdmmt9lp4/s1600/sigh.png',
-        ' ;)'  ,'http://2.bp.blogspot.com/-EvSfZMZuwKo/U6tMVvRUL1I/AAAAAAAAD9w/1zzRy8EUC5A/s1600/cool.png',
-        ':-bd'  ,'http://3.bp.blogspot.com/-_lM3w2ZD7K8/VJNbiIf2PII/AAAAAAAAH7g/U5qLOVDZg8c/s1600/like.png',
-        ':-d'  ,'http://3.bp.blogspot.com/-_lM3w2ZD7K8/VJNbiIf2PII/AAAAAAAAH7g/U5qLOVDZg8c/s1600/like.png',
-        ' :p'  ,'http://2.bp.blogspot.com/-TMShyHWtK9o/VJNbrl_cRZI/AAAAAAAAH80/jFKnRysFupo/s1600/unbelieve.png',
-        ':ng'  ,'http://4.bp.blogspot.com/-SLdFsLn7w00/U6tMXp7KTGI/AAAAAAAAD-I/MFuTw6CkbfI/s1600/ngakak.gif',
-        ':lv'  ,'http://2.bp.blogspot.com/-A_W5lI-_J8I/VJNbi2oXwjI/AAAAAAAAH7c/wlxM7CETbhI/s1600/love.png',   
+        ':)'  ,'https://2.bp.blogspot.com/-eeLWBWx7zaI/VJNbnR-JhoI/AAAAAAAAH8E/4vUZ3j_GoEg/s1600/shy.png',
+        ':('  ,'https://4.bp.blogspot.com/-RDtah-TXteU/VJNblptXyEI/AAAAAAAAH70/GGZg4MMUVxA/s1600/sad.png',
+        ' =('  ,'https://2.bp.blogspot.com/-F-ATl2dVex0/VJNbgm8anmI/AAAAAAAAH7A/G2OZMUs51hg/s1600/hate.png',
+        '^_^'  ,'https://2.bp.blogspot.com/-rvM5sSYqd2k/VJNbjkemjyI/AAAAAAAAH7k/QcT_8JETczs/s1600/noprob.png',
+        ' :D'  ,'https://2.bp.blogspot.com/-rvM5sSYqd2k/VJNbjkemjyI/AAAAAAAAH7k/QcT_8JETczs/s1600/noprob.png',
+        '=D'  ,'https://1.bp.blogspot.com/-DB0TS3jw6n8/VJNbgab1A_I/AAAAAAAAH7I/4Cr8aYd6AmU/s1600/happy.png',
+        '=)D' ,'https://3.bp.blogspot.com/-WZ352_DPpck/VJNblq2WFVI/AAAAAAAAH74/h9PAx0BeLJQ/s1600/rapt.png',
+        '|o|'  ,'https://1.bp.blogspot.com/-VzxVDD6dmB4/Usv09aIonRI/AAAAAAAAax0/ETH5TeQiIpA/s1600/applause-yahoo-emoticon.gif',
+        '@@,'  ,'https://4.bp.blogspot.com/-Y2KF1cqsEiQ/VJNbolnNw1I/AAAAAAAAH8Y/mzpdmmt9lp4/s1600/sigh.png',
+        ' ;)'  ,'https://2.bp.blogspot.com/-EvSfZMZuwKo/U6tMVvRUL1I/AAAAAAAAD9w/1zzRy8EUC5A/s1600/cool.png',
+        ':-bd'  ,'https://3.bp.blogspot.com/-_lM3w2ZD7K8/VJNbiIf2PII/AAAAAAAAH7g/U5qLOVDZg8c/s1600/like.png',
+        ':-d'  ,'https://3.bp.blogspot.com/-_lM3w2ZD7K8/VJNbiIf2PII/AAAAAAAAH7g/U5qLOVDZg8c/s1600/like.png',
+        ' :p'  ,'https://2.bp.blogspot.com/-TMShyHWtK9o/VJNbrl_cRZI/AAAAAAAAH80/jFKnRysFupo/s1600/unbelieve.png',
+        ':ng'  ,'https://4.bp.blogspot.com/-SLdFsLn7w00/U6tMXp7KTGI/AAAAAAAAD-I/MFuTw6CkbfI/s1600/ngakak.gif',
+        ':lv'  ,'https://2.bp.blogspot.com/-A_W5lI-_J8I/VJNbi2oXwjI/AAAAAAAAH7c/wlxM7CETbhI/s1600/love.png',   
         ];
              
 //Config Force tag list, define all in lower case
@@ -1131,15 +1118,15 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
     </b:if>
     <div class='date-posts'>
       <div class='post-outer'>
-        <div class='post hentry uncustomized-post-template' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+        <div class='post hentry uncustomized-post-template' itemscope='itemscope' itemtype='https://schema.org/BlogPosting'>
           <b:if cond='data:post.thumbnailUrl'>
-            <meta expr:content='data:post.thumbnailUrl' itemprop='image_url'/>
+            <meta expr:content='data:post.thumbnailUrl' itemprop='image'/>
           </b:if>
           <meta expr:content='data:blog.blogId' itemprop='blogId'/>
           <meta expr:content='data:post.id' itemprop='postId'/>
           <a expr:name='data:post.id'/>
           <b:if cond='data:post.title'>
-            <h3 class='post-title entry-title' itemprop='name'>
+            <h3 class='post-title entry-title' itemprop='headline'>
               <b:if cond='data:post.link'>
                 <a expr:href='data:post.link'><data:post.title/></a>
               <b:elseif cond='data:post.url and data:blog.url != data:post.url'/>
@@ -1161,14 +1148,14 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
               <span class='post-author vcard'>
                 <b:if cond='data:top.showAuthor'>
                   <b:if cond='data:post.authorProfileUrl'>
-                    <span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+                    <span class='fn' itemprop='author' itemscope='itemscope' itemtype='https://schema.org/Person'>
                       <meta expr:content='data:post.authorProfileUrl' itemprop='url'/>
                       <a expr:href='data:post.authorProfileUrl' rel='author' title='author profile'>
                         <span itemprop='name'><data:post.author/></span>
                       </a>
                     </span>
                   <b:else/>
-                    <span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+                    <span class='fn' itemprop='author' itemscope='itemscope' itemtype='https://schema.org/Person'>
                       <span itemprop='name'><data:post.author/></span>
                     </span>
                   </b:if>
@@ -1301,7 +1288,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
             <b:if cond='data:post.authorProfileUrl'>
 			  <span class='author-info'>
                 <i class='fa fa-user'/>
-			  <span class='vcard' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+			  <span class='vcard' itemprop='author' itemscope='itemscope' itemtype='https://schema.org/Person'>
 			  <span class='fn'> 
                 <a class='g-profile' expr:href='data:post.authorProfileUrl' rel='author' title='author profile'>
                   <span itemprop='name'><data:post.author/></span>
@@ -1339,7 +1326,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 
     <div class='post-header'>
     <div class='post-header-line-1'/>
-<span class='post-author vcard' itemscope='itemscope' itemtype='http://schema.org/Person'> 
+<span class='post-author vcard' itemscope='itemscope' itemtype='https://schema.org/Person'> 
                 <b:if cond='data:top.showAuthor'> 
                   <b:if cond='data:post.authorProfileUrl'> 
                     <span class='fn author'> 
@@ -1369,7 +1356,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
       <a expr:href='data:post.url'>
      
         
-																												<!--CHANGE THUMBNAIL-->        
+        
         <div class='simple-thumbnail'>
   <img expr:alt='data:post.title' expr:title='data:post.title' src='https://foe.tu.edu.np/assets/logo.png'/>
 </div>
@@ -1422,20 +1409,16 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
 <div class='tombol-berbagi-simple'>
 <div class='tombol-berbagi-simple-fb'>
-<a class='tombol-berbagi-fb' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:post.url + &quot;&amp;title=&quot; + data:post.title' rel='nofollow' target='_blank'/>
-<a class='tombol-berbagi-fb-label' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:post.url + &quot;&amp;title=&quot; + data:post.title' rel='nofollow' target='_blank'> Share on Facebook</a>
+<a class='tombol-berbagi-fb' expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:post.url + &quot;&amp;title=&quot; + data:post.title' rel='nofollow' target='_blank'/>
+<a class='tombol-berbagi-fb-label' expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:post.url + &quot;&amp;title=&quot; + data:post.title' rel='nofollow' target='_blank'> Share on Facebook</a>
 </div>
 <div class='tombol-berbagi-simple-tw'>
-<a class='tombol-berbagi-tw' expr:data-text='data:post.title' expr:data-url='data:post.url' href='http://twitter.com/share' rel='nofollow' target='_blank'/>
-<a class='tombol-berbagi-tw-label' expr:data-text='data:post.title' expr:data-url='data:post.url' href='http://twitter.com/share' rel='nofollow' target='_blank'>Share on Twitter</a>
+<a class='tombol-berbagi-tw' expr:data-text='data:post.title' expr:data-url='data:post.url' href='https://twitter.com/share' rel='nofollow' target='_blank'/>
+<a class='tombol-berbagi-tw-label' expr:data-text='data:post.title' expr:data-url='data:post.url' href='https://twitter.com/share' rel='nofollow' target='_blank'>Share on Twitter</a>
 </div>
 <div class='tombol-berbagi'>
-<a class='tombol-berbagi-gp' expr:href='&quot;https://plus.google.com/share?url=&quot; + data:post.url' rel='nofollow' target='_blank'/>
-<a class='tombol-berbagi-gp-label' expr:href='&quot;https://plus.google.com/share?url=&quot; + data:post.url' rel='nofollow' target='_blank'>Share on Google+</a>
-</div>
-<div class='tombol-berbagi'>
-<a class='tombol-berbagi-lin' expr:href='&quot;http://www.linkedin.com/shareArticle?mini=true&amp;amp;url=&quot; + data:post.url + &quot;&amp;amp;title=&quot; + data:post.title + &quot;&amp;amp;summary=&quot; + data:post.snippets' rel='nofollow' target='_blank'/>
-<a class='tombol-berbagi-lin-label' expr:href='&quot;http://www.linkedin.com/shareArticle?mini=true&amp;amp;url=&quot; + data:post.url + &quot;&amp;amp;title=&quot; + data:post.title + &quot;&amp;amp;summary=&quot; + data:post.snippets' rel='nofollow' target='_blank'>Share on LinkedIn</a>
+<a class='tombol-berbagi-lin' expr:href='&quot;https://www.linkedin.com/shareArticle?mini=true&amp;amp;url=&quot; + data:post.url + &quot;&amp;amp;title=&quot; + data:post.title + &quot;&amp;amp;summary=&quot; + data:post.snippets' rel='nofollow' target='_blank'/>
+<a class='tombol-berbagi-lin-label' expr:href='&quot;https://www.linkedin.com/shareArticle?mini=true&amp;amp;url=&quot; + data:post.url + &quot;&amp;amp;title=&quot; + data:post.title + &quot;&amp;amp;summary=&quot; + data:post.snippets' rel='nofollow' target='_blank'>Share on LinkedIn</a>
 </div>
 </div>
 <div style='clear:both;'/>
@@ -1778,7 +1761,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 </div>
 <div class='clear'/>
 </div>
-<aside id='sidebar-wrapper' itemscope='itemscope' itemtype='http://schema.org/WPSideBar'>
+<aside id='sidebar-wrapper' itemscope='itemscope' itemtype='https://schema.org/WPSideBar'>
 <div class='sidebar-inner'>
 <b:section class='sidebar section' id='sidebar' preferred='yes'>
 <b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive'>
@@ -1896,7 +1879,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 </b:widget>
 <b:widget id='PageList1' locked='false' title='Pages' type='PageList'>
 <b:widget-settings>
-<b:widget-setting name='pageListJson'><![CDATA[{"home":{"href":"http://operatorksa.blogspot.com/","position":0,"title":"Home"}}]]></b:widget-setting>
+<b:widget-setting name='pageListJson'><![CDATA[{"home":{"href":"https://www.ksumanadhikari.com.np/","position":0,"title":"Home"}}]]></b:widget-setting>
 <b:widget-setting name='homeTitle'>Home</b:widget-setting>
 </b:widget-settings>
 <b:includable id='main'>
@@ -2012,9 +1995,9 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 <b:widget-settings>
 <b:widget-setting name='sorting'>NONE</b:widget-setting>
 <b:widget-setting name='text-1'>Contact Us</b:widget-setting>
-<b:widget-setting name='link-1'>http://www.ksumanadhikari.com.np/p/qr.html</b:widget-setting>
+<b:widget-setting name='link-1'>https://www.ksumanadhikari.com.np/p/qr.html</b:widget-setting>
 <b:widget-setting name='text-0'>Home Page</b:widget-setting>
-<b:widget-setting name='link-2'>http://www.ksumanadhikari.com.np/p/bio.html</b:widget-setting>
+<b:widget-setting name='link-2'>https://www.ksumanadhikari.com.np/p/bio.html</b:widget-setting>
 <b:widget-setting name='link-0'>https://www.ksumanadhikari.com.np</b:widget-setting>
 <b:widget-setting name='text-2'>About Us</b:widget-setting>
 </b:widget-settings>
@@ -2140,7 +2123,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 <div class='clear'/>
 <b:section class='banner2 section' id='banner2' maxwidgets='1' showaddelement='yes'/>
 <div class='clear'/>
-<footer id='footer-wrapper' itemscope='itemscope' itemtype='http://schema.org/WPFooter' role='contentinfo'>
+<footer id='footer-wrapper' itemscope='itemscope' itemtype='https://schema.org/WPFooter' role='contentinfo'>
 <div class='footer-bottom'>
 <div id='footer-sgwidget'>
 <div class='footer-widget' id='footx1'>
