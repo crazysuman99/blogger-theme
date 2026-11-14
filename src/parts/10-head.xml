@@ -118,7 +118,7 @@ body#layout #banner .add_widget,#layout #banner2 .add_widget{width:80%;margin:5p
 ]]>
 </b:template-skin>
 <!-- External overall CSS via jsDelivr -->
-<link href='https://cdn.jsdelivr.net/gh/crazysuman99/blogger-theme@03f9d9bf0fe61219836b7a1374d67561cb54dcaa/css/overall.css' rel='stylesheet' type='text/css'/>
+<link href='https://cdn.jsdelivr.net/gh/crazysuman99/blogger-theme@e9b80e3aa342d2553f054d16370debd7fc5f540a/css/overall.css' rel='stylesheet' type='text/css'/>
 
 <script src='//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'/>
 <script src='https://cdn.jsdelivr.net/gh/crazysuman99/blogger-theme@main/js/theme.js' defer='defer'></script>
