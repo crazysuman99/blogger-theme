@@ -621,13 +621,13 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
       <div class='post-outer'>
         <div class='post hentry uncustomized-post-template' itemscope='itemscope' itemtype='https://schema.org/BlogPosting'>
           <b:if cond='data:post.thumbnailUrl'>
-            <meta expr:content='data:post.thumbnailUrl' itemprop='image_url'/>
+            <meta expr:content='data:post.thumbnailUrl' itemprop='image'/>
           </b:if>
           <meta expr:content='data:blog.blogId' itemprop='blogId'/>
           <meta expr:content='data:post.id' itemprop='postId'/>
           <a expr:name='data:post.id'/>
           <b:if cond='data:post.title'>
-            <h3 class='post-title entry-title' itemprop='name'>
+            <h3 class='post-title entry-title' itemprop='headline'>
               <b:if cond='data:post.link'>
                 <a expr:href='data:post.link'><data:post.title/></a>
               <b:elseif cond='data:post.url and data:blog.url != data:post.url'/>
