@@ -1,4 +1,4 @@
-<aside id='sidebar-wrapper' itemscope='itemscope' itemtype='http://schema.org/WPSideBar'>
+<aside id='sidebar-wrapper' itemscope='itemscope' itemtype='https://schema.org/WPSideBar'>
 <div class='sidebar-inner'>
 <b:section class='sidebar section' id='sidebar' preferred='yes'>
 <b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive'>
@@ -232,9 +232,9 @@
 <b:widget-settings>
 <b:widget-setting name='sorting'>NONE</b:widget-setting>
 <b:widget-setting name='text-1'>Contact Us</b:widget-setting>
-<b:widget-setting name='link-1'>http://www.ksumanadhikari.com.np/p/qr.html</b:widget-setting>
+<b:widget-setting name='link-1'>https://www.ksumanadhikari.com.np/p/qr.html</b:widget-setting>
 <b:widget-setting name='text-0'>Home Page</b:widget-setting>
-<b:widget-setting name='link-2'>http://www.ksumanadhikari.com.np/p/bio.html</b:widget-setting>
+<b:widget-setting name='link-2'>https://www.ksumanadhikari.com.np/p/bio.html</b:widget-setting>
 <b:widget-setting name='link-0'>https://www.ksumanadhikari.com.np</b:widget-setting>
 <b:widget-setting name='text-2'>About Us</b:widget-setting>
 </b:widget-settings>
@@ -360,7 +360,7 @@
 <div class='clear'/>
 <b:section class='banner2 section' id='banner2' maxwidgets='1' showaddelement='yes'/>
 <div class='clear'/>
-<footer id='footer-wrapper' itemscope='itemscope' itemtype='http://schema.org/WPFooter' role='contentinfo'>
+<footer id='footer-wrapper' itemscope='itemscope' itemtype='https://schema.org/WPFooter' role='contentinfo'>
 <div class='footer-bottom'>
 <div id='footer-sgwidget'>
 <div class='footer-widget' id='footx1'>
