@@ -1,88 +1,78 @@
 
   <script async='async' crossorigin='anonymous' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3386340410780049'/>
-<!-- [ Meta Tag SEO ] -->
+<!-- SEO: canonical, page title and description -->
 <meta charset='utf-8'/>
 <meta content='width=device-width, initial-scale=1' name='viewport'/>
-<meta content='blogger' name='generator'/>
 <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
-<link href='http://www.blogger.com/openid-server.g' rel='openid.server'/>
-<link expr:href='data:blog.homepageUrl' rel='openid.delegate'/>
-<link expr:href='data:blog.url' rel='canonical'/>
+<link expr:href='data:blog.canonicalUrl' rel='canonical'/>
 <b:if cond='data:blog.pageType == &quot;index&quot;'>
 <title><data:blog.pageTitle/></title>
 <b:else/>
 <b:if cond='data:blog.pageType != &quot;error_page&quot;'>
 <title><data:blog.pageName/> - <data:blog.title/></title>
-</b:if></b:if>
+</b:if>
+</b:if>
 <b:if cond='data:blog.pageType == &quot;error_page&quot;'>
 <title>Page Not Found - <data:blog.title/></title>
 </b:if>
-
-<b:if cond='data:blog.pageType != &quot;error_page&quot;'>
+<b:if cond='data:blog.metaDescription'>
 <meta expr:content='data:blog.metaDescription' name='description'/>
-<b:if cond='data:blog.homepageUrl != data:blog.url'>
-<meta expr:content='data:blog.pageName + &quot;, &quot; + data:blog.pageTitle + &quot;, &quot; + data:blog.title' name='keywords'/>
-</b:if></b:if>
-<b:if cond='data:blog.url == data:blog.homepageUrl'>
-<meta content='Suman Adhikari, computer education, programming, BICTE, computer operator, IT education, Nepal' name='keywords'/></b:if>
+<b:else/>
+<meta content='Suman Adhikari: computer education, programming tutorials, BICTE learning resources, computer operator exam preparation and IT education in Nepal.' name='description'/>
+</b:if>
+<meta content='Suman Adhikari' name='author'/>
 <link expr:href='data:blog.homepageUrl + &quot;feeds/posts/default&quot;' expr:title='data:blog.title + &quot; - Atom&quot;' rel='alternate' type='application/atom+xml'/>
 <link expr:href='data:blog.homepageUrl + &quot;feeds/posts/default?alt=rss&quot;' expr:title='data:blog.title + &quot; - RSS&quot;' rel='alternate' type='application/rss+xml'/>
-<link expr:href='&quot;http://www.blogger.com/feeds/&quot; + data:blog.blogId + &quot;/posts/default&quot;' expr:title='data:blog.title + &quot; - Atom&quot;' rel='alternate' type='application/atom+xml'/>
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
-<b:if cond='data:blog.postImageThumbnailUrl'>
-<link expr:href='data:blog.postImageThumbnailUrl' rel='image_src'/>
-</b:if></b:if>
-<link href='/favicon.ico' rel='icon' type='image/x-icon'/>
-<link href='https://plus.google.com/xxxxx/posts' rel='publisher'/>
-<link href='https://plus.google.com/xxxxx/about' rel='author'/>
-<link href='https://plus.google.com/xxxxx' rel='me'/>
-<meta content='xxxxx' name='google-site-verification'/>
-<meta content='xxxxx' name='msvalidate.01'/>
-<meta content='xxxxx' name='alexaVerifyID'/>
-<meta content='Nepal' name='geo.country'/>
-<meta content='Suman Adhikari' name='Author'/>
-<meta content='general' name='rating'/>
-<meta content='id' name='geo.country'/>
-
-<!-- [ Social Media meta tag ] -->
-<b:if cond='data:blog.url == data:blog.homepageUrl'> 
-<b:if cond='data:blog.pageType == &quot;item&quot;'> 
-<b:if cond='data:blog.pageType == &quot;static_page&quot;'>  
-<b:if cond='data:blog.url'>
-<meta expr:content='data:blog.url' property='og:url'/>
+<b:if cond='data:blog.postImageUrl'>
+<link expr:href='data:blog.postImageUrl' rel='image_src'/>
 </b:if>
-<meta expr:content='data:blog.title' property='og:site_name'/>
-<b:if cond='data:blog.pageName'>
-<meta expr:content='data:blog.pageName' property='og:title'/>
-</b:if></b:if></b:if></b:if>
+</b:if>
+<link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+<!-- Open Graph: one consistent set of values per page -->
 <meta expr:content='data:blog.pageTitle' property='og:title'/>
+<meta expr:content='data:blog.canonicalUrl' property='og:url'/>
+<meta expr:content='data:blog.title' property='og:site_name'/>
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
 <meta content='article' property='og:type'/>
 <b:else/>
 <meta content='website' property='og:type'/>
 </b:if>
-<meta expr:content='data:blog.canonicalUrl' property='og:url'/>
 <b:if cond='data:blog.postImageUrl'>
 <meta expr:content='data:blog.postImageUrl' property='og:image'/>
 <b:else/>
 <b:if cond='data:blog.postImageThumbnailUrl'>
 <meta expr:content='data:blog.postImageThumbnailUrl' property='og:image'/>
-  <b:else/>
+<b:else/>
 <meta expr:content='data:blog.blogspotFaviconUrl' property='og:image'/>
-</b:if></b:if>
+</b:if>
+</b:if>
 <b:if cond='data:blog.metaDescription'>
 <meta expr:content='data:blog.metaDescription' property='og:description'/>
 <b:else/>
-<meta content='Suman Adhikari&apos;s personal learning space for programming, IT education, BICTE resources, computer operator preparation, career guidance and projects.' property='og:description'/></b:if>
-<meta expr:content='data:blog.title' property='og:site_name'/>
-<meta content='562901580420523' property='fb:app_id'/>
-<meta content='100005787193074' property='fb:admins'/>
+<meta content='Computer education, programming tutorials, BICTE resources, computer operator exam preparation and IT learning resources from Nepal.' property='og:description'/>
+</b:if>
 <meta content='en_US' property='og:locale'/>
-<meta content='en_GB' property='og:locale:alternate'/>
 <meta content='ne_NP' property='og:locale:alternate'/>
-<meta content='summary' name='twitter:card'/>
-<meta expr:content='data:blog.pageTitle' name='twitter:title'/>
 
+<!-- X/Twitter Cards -->
+<meta content='summary_large_image' name='twitter:card'/>
+<meta expr:content='data:blog.pageTitle' name='twitter:title'/>
+<b:if cond='data:blog.metaDescription'>
+<meta expr:content='data:blog.metaDescription' name='twitter:description'/>
+<b:else/>
+<meta content='Computer education, programming tutorials, BICTE resources and IT learning resources from Nepal.' name='twitter:description'/>
+</b:if>
+<b:if cond='data:blog.postImageUrl'>
+<meta expr:content='data:blog.postImageUrl' name='twitter:image'/>
+<b:else/>
+<b:if cond='data:blog.postImageThumbnailUrl'>
+<meta expr:content='data:blog.postImageThumbnailUrl' name='twitter:image'/>
+<b:else/>
+<meta expr:content='data:blog.blogspotFaviconUrl' name='twitter:image'/>
+</b:if>
+</b:if>
 
 <b:skin><![CDATA[
 /* CSS moved to external skin-base.css. Keep this Blogger skin block. */
@@ -136,7 +126,7 @@ body#layout #banner .add_widget,#layout #banner2 .add_widget{width:80%;margin:5p
 //<![CDATA[
 //CSS Ready
 function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }
-loadCSS("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");loadCSS("http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700");loadCSS("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+loadCSS("https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");loadCSS("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700");loadCSS("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 //]]>
 </script>
 <b:if cond='data:blog.pageType != &quot;item&quot;'>
