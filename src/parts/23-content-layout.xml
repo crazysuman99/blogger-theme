@@ -1,4 +1,4 @@
-<div id='content-wrapper' itemscope='itemscope' itemtype='http://schema.org/Blog' role='main'>
+<div id='content-wrapper' itemscope='itemscope' itemtype='https://schema.org/Blog' role='main'>
 <div id='post-wrapper'>
 <div class='post-inner'>
 <b:section class='main' id='main' maxwidgets='30' showaddelement='yes'>
@@ -314,7 +314,7 @@
 <b:else/>
 <data:comment.author/>
 </b:if>
-<div class='comments' id='comments' itemscope='itemscope' itemtype='http://schema.org/Comment'>
+<div class='comments' id='comments' itemscope='itemscope' itemtype='https://schema.org/Comment'>
 <meta expr:content='data:post.title' itemprop='about'/>
 <meta expr:content='data:post.canonicalUrl' itemprop='discussionUrl'/>
 <b:if cond='data:post.allowComments'>
@@ -350,7 +350,7 @@
 <div class='clear'/>
 <div id='comment_block'>
 <b:loop values='data:post.comments' var='comment'>
-<div data-level='0' expr:class='data:comment.adminClass' expr:id='data:comment.anchorName' itemprop='comment' itemscope='itemscope' itemtype='http://schema.org/UserComments'>
+<div data-level='0' expr:class='data:comment.adminClass' expr:id='data:comment.anchorName' itemprop='comment' itemscope='itemscope' itemtype='https://schema.org/UserComments'>
 <b:if cond='data:comment.isDeleted'>
 <span class='deleted-comment'>
 <data:comment.body/> - <a class='comment_hapus' expr:href='&quot;http://www.blogger.com/delete-comment.g?blogID=&quot; + data:blog.blogId + &quot;&amp;amp;postID=&quot; + data:comment.id' expr:title='data:top.deleteCommentMsg'>Hapus</a></span>
@@ -619,7 +619,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
     </b:if>
     <div class='date-posts'>
       <div class='post-outer'>
-        <div class='post hentry uncustomized-post-template' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+        <div class='post hentry uncustomized-post-template' itemscope='itemscope' itemtype='https://schema.org/BlogPosting'>
           <b:if cond='data:post.thumbnailUrl'>
             <meta expr:content='data:post.thumbnailUrl' itemprop='image_url'/>
           </b:if>
@@ -649,14 +649,14 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
               <span class='post-author vcard'>
                 <b:if cond='data:top.showAuthor'>
                   <b:if cond='data:post.authorProfileUrl'>
-                    <span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+                    <span class='fn' itemprop='author' itemscope='itemscope' itemtype='https://schema.org/Person'>
                       <meta expr:content='data:post.authorProfileUrl' itemprop='url'/>
                       <a expr:href='data:post.authorProfileUrl' rel='author' title='author profile'>
                         <span itemprop='name'><data:post.author/></span>
                       </a>
                     </span>
                   <b:else/>
-                    <span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+                    <span class='fn' itemprop='author' itemscope='itemscope' itemtype='https://schema.org/Person'>
                       <span itemprop='name'><data:post.author/></span>
                     </span>
                   </b:if>
@@ -789,7 +789,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
             <b:if cond='data:post.authorProfileUrl'>
 			  <span class='author-info'>
                 <i class='fa fa-user'/>
-			  <span class='vcard' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+			  <span class='vcard' itemprop='author' itemscope='itemscope' itemtype='https://schema.org/Person'>
 			  <span class='fn'> 
                 <a class='g-profile' expr:href='data:post.authorProfileUrl' rel='author' title='author profile'>
                   <span itemprop='name'><data:post.author/></span>
@@ -827,7 +827,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 
     <div class='post-header'>
     <div class='post-header-line-1'/>
-<span class='post-author vcard' itemscope='itemscope' itemtype='http://schema.org/Person'> 
+<span class='post-author vcard' itemscope='itemscope' itemtype='https://schema.org/Person'> 
                 <b:if cond='data:top.showAuthor'> 
                   <b:if cond='data:post.authorProfileUrl'> 
                     <span class='fn author'> 
@@ -910,20 +910,16 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
 <div class='tombol-berbagi-simple'>
 <div class='tombol-berbagi-simple-fb'>
-<a class='tombol-berbagi-fb' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:post.url + &quot;&amp;title=&quot; + data:post.title' rel='nofollow' target='_blank'/>
-<a class='tombol-berbagi-fb-label' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:post.url + &quot;&amp;title=&quot; + data:post.title' rel='nofollow' target='_blank'> Share on Facebook</a>
+<a class='tombol-berbagi-fb' expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:post.url + &quot;&amp;title=&quot; + data:post.title' rel='nofollow' target='_blank'/>
+<a class='tombol-berbagi-fb-label' expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:post.url + &quot;&amp;title=&quot; + data:post.title' rel='nofollow' target='_blank'> Share on Facebook</a>
 </div>
 <div class='tombol-berbagi-simple-tw'>
-<a class='tombol-berbagi-tw' expr:data-text='data:post.title' expr:data-url='data:post.url' href='http://twitter.com/share' rel='nofollow' target='_blank'/>
-<a class='tombol-berbagi-tw-label' expr:data-text='data:post.title' expr:data-url='data:post.url' href='http://twitter.com/share' rel='nofollow' target='_blank'>Share on Twitter</a>
+<a class='tombol-berbagi-tw' expr:data-text='data:post.title' expr:data-url='data:post.url' href='https://twitter.com/intent/tweet' rel='nofollow' target='_blank'/>
+<a class='tombol-berbagi-tw-label' expr:data-text='data:post.title' expr:data-url='data:post.url' href='https://twitter.com/intent/tweet' rel='nofollow' target='_blank'>Share on Twitter</a>
 </div>
 <div class='tombol-berbagi'>
-<a class='tombol-berbagi-gp' expr:href='&quot;https://plus.google.com/share?url=&quot; + data:post.url' rel='nofollow' target='_blank'/>
-<a class='tombol-berbagi-gp-label' expr:href='&quot;https://plus.google.com/share?url=&quot; + data:post.url' rel='nofollow' target='_blank'>Share on Google+</a>
-</div>
-<div class='tombol-berbagi'>
-<a class='tombol-berbagi-lin' expr:href='&quot;http://www.linkedin.com/shareArticle?mini=true&amp;amp;url=&quot; + data:post.url + &quot;&amp;amp;title=&quot; + data:post.title + &quot;&amp;amp;summary=&quot; + data:post.snippets' rel='nofollow' target='_blank'/>
-<a class='tombol-berbagi-lin-label' expr:href='&quot;http://www.linkedin.com/shareArticle?mini=true&amp;amp;url=&quot; + data:post.url + &quot;&amp;amp;title=&quot; + data:post.title + &quot;&amp;amp;summary=&quot; + data:post.snippets' rel='nofollow' target='_blank'>Share on LinkedIn</a>
+<a class='tombol-berbagi-lin' expr:href='&quot;https://www.linkedin.com/shareArticle?mini=true&amp;amp;url=&quot; + data:post.url + &quot;&amp;amp;title=&quot; + data:post.title + &quot;&amp;amp;summary=&quot; + data:post.snippets' rel='nofollow' target='_blank'/>
+<a class='tombol-berbagi-lin-label' expr:href='&quot;https://www.linkedin.com/shareArticle?mini=true&amp;amp;url=&quot; + data:post.url + &quot;&amp;amp;title=&quot; + data:post.title + &quot;&amp;amp;summary=&quot; + data:post.snippets' rel='nofollow' target='_blank'>Share on LinkedIn</a>
 </div>
 </div>
 <div style='clear:both;'/>
