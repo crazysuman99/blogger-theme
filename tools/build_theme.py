@@ -14,6 +14,10 @@ PARTS = [
     ROOT / "src/parts/00-document-start.xml",
     ROOT / "src/parts/10-head.xml",
     ROOT / "src/parts/20-body.xml",
+    ROOT / "src/parts/21-header-navigation.xml",
+    ROOT / "src/parts/22-homepage-signature.xml",
+    ROOT / "src/parts/23-content-layout.xml",
+    ROOT / "src/parts/24-footer-and-close.xml",
 ]
 OUTPUT = ROOT / "theme.xml"
 
@@ -22,8 +26,7 @@ def assemble() -> str:
     missing = [str(path.relative_to(ROOT)) for path in PARTS if not path.is_file()]
     if missing:
         raise FileNotFoundError("Missing source fragment(s): " + ", ".join(missing))
-    # Deliberately concatenate without adding whitespace: output stays byte-for-byte
-    # identical to the original Blogger XML when fragments are unchanged.
+    # No separators are inserted: fragment concatenation preserves original bytes.
     return "".join(path.read_text(encoding="utf-8") for path in PARTS)
 
 
