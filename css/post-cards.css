@@ -59,7 +59,7 @@
   flex:0 0 auto!important;
   width:100%!important;
   min-width:0!important;
-  margin:0!important;
+  margin:0 0 14px!important;
   padding:0!important;
   line-height:0!important;
 }
@@ -70,7 +70,7 @@
   width:100%!important;
   height:auto!important;
   aspect-ratio:16/9!important;
-  margin:0 0 14px!important;
+  margin:0!important;
   padding:0!important;
   overflow:hidden!important;
   box-sizing:border-box!important;
