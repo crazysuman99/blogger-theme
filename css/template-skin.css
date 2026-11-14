@@ -1,0 +1,34 @@
+
+/* CSS Body Layout */
+body#layout #outer-wrapper, body#layout .post-inner, body#layout .sidebar, body#layout .sidebar-two {padding:0 0 0 0;}
+body#layout .top-tab-widget-menu ul,body#layout ul,#layout ul {display:none;}
+body#layout #wrapper, body#layout .post-inner, body#layout .sidebar-inner {padding:0 0 0 0;}
+body#layout .arlina-list {float:left;width:79px;}
+body#layout .header-wrapper {margin-top:0;}
+body#layout .arlina-list {float:left;width:100%;}
+body#layout #header-wrapper {min-height:0px;}
+#layout,#layout .widget-content,#layout .add_widget {border:none;}
+body#layout .add_widget {border:1px solid #ddd;}
+#layout .add_widget a {color:#404040;}
+#layout:before {content:'Simple Grid';text-transform:uppercase;font-size:20px;color:#999;margin:0 0 20px 0;display:inline-block;font-weight:700;font-family:sans-serif;}
+#layout #header-wrapper{min-height:0px;width:100%;margin:10px 0 0 0;}
+#layout #footer-wrapper{padding:20px 0;overflow:visible;background:#f9f9f9;border-top:1px solid #ccc;}
+#layout #footer-wrapper .add_widget {background-color:#999;border:none;}
+#layout #footer-wrapper .add_widget a {color:#fff;}
+#layout #footer-wrapper .footer-column{width:33.33%;float:left}
+body#layout #footx1,body#layout #footx2,body#layout #footx3{width:33.33%;float:left}
+body#layout #post-wrapper {float:left;width:69%;}
+body#layout #sidebar-wrapper {float:right;width:30%;}
+body#layout #header{width:97.7%}
+#layout #footer-wrapper #column1,#layout #footer-wrapper #column2{margin:0}
+#layout #footer-wrapper:before {content:'Footer Wrapper';text-transform:uppercase;color:#aaa;margin:0 0 20px 0;display:inline-block;font-weight:700;font-family:sans-serif;}
+#layout div#post-wrapper:before {content:'Post Wrapper';text-transform:uppercase;color:#aaa;margin:0 0 20px 0;display:inline-block;font-weight:700;font-family:sans-serif;}
+#layout #main-wrapper{width:70%;float:left}
+#layout #sidebar-wrapper{width:30%;left:0;padding:0;float:right}
+#layout #sidebar-wrapper:before {content:'Sidebar Wrapper';text-transform:uppercase;color:#aaa;margin:0 0 20px 0;display:inline-block;font-weight:700;font-family:sans-serif;}
+#layout .draggable-widget .widget-wrap2 {background:#c1cfd9;}
+body#layout #banner,#layout #banner2 {background-color:#444;padding:20px 0!important;margin-bottom:20px;}
+body#layout #banner:before,#layout #banner2:before{content:'Ad Slot 970x90';font-size:13px;color:#fff;margin-bottom:20px;padding-bottom:5px;display:inline-block;font-weight:400;font-family:sans-serif}
+body#layout #banner .widget,#layout #banner2 .widget{width:80%;margin:5px auto!important;overflow:hidden;float:none}
+body#layout #banner .add_widget,#layout #banner2 .add_widget{width:80%;margin:5px auto!important;overflow:hidden;float:none}
+]]>
