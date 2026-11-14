@@ -61,13 +61,36 @@
 </b:section>
 </div>
 <div class='footer-widget' id='footx3'>
-<b:section class='footer' id='footer3'/>
+<b:section class='footer' id='footer3'>
+<b:widget id='HTML3' locked='false' title='About &amp; Connect' type='HTML' version='2' visible='true'>
+<b:widget-settings>
+<b:widget-setting name='content'><![CDATA[
+<div class="footer-about">
+  <div class="footer-brand-mark">SA<span>.</span></div>
+  <h3>Suman Adhikari</h3>
+  <p>Computer education, programming tutorials and practical learning resources to help you learn, build and grow.</p>
+  <div class="footer-connect-links">
+    <a href="https://www.ksumanadhikari.com.np/" rel="noopener">Main Website</a>
+    <a href="https://www.youtube.com/@ksumanadhikari" rel="noopener" target="_blank">YouTube</a>
+    <a href="https://x.com/ksumanadhikari" rel="noopener" target="_blank">X / Twitter</a>
+  </div>
+</div>
+]]></b:widget-setting>
+</b:widget-settings>
+<b:includable id='main'>
+<div class='widget-content'>
+<data:content/>
+</div>
+</b:includable>
+</b:widget>
+</b:section>
 </div>
 </div>
 </div>
 <div id='footer-credit'>
-<div class='tscredit' id='tscredit'>
-@ksumanadhikari
+<div class='footer-credit-inner'>
+<span>© <data:blog.title/>. All rights reserved.</span>
+<span>Designed &amp; maintained by <a href='https://www.ksumanadhikari.com.np/' rel='noopener'>Suman Adhikari</a></span>
 </div>
 </div>
 </footer>
