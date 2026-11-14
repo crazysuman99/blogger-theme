@@ -3,7 +3,23 @@
 <b:section id='signature-video' maxwidgets='1' name='Featured Video - Edit in Layout' showaddelement='yes'>
 <b:widget id='HTML21' locked='false' title='Featured Video' type='HTML' version='2' visible='true'>
 <b:widget-settings>
-<b:widget-setting name='content'><![CDATA[<iframe width="100%" height="500px" src="https://www.youtube.com/embed/iQ-XHbzs4Ag?si=3FTFdHC8aMw73LwC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>]]></b:widget-setting>
+<b:widget-setting name='content'><![CDATA[<div class="signature-video-card">
+  <div class="signature-video-heading">
+    <div class="signature-video-heading-copy">
+      <span class="signature-video-kicker">Featured video</span>
+      <h2>Watch, Learn &amp; Explore</h2>
+      <p>A featured lesson from Suman Adhikari. Press play and start learning.</p>
+    </div>
+    <a class="signature-video-youtube" href="https://www.youtube.com/watch?v=iQ-XHbzs4Ag" target="_blank" rel="noopener noreferrer">▶ Watch on YouTube</a>
+  </div>
+  <div class="signature-video-frame">
+    <iframe src="https://www.youtube.com/embed/iQ-XHbzs4Ag?rel=0" title="Featured video by Suman Adhikari" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="allowfullscreen"></iframe>
+  </div>
+  <div class="signature-video-footnote">
+    <span>LEARN SOMETHING NEW TODAY</span>
+    <span>More lessons on the YouTube channel</span>
+  </div>
+</div>]]></b:widget-setting>
 </b:widget-settings>
 <b:includable id='main'>
 <b:include name='widget-title'/>
