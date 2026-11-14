@@ -118,7 +118,7 @@ body#layout #banner .add_widget,#layout #banner2 .add_widget{width:80%;margin:5p
 ]]>
 </b:template-skin>
 <!-- External overall CSS via jsDelivr -->
-<link href='https://cdn.jsdelivr.net/gh/crazysuman99/blogger-theme@5981f356f8ee5af8874d49d57304c9485f2713fa/css/overall.css' rel='stylesheet' type='text/css'/>
+<link href='https://cdn.jsdelivr.net/gh/crazysuman99/blogger-theme@998889a83054f1bb18eaf21701d22e278decd2f5/css/overall.css' rel='stylesheet' type='text/css'/>
 <!-- Dedicated homepage/archive post card styles -->
 <link href='https://cdn.jsdelivr.net/gh/crazysuman99/blogger-theme@563c33f3ec73565cb41a8548444b98d8cafc87f3/css/post-cards.css' rel='stylesheet' type='text/css'/>
 
