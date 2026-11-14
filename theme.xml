@@ -121,7 +121,7 @@ body#layout #banner .add_widget,#layout #banner2 .add_widget{width:80%;margin:5p
 ]]>
 </b:template-skin>
 <!-- External overall CSS via jsDelivr -->
-<link href='https://cdn.jsdelivr.net/gh/crazysuman99/blogger-theme@1e5cce9c5a96990c102a3c1c79bb765aa050475c/css/overall.css' rel='stylesheet' type='text/css'/>
+<link href='https://cdn.jsdelivr.net/gh/crazysuman99/blogger-theme@5981f356f8ee5af8874d49d57304c9485f2713fa/css/overall.css' rel='stylesheet' type='text/css'/>
 <!-- Dedicated homepage/archive post card styles -->
 <link href='https://cdn.jsdelivr.net/gh/crazysuman99/blogger-theme@563c33f3ec73565cb41a8548444b98d8cafc87f3/css/post-cards.css' rel='stylesheet' type='text/css'/>
 
@@ -2120,7 +2120,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 <div id='footer-sgwidget'>
 <div class='footer-widget' id='footx1'>
 <b:section class='footer' id='footer1'>
-<b:widget id='Label1' locked='false' title='Label' type='Label' version='1'>
+<b:widget id='Label1' locked='false' title='Explore Topics' type='Label' version='1'>
 <b:widget-settings>
 <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
 <b:widget-setting name='display'>LIST</b:widget-setting>
@@ -2230,13 +2230,36 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 </b:section>
 </div>
 <div class='footer-widget' id='footx3'>
-<b:section class='footer' id='footer3'/>
+<b:section class='footer' id='footer3'>
+<b:widget id='HTML3' locked='false' title='About &amp; Connect' type='HTML' version='2' visible='true'>
+<b:widget-settings>
+<b:widget-setting name='content'><![CDATA[
+<div class="footer-about">
+  <div class="footer-brand-mark">SA<span>.</span></div>
+  <h3>Suman Adhikari</h3>
+  <p>Computer education, programming tutorials and practical learning resources to help you learn, build and grow.</p>
+  <div class="footer-connect-links">
+    <a href="https://www.ksumanadhikari.com.np/" rel="noopener">Main Website</a>
+    <a href="https://www.youtube.com/@ksumanadhikari" rel="noopener" target="_blank">YouTube</a>
+    <a href="https://x.com/ksumanadhikari" rel="noopener" target="_blank">X / Twitter</a>
+  </div>
+</div>
+]]></b:widget-setting>
+</b:widget-settings>
+<b:includable id='main'>
+<div class='widget-content'>
+<data:content/>
+</div>
+</b:includable>
+</b:widget>
+</b:section>
 </div>
 </div>
 </div>
 <div id='footer-credit'>
-<div class='tscredit' id='tscredit'>
-@ksumanadhikari
+<div class='footer-credit-inner'>
+<span>© <data:blog.title/>. All rights reserved.</span>
+<span>Designed &amp; maintained by <a href='https://www.ksumanadhikari.com.np/' rel='noopener'>Suman Adhikari</a></span>
 </div>
 </div>
 </footer>
