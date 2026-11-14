@@ -13,13 +13,14 @@ root-level `theme.xml` that Blogger can import.
 | 20 | `src/parts/20-body.xml` | Body open, auto ads, error-page block and outer wrapper open |
 | 21 | `src/parts/21-header-navigation.xml` | Top links, site logo/header widget and main navigation |
 | 22 | `src/parts/22-homepage-signature.xml` | Homepage-only featured video, intro and network widgets |
-| 23 | `src/parts/23-content-layout.xml` | Main post area, sidebar, banners and layout widgets |
-| 24 | `src/parts/24-footer-and-close.xml` | Footer widgets and closing document tags |
+| 23 | `src/parts/23-content-layout.xml` | Main blog post area and its layout |
+| 24 | `src/parts/24-sidebar-layout.xml` | Sidebar widgets and related layout |
+| 25 | `src/parts/24-footer-and-close.xml` | Footer widgets and closing document tags |
 
-The fragments are cut only at existing, verified boundaries. The initial split does
-not rewrite Blogger tags, widget IDs, conditions, scripts, styles or URLs. Every
-original character remains in the same order, so concatenating the parts recreates
-the original XML exactly.
+The fragments are cut only at existing, verified boundaries. This split does not
+rewrite Blogger tags, widget IDs, conditions, scripts, styles or URLs. Every original
+character remains in the same order, so concatenating the parts recreates the original
+XML exactly.
 
 ## Build
 
@@ -40,7 +41,7 @@ Run `--check` to verify the committed upload file is synchronized with source.
 2. Run `python tools/build_theme.py`.
 3. Run `python tools/build_theme.py --check`.
 4. Review the generated `theme.xml` diff.
-5. Commit source fragments and generated `theme.xml` together, then open a PR.
+5. Commit source fragments and generated output together, then open a PR.
 
 Upload only the generated root `theme.xml` through Blogger → Theme → Edit HTML.
 Back up the currently active Blogger theme first. Existing external CSS/JS URLs are
