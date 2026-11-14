@@ -20,9 +20,10 @@ The XML is syntax-checked, but this package has not been live-tested by uploadin
 
 ## Modular XML development
 
-The editable XML source is now split into ordered fragments under `src/parts/`.
-Blogger still receives one generated `theme.xml`; it cannot natively include
-external XML files. Build it with:
+The editable XML source is split into ordered parts under `src/parts/` (document/head,
+header/navigation, homepage signature, content layout and footer). Blogger still
+receives one generated `theme.xml`; it cannot natively include external XML files.
+Build it with:
 
 ```bash
 python tools/build_theme.py
