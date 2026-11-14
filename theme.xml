@@ -123,7 +123,7 @@ body#layout #banner .add_widget,#layout #banner2 .add_widget{width:80%;margin:5p
 <!-- External overall CSS via jsDelivr -->
 <link href='https://cdn.jsdelivr.net/gh/crazysuman99/blogger-theme@e9b80e3aa342d2553f054d16370debd7fc5f540a/css/overall.css' rel='stylesheet' type='text/css'/>
 <!-- Dedicated homepage/archive post card styles -->
-<link href='https://cdn.jsdelivr.net/gh/crazysuman99/blogger-theme@0f1558e956e48d20ed05bda39938794bdeba1f37/css/post-cards.css' rel='stylesheet' type='text/css'/>
+<link href='https://cdn.jsdelivr.net/gh/crazysuman99/blogger-theme@69adcc3dec77fe6dec7af8690342d10ed0f088a6/css/post-cards.css' rel='stylesheet' type='text/css'/>
 
 <script src='//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'/>
 <script src='https://cdn.jsdelivr.net/gh/crazysuman99/blogger-theme@main/js/theme.js' defer='defer'></script>
