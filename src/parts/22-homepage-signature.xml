@@ -1,0 +1,87 @@
+<div class='signature-home'>
+<div class='signature-shell'>
+<b:section id='signature-video' maxwidgets='1' name='Featured Video - Edit in Layout' showaddelement='yes'>
+<b:widget id='HTML21' locked='false' title='Featured Video' type='HTML' version='2' visible='true'>
+<b:widget-settings>
+<b:widget-setting name='content'><![CDATA[<iframe width="100%" height="500px" src="https://www.youtube.com/embed/iQ-XHbzs4Ag?si=3FTFdHC8aMw73LwC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>]]></b:widget-setting>
+</b:widget-settings>
+<b:includable id='main'>
+<b:include name='widget-title'/>
+<div class='widget-content'><data:content/></div>
+</b:includable>
+</b:widget>
+</b:section>
+<b:section id='signature-message' maxwidgets='1' name='Custom Message and Image - Edit in Layout' showaddelement='yes'>
+<b:widget id='HTML22' locked='false' title='A Message From Suman' type='HTML' version='2' visible='true'>
+<b:widget-settings>
+<b:widget-setting name='content'><![CDATA[<section class="signature-intro">
+  <div class="signature-intro-copy">
+    <span class="signature-kicker">WELCOME TO MY LEARNING SPACE</span>
+    <h2>Learn. Understand. Grow.</h2>
+
+    <p>Welcome to <b>BICTE With Ksumanaadhikari</b>! 🎓</p>
+
+    <p>This platform is created to help BICTE students learn their subjects through organized notes, simple explanations, important questions, and syllabus-based study materials.</p>
+
+    <p>Whether you are preparing for your semester examinations, revising important topics, or building a strong foundation in Information Technology and Education, this platform is here to support your academic journey.</p>
+
+    <p><b>Learn deeply. Think critically. Teach confidently.</b></p>
+  </div>
+
+  <div class="signature-intro-image">
+    <!-- Replace this placeholder image URL with your own photo/image URL. -->
+
+    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEggOb0YhGTFG0pGdfE_anT6VMKF7Mimoc1ADajwLSteQtSjAlP6SHexw5lgUNwbAfY_PgmDSeoe6kfTakX6AxHoWvb6FZgQ8POTuTpQ9-MPWxF0DoI3CLftoToE8R8leZnfzWJt6E47xPo6AanLFeA-hPc4Uien6ZCATrcPGma7IepQe1_jvlNlwr16mAI=s1600" alt="Add your own image here"/>
+  </div>
+</section>]]></b:widget-setting>
+</b:widget-settings>
+<b:includable id='main'>
+<b:include name='widget-title'/>
+<div class='widget-content'><data:content/></div>
+</b:includable>
+</b:widget>
+</b:section>
+<b:section id='signature-network' maxwidgets='1' name='Other Blogs and Websites - Edit in Layout' showaddelement='yes'>
+<b:widget id='HTML23' locked='false' title='Explore My Blogs' type='HTML' version='2' visible='true'>
+<b:widget-settings>
+<b:widget-setting name='content'><![CDATA[<div class="signature-network">
+  <div class="signature-section-heading">
+    <span>EXPLORE THE NETWORK</span>
+    <h2>More from Suman</h2>
+    <p>Other Subsidairy</p>
+  </div>
+  <div class="signature-network-grid">
+    <!-- प्रत्येक card को href र img src आफ्नो आवश्यकता अनुसार बदल्नुस्। -->
+    <a class="signature-network-card" href="https://c.ksumanadhikari.com.np/" target="_blank" rel="noopener">
+      <img src="https://placehold.co/640x420/1f2937/ffffff?text=C+Programming" alt="C Programming"/>
+      <span><b>C Programming</b><small>Programming tutorials and notes</small></span>
+    </a>
+    <a class="signature-network-card" href="https://cpp.ksumanadhikari.com.np/" target="_blank" rel="noopener">
+      <img src="https://placehold.co/640x420/263b53/ffffff?text=C%2B%2B" alt="C++ Programming"/>
+      <span><b>C++ Programming</b><small>Concepts, examples and practice</small></span>
+    </a>
+    <a class="signature-network-card" href="https://js.ksumanadhikari.com.np/" target="_blank" rel="noopener">
+      <img src="https://placehold.co/640x420/354b2c/ffffff?text=JavaScript" alt="JavaScript"/>
+      <span><b>JavaScript</b><small>Web development resources</small></span>
+    </a>
+    <a class="signature-network-card" href="https://php.ksumanadhikari.com.np/" target="_blank" rel="noopener">
+      <img src="https://placehold.co/640x420/4b3d68/ffffff?text=PHP" alt="PHP"/>
+      <span><b>PHP Development</b><small>Server-side development</small></span>
+    </a>
+
+  </div>
+</div>]]></b:widget-setting>
+</b:widget-settings>
+<b:includable id='main'>
+<b:include name='widget-title'/>
+<div class='widget-content'><data:content/></div>
+</b:includable>
+</b:widget>
+</b:section>
+</div>
+</div>
+</b:if>
+<div class='clear'/>
+<div class='clear'/>
+<b:section class='banner section' id='banner' maxwidgets='1' showaddelement='yes'/>
+<div class='clear'/>
