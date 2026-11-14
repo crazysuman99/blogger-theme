@@ -1,4 +1,4 @@
-<body>
+<body expr:class='data:blog.pageType'>
 <amp-auto-ads data-ad-client='ca-pub-3386340410780049' type='adsense'>
 </amp-auto-ads>
 <b:if cond='data:blog.pageType == &quot;error_page&quot;'>
