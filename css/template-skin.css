@@ -31,4 +31,4 @@ body#layout #banner,#layout #banner2 {background-color:#444;padding:20px 0!impor
 body#layout #banner:before,#layout #banner2:before{content:'Ad Slot 970x90';font-size:13px;color:#fff;margin-bottom:20px;padding-bottom:5px;display:inline-block;font-weight:400;font-family:sans-serif}
 body#layout #banner .widget,#layout #banner2 .widget{width:80%;margin:5px auto!important;overflow:hidden;float:none}
 body#layout #banner .add_widget,#layout #banner2 .add_widget{width:80%;margin:5px auto!important;overflow:hidden;float:none}
-]]>
+
