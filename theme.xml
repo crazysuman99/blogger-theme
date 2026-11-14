@@ -121,12 +121,12 @@ body#layout #banner .add_widget,#layout #banner2 .add_widget{width:80%;margin:5p
 ]]>
 </b:template-skin>
 <!-- External overall CSS via jsDelivr -->
-<link href='https://cdn.jsdelivr.net/gh/crazysuman99/blogger-theme@998889a83054f1bb18eaf21701d22e278decd2f5/css/overall.css' rel='stylesheet' type='text/css'/>
+<link href='https://cdn.jsdelivr.net/gh/crazysuman99/blogger-theme@1e5cce9c5a96990c102a3c1c79bb765aa050475c/css/overall.css' rel='stylesheet' type='text/css'/>
 <!-- Dedicated homepage/archive post card styles -->
 <link href='https://cdn.jsdelivr.net/gh/crazysuman99/blogger-theme@563c33f3ec73565cb41a8548444b98d8cafc87f3/css/post-cards.css' rel='stylesheet' type='text/css'/>
 
 <script src='//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'/>
-<script src='https://cdn.jsdelivr.net/gh/crazysuman99/blogger-theme@main/js/theme.js' defer='defer'></script>
+<script defer='defer' src='https://cdn.jsdelivr.net/gh/crazysuman99/blogger-theme@main/js/theme.js'/>
 <script type='text/javascript'>
 //<![CDATA[
 //CSS Ready
@@ -180,17 +180,17 @@ loadCSS("https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");l
 <div class='clear'/>
 <div id='header-wrapper' itemscope='itemscope' itemtype='https://schema.org/WPHeader'>
 <b:section class='header section' id='header' maxwidgets='1' name='Site Logo' showaddelement='yes'>
-<b:widget id='Header1' locked='false' title='BICTE with ksumanadhikari (Header)' type='Header' version='1'>
-<b:widget-settings>
-<b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUk0fbwM3V7QQeSJxwtSR7U_tyDNC_mDMtyV1_sHU5rbswFwT02tmyTSXxmflh15-EdlKyhPWWbK_VKYtBHdXklwIUOwcNPyQCP6_5tIjW6HWXp1cB2bx0ZxWaQX0IF3iBfPjdB9o_DfyqPCgtPI2P9bYl1q4UU_XCtZVF-vE4cGN69yJPCTQK0nitf5I/s1600/Suman%20Adhikari.PNG</b:widget-setting>
-<b:widget-setting name='displayHeight'>225</b:widget-setting>
-<b:widget-setting name='sectionWidth'>150</b:widget-setting>
-<b:widget-setting name='useImage'>true</b:widget-setting>
-<b:widget-setting name='shrinkToFit'>false</b:widget-setting>
-<b:widget-setting name='imagePlacement'>REPLACE</b:widget-setting>
-<b:widget-setting name='displayWidth'>1600</b:widget-setting>
-</b:widget-settings>
-<b:includable id='main'>
+  <b:widget id='Header1' locked='false' title='Computer Operator Manual (Header)' type='Header' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUk0fbwM3V7QQeSJxwtSR7U_tyDNC_mDMtyV1_sHU5rbswFwT02tmyTSXxmflh15-EdlKyhPWWbK_VKYtBHdXklwIUOwcNPyQCP6_5tIjW6HWXp1cB2bx0ZxWaQX0IF3iBfPjdB9o_DfyqPCgtPI2P9bYl1q4UU_XCtZVF-vE4cGN69yJPCTQK0nitf5I/s1600/Suman%20Adhikari.PNG</b:widget-setting>
+      <b:widget-setting name='displayHeight'>225</b:widget-setting>
+      <b:widget-setting name='sectionWidth'>150</b:widget-setting>
+      <b:widget-setting name='useImage'>true</b:widget-setting>
+      <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+      <b:widget-setting name='imagePlacement'>REPLACE</b:widget-setting>
+      <b:widget-setting name='displayWidth'>1600</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
 <b:if cond='data:useImage'>
 <b:if cond='data:imagePlacement == &quot;BEHIND&quot;'>
       <!--
@@ -238,14 +238,14 @@ loadCSS("https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");l
 </div>
 </b:if>
 </b:includable>
-<b:includable id='description'>
+    <b:includable id='description'>
 <div class='descriptionwrapper'>
 <p class='description'><span><data:description/></span></p>
 </div>
 </b:includable>
-<b:includable id='shrinkToFitStyle'>
+    <b:includable id='shrinkToFitStyle'>
 </b:includable>
-<b:includable id='title'>
+    <b:includable id='title'>
 <b:if cond='data:blog.pageType != &quot;item&quot;'>
 <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
 <h1 class='title'>
@@ -268,140 +268,140 @@ loadCSS("https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");l
 </h2>
 </b:if>
 </b:includable>
-</b:widget>
+  </b:widget>
 </b:section>
 </div>
 <div class='clear'/>
 <nav id='nav' itemscope='itemscope' itemtype='https://schema.org/SiteNavigationElement' role='navigation'>
 <a class='menu-trigger' href='#'><i class='fa fa-list'/> Menu</a>
 <b:section class='main-menu-section' id='main-menu' maxwidgets='1' name='Main Navigation (Edit in Layout)' showaddelement='yes'>
-<b:widget id='LinkList99' locked='false' title='Main Navigation' type='LinkList' version='2' visible='true'>
-<b:widget-settings>
-<b:widget-setting name='text-9'>2nd Sem</b:widget-setting>
-<b:widget-setting name='text-8'>_Mathematics-I</b:widget-setting>
-<b:widget-setting name='text-1'>Entrance Preparation</b:widget-setting>
-<b:widget-setting name='text-0'>Home</b:widget-setting>
-<b:widget-setting name='text-3'>_स&#2366;ध&#2366;रण न&#2375;प&#2366;ल&#2368;-१</b:widget-setting>
-<b:widget-setting name='text-2'>1st Sem</b:widget-setting>
-<b:widget-setting name='text-5'>_Fundamental of Education</b:widget-setting>
-<b:widget-setting name='text-4'>_General English</b:widget-setting>
-<b:widget-setting name='text-7'>_Programming Concept with C</b:widget-setting>
-<b:widget-setting name='text-6'>_Introduction to Information Technology</b:widget-setting>
-<b:widget-setting name='text-55'>_Big Data Analysis</b:widget-setting>
-<b:widget-setting name='text-51'>_Teaching Practicum in ICT Education</b:widget-setting>
-<b:widget-setting name='text-52'>_Artificial Intelligence in Education</b:widget-setting>
-<b:widget-setting name='text-53'>_System Administration using Linux</b:widget-setting>
-<b:widget-setting name='text-54'>_Cloud Computing</b:widget-setting>
-<b:widget-setting name='text-50'>_Classroom Pedagogy</b:widget-setting>
-<b:widget-setting name='link-17'>https://</b:widget-setting>
-<b:widget-setting name='link-16'>#</b:widget-setting>
-<b:widget-setting name='link-19'>https://</b:widget-setting>
-<b:widget-setting name='link-18'>https://</b:widget-setting>
-<b:widget-setting name='link-1'>/p/entrance.html</b:widget-setting>
-<b:widget-setting name='link-13'>https://</b:widget-setting>
-<b:widget-setting name='text-48'>_Educational Project</b:widget-setting>
-<b:widget-setting name='link-2'>#</b:widget-setting>
-<b:widget-setting name='link-12'>/p/general-english-ii.html</b:widget-setting>
-<b:widget-setting name='text-49'>8th Sem</b:widget-setting>
-<b:widget-setting name='link-15'>https://</b:widget-setting>
-<b:widget-setting name='link-0'>/</b:widget-setting>
-<b:widget-setting name='link-14'>https://cpp.ksumanadhikari.com.np</b:widget-setting>
-<b:widget-setting name='text-44'>_GIS</b:widget-setting>
-<b:widget-setting name='text-45'>_Multimedia in Education</b:widget-setting>
-<b:widget-setting name='link-11'>/p/blog-page_08.html</b:widget-setting>
-<b:widget-setting name='text-46'>_Python Programming</b:widget-setting>
-<b:widget-setting name='link-10'>https://</b:widget-setting>
-<b:widget-setting name='text-47'>_Teaching Method in ICT Education</b:widget-setting>
-<b:widget-setting name='link-9'>#</b:widget-setting>
-<b:widget-setting name='text-40'>_Network Security</b:widget-setting>
-<b:widget-setting name='text-41'>_Digital Pedagogy</b:widget-setting>
-<b:widget-setting name='link-7'>https://c.ksumanadhikari.com.np</b:widget-setting>
-<b:widget-setting name='text-42'>7th Sem</b:widget-setting>
-<b:widget-setting name='link-8'>https://</b:widget-setting>
-<b:widget-setting name='text-43'>_Research Project</b:widget-setting>
-<b:widget-setting name='link-5'>https://</b:widget-setting>
-<b:widget-setting name='link-6'>https://</b:widget-setting>
-<b:widget-setting name='link-3'>/p/blog-page.html</b:widget-setting>
-<b:widget-setting name='link-4'>/p/general-english-i.html</b:widget-setting>
-<b:widget-setting name='link-28'>https://</b:widget-setting>
-<b:widget-setting name='link-27'>https://</b:widget-setting>
-<b:widget-setting name='link-29'>https://</b:widget-setting>
-<b:widget-setting name='link-24'>https://</b:widget-setting>
-<b:widget-setting name='text-37'>_Research in Education</b:widget-setting>
-<b:widget-setting name='link-23'>#</b:widget-setting>
-<b:widget-setting name='text-38'>_Visual Programming</b:widget-setting>
-<b:widget-setting name='link-26'>https://</b:widget-setting>
-<b:widget-setting name='text-39'>_Computer Graphics</b:widget-setting>
-<b:widget-setting name='link-25'>https://</b:widget-setting>
-<b:widget-setting name='link-20'>https://</b:widget-setting>
-<b:widget-setting name='text-33'>_Data Communication and Networks</b:widget-setting>
-<b:widget-setting name='text-34'>_Software Engineering and Project Management</b:widget-setting>
-<b:widget-setting name='link-22'>https://</b:widget-setting>
-<b:widget-setting name='text-35'>_Discrete Mathematics</b:widget-setting>
-<b:widget-setting name='link-21'>https://</b:widget-setting>
-<b:widget-setting name='text-36'>6th Sem</b:widget-setting>
-<b:widget-setting name='text-30'>5th Sem</b:widget-setting>
-<b:widget-setting name='text-31'>_Assessment and Evaluation in Education</b:widget-setting>
-<b:widget-setting name='text-32'>_Java Programming</b:widget-setting>
-<b:widget-setting name='link-39'>https://</b:widget-setting>
-<b:widget-setting name='link-38'>https://</b:widget-setting>
-<b:widget-setting name='text-26'>_Operating System</b:widget-setting>
-<b:widget-setting name='link-35'>https://</b:widget-setting>
-<b:widget-setting name='text-27'>_Database Management System</b:widget-setting>
-<b:widget-setting name='link-34'>https://</b:widget-setting>
-<b:widget-setting name='text-28'>_System Analysis and Design</b:widget-setting>
-<b:widget-setting name='link-37'>/p/research-in-education_01268197903.html</b:widget-setting>
-<b:widget-setting name='text-29'>_Numerical Analysis</b:widget-setting>
-<b:widget-setting name='link-36'>#</b:widget-setting>
-<b:widget-setting name='text-22'>_Probability and Statistics</b:widget-setting>
-<b:widget-setting name='link-31'>https://</b:widget-setting>
-<b:widget-setting name='text-23'>4th Sem</b:widget-setting>
-<b:widget-setting name='link-30'>#</b:widget-setting>
-<b:widget-setting name='text-24'>_Fundamental of Curriculum</b:widget-setting>
-<b:widget-setting name='link-33'>https://</b:widget-setting>
-<b:widget-setting name='text-25'>_Educational Leadership in Digital Era</b:widget-setting>
-<b:widget-setting name='link-32'>https://java.ksumanadhikari.com.np</b:widget-setting>
-<b:widget-setting name='text-20'>_Computer Architecture and Organization</b:widget-setting>
-<b:widget-setting name='link-40'>/p/network-security_0365064969.html</b:widget-setting>
-<b:widget-setting name='text-21'>_Data Structure and Algorithms</b:widget-setting>
-<b:widget-setting name='text-19'>_21st Century Skill</b:widget-setting>
-<b:widget-setting name='link-49'>#</b:widget-setting>
-<b:widget-setting name='text-15'>_Mathematics II</b:widget-setting>
-<b:widget-setting name='link-46'>https://</b:widget-setting>
-<b:widget-setting name='text-16'>3rd Sem</b:widget-setting>
-<b:widget-setting name='link-45'>https://</b:widget-setting>
-<b:widget-setting name='text-17'>_Learning Psychology</b:widget-setting>
-<b:widget-setting name='link-48'>https://</b:widget-setting>
-<b:widget-setting name='text-18'>_Web Technology</b:widget-setting>
-<b:widget-setting name='link-47'>https://</b:widget-setting>
-<b:widget-setting name='text-11'>_स&#2366;ध&#2366;रण न&#2375;प&#2366;ल&#2368;-२</b:widget-setting>
-<b:widget-setting name='link-42'>#</b:widget-setting>
-<b:widget-setting name='text-12'>_General English II</b:widget-setting>
-<b:widget-setting name='link-41'>https://</b:widget-setting>
-<b:widget-setting name='text-13'>_Digital Logic</b:widget-setting>
-<b:widget-setting name='link-44'>https://</b:widget-setting>
-<b:widget-setting name='text-14'>_Object Oriented Programming With C++</b:widget-setting>
-<b:widget-setting name='link-43'>https://</b:widget-setting>
-<b:widget-setting name='link-51'>https://</b:widget-setting>
-<b:widget-setting name='text-10'>_Developmental Psychology</b:widget-setting>
-<b:widget-setting name='link-50'>https://</b:widget-setting>
-<b:widget-setting name='sorting'>NONE</b:widget-setting>
-<b:widget-setting name='link-53'>https://</b:widget-setting>
-<b:widget-setting name='link-52'>https://</b:widget-setting>
-<b:widget-setting name='link-55'>https://</b:widget-setting>
-<b:widget-setting name='link-54'>https://</b:widget-setting>
-</b:widget-settings>
-<b:includable id='main'>
+  <b:widget id='LinkList99' locked='false' title='Main Navigation' type='LinkList' version='2' visible='true'>
+    <b:widget-settings>
+      <b:widget-setting name='text-9'>2nd Sem</b:widget-setting>
+      <b:widget-setting name='text-8'>_Mathematics-I</b:widget-setting>
+      <b:widget-setting name='text-1'>Entrance Preparation</b:widget-setting>
+      <b:widget-setting name='text-0'>Home</b:widget-setting>
+      <b:widget-setting name='text-3'>_स&#2366;ध&#2366;रण न&#2375;प&#2366;ल&#2368;-१</b:widget-setting>
+      <b:widget-setting name='text-2'>1st Sem</b:widget-setting>
+      <b:widget-setting name='text-5'>_Fundamental of Education</b:widget-setting>
+      <b:widget-setting name='text-4'>_General English</b:widget-setting>
+      <b:widget-setting name='text-7'>_Programming Concept with C</b:widget-setting>
+      <b:widget-setting name='text-6'>_Introduction to Information Technology</b:widget-setting>
+      <b:widget-setting name='text-55'>_Big Data Analysis</b:widget-setting>
+      <b:widget-setting name='text-51'>_Teaching Practicum in ICT Education</b:widget-setting>
+      <b:widget-setting name='text-52'>_Artificial Intelligence in Education</b:widget-setting>
+      <b:widget-setting name='text-53'>_System Administration using Linux</b:widget-setting>
+      <b:widget-setting name='text-54'>_Cloud Computing</b:widget-setting>
+      <b:widget-setting name='text-50'>_Classroom Pedagogy</b:widget-setting>
+      <b:widget-setting name='link-17'>https://</b:widget-setting>
+      <b:widget-setting name='link-16'>#</b:widget-setting>
+      <b:widget-setting name='link-19'>https://</b:widget-setting>
+      <b:widget-setting name='link-18'>https://</b:widget-setting>
+      <b:widget-setting name='link-1'>/p/entrance.html</b:widget-setting>
+      <b:widget-setting name='link-13'>https://</b:widget-setting>
+      <b:widget-setting name='text-48'>_Educational Project</b:widget-setting>
+      <b:widget-setting name='link-2'>#</b:widget-setting>
+      <b:widget-setting name='link-12'>/p/general-english-ii.html</b:widget-setting>
+      <b:widget-setting name='text-49'>8th Sem</b:widget-setting>
+      <b:widget-setting name='link-15'>https://</b:widget-setting>
+      <b:widget-setting name='link-0'>/</b:widget-setting>
+      <b:widget-setting name='link-14'>https://cpp.ksumanadhikari.com.np</b:widget-setting>
+      <b:widget-setting name='text-44'>_GIS</b:widget-setting>
+      <b:widget-setting name='text-45'>_Multimedia in Education</b:widget-setting>
+      <b:widget-setting name='link-11'>/p/blog-page_08.html</b:widget-setting>
+      <b:widget-setting name='text-46'>_Python Programming</b:widget-setting>
+      <b:widget-setting name='link-10'>https://</b:widget-setting>
+      <b:widget-setting name='text-47'>_Teaching Method in ICT Education</b:widget-setting>
+      <b:widget-setting name='link-9'>#</b:widget-setting>
+      <b:widget-setting name='text-40'>_Network Security</b:widget-setting>
+      <b:widget-setting name='text-41'>_Digital Pedagogy</b:widget-setting>
+      <b:widget-setting name='link-7'>https://c.ksumanadhikari.com.np</b:widget-setting>
+      <b:widget-setting name='text-42'>7th Sem</b:widget-setting>
+      <b:widget-setting name='link-8'>https://</b:widget-setting>
+      <b:widget-setting name='text-43'>_Research Project</b:widget-setting>
+      <b:widget-setting name='link-5'>https://</b:widget-setting>
+      <b:widget-setting name='link-6'>https://</b:widget-setting>
+      <b:widget-setting name='link-3'>/p/blog-page.html</b:widget-setting>
+      <b:widget-setting name='link-4'>/p/general-english-i.html</b:widget-setting>
+      <b:widget-setting name='link-28'>https://</b:widget-setting>
+      <b:widget-setting name='link-27'>https://</b:widget-setting>
+      <b:widget-setting name='link-29'>https://</b:widget-setting>
+      <b:widget-setting name='link-24'>https://</b:widget-setting>
+      <b:widget-setting name='text-37'>_Research in Education</b:widget-setting>
+      <b:widget-setting name='link-23'>#</b:widget-setting>
+      <b:widget-setting name='text-38'>_Visual Programming</b:widget-setting>
+      <b:widget-setting name='link-26'>https://</b:widget-setting>
+      <b:widget-setting name='text-39'>_Computer Graphics</b:widget-setting>
+      <b:widget-setting name='link-25'>https://</b:widget-setting>
+      <b:widget-setting name='link-20'>https://</b:widget-setting>
+      <b:widget-setting name='text-33'>_Data Communication and Networks</b:widget-setting>
+      <b:widget-setting name='text-34'>_Software Engineering and Project Management</b:widget-setting>
+      <b:widget-setting name='link-22'>https://</b:widget-setting>
+      <b:widget-setting name='text-35'>_Discrete Mathematics</b:widget-setting>
+      <b:widget-setting name='link-21'>https://</b:widget-setting>
+      <b:widget-setting name='text-36'>6th Sem</b:widget-setting>
+      <b:widget-setting name='text-30'>5th Sem</b:widget-setting>
+      <b:widget-setting name='text-31'>_Assessment and Evaluation in Education</b:widget-setting>
+      <b:widget-setting name='text-32'>_Java Programming</b:widget-setting>
+      <b:widget-setting name='link-39'>https://</b:widget-setting>
+      <b:widget-setting name='link-38'>https://</b:widget-setting>
+      <b:widget-setting name='text-26'>_Operating System</b:widget-setting>
+      <b:widget-setting name='link-35'>https://</b:widget-setting>
+      <b:widget-setting name='text-27'>_Database Management System</b:widget-setting>
+      <b:widget-setting name='link-34'>https://</b:widget-setting>
+      <b:widget-setting name='text-28'>_System Analysis and Design</b:widget-setting>
+      <b:widget-setting name='link-37'>/p/research-in-education_01268197903.html</b:widget-setting>
+      <b:widget-setting name='text-29'>_Numerical Analysis</b:widget-setting>
+      <b:widget-setting name='link-36'>#</b:widget-setting>
+      <b:widget-setting name='text-22'>_Probability and Statistics</b:widget-setting>
+      <b:widget-setting name='link-31'>https://</b:widget-setting>
+      <b:widget-setting name='text-23'>4th Sem</b:widget-setting>
+      <b:widget-setting name='link-30'>#</b:widget-setting>
+      <b:widget-setting name='text-24'>_Fundamental of Curriculum</b:widget-setting>
+      <b:widget-setting name='link-33'>https://</b:widget-setting>
+      <b:widget-setting name='text-25'>_Educational Leadership in Digital Era</b:widget-setting>
+      <b:widget-setting name='link-32'>https://java.ksumanadhikari.com.np</b:widget-setting>
+      <b:widget-setting name='text-20'>_Computer Architecture and Organization</b:widget-setting>
+      <b:widget-setting name='link-40'>/p/network-security_0365064969.html</b:widget-setting>
+      <b:widget-setting name='text-21'>_Data Structure and Algorithms</b:widget-setting>
+      <b:widget-setting name='text-19'>_21st Century Skill</b:widget-setting>
+      <b:widget-setting name='link-49'>#</b:widget-setting>
+      <b:widget-setting name='text-15'>_Mathematics II</b:widget-setting>
+      <b:widget-setting name='link-46'>https://</b:widget-setting>
+      <b:widget-setting name='text-16'>3rd Sem</b:widget-setting>
+      <b:widget-setting name='link-45'>https://</b:widget-setting>
+      <b:widget-setting name='text-17'>_Learning Psychology</b:widget-setting>
+      <b:widget-setting name='link-48'>https://</b:widget-setting>
+      <b:widget-setting name='text-18'>_Web Technology</b:widget-setting>
+      <b:widget-setting name='link-47'>https://</b:widget-setting>
+      <b:widget-setting name='text-11'>_स&#2366;ध&#2366;रण न&#2375;प&#2366;ल&#2368;-२</b:widget-setting>
+      <b:widget-setting name='link-42'>#</b:widget-setting>
+      <b:widget-setting name='text-12'>_General English II</b:widget-setting>
+      <b:widget-setting name='link-41'>https://</b:widget-setting>
+      <b:widget-setting name='text-13'>_Digital Logic</b:widget-setting>
+      <b:widget-setting name='link-44'>https://</b:widget-setting>
+      <b:widget-setting name='text-14'>_Object Oriented Programming With C++</b:widget-setting>
+      <b:widget-setting name='link-43'>https://</b:widget-setting>
+      <b:widget-setting name='link-51'>https://</b:widget-setting>
+      <b:widget-setting name='text-10'>_Developmental Psychology</b:widget-setting>
+      <b:widget-setting name='link-50'>https://</b:widget-setting>
+      <b:widget-setting name='sorting'>NONE</b:widget-setting>
+      <b:widget-setting name='link-53'>https://</b:widget-setting>
+      <b:widget-setting name='link-52'>https://</b:widget-setting>
+      <b:widget-setting name='link-55'>https://</b:widget-setting>
+      <b:widget-setting name='link-54'>https://</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
 <b:include name='content'/>
 </b:includable>
-<b:includable id='content'>
+    <b:includable id='content'>
 <ul class='shnav simple-mainmenu' id='main-menu-nav' role='menubar'>
 <b:loop values='data:links' var='link'>
 <li><a expr:href='data:link.target' role='menuitem'><data:link.name/></a></li>
 </b:loop>
 </ul>
 </b:includable>
-</b:widget>
+  </b:widget>
 </b:section>
 <form action='/search' id='search-form' method='get'>
 <table><tbody><tr><td class='search-box'>
@@ -415,36 +415,20 @@ loadCSS("https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");l
 <div class='signature-home'>
 <div class='signature-shell'>
 <b:section id='signature-video' maxwidgets='1' name='Featured Video - Edit in Layout' showaddelement='yes'>
-<b:widget id='HTML21' locked='false' title='Featured Video' type='HTML' version='2' visible='true'>
-<b:widget-settings>
-<b:widget-setting name='content'><![CDATA[<div class="signature-video-card">
-  <div class="signature-video-heading">
-    <div class="signature-video-heading-copy">
-      <span class="signature-video-kicker">Featured video</span>
-      <h2>Watch, Learn &amp; Explore</h2>
-      <p>A featured lesson from Suman Adhikari. Press play and start learning.</p>
-    </div>
-    <a class="signature-video-youtube" href="https://www.youtube.com/watch?v=iQ-XHbzs4Ag" target="_blank" rel="noopener noreferrer">▶ Watch on YouTube</a>
-  </div>
-  <div class="signature-video-frame">
-    <iframe src="https://www.youtube.com/embed/iQ-XHbzs4Ag?rel=0" title="Featured video by Suman Adhikari" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="allowfullscreen"></iframe>
-  </div>
-  <div class="signature-video-footnote">
-    <span>LEARN SOMETHING NEW TODAY</span>
-    <span>More lessons on the YouTube channel</span>
-  </div>
-</div>]]></b:widget-setting>
-</b:widget-settings>
-<b:includable id='main'>
+  <b:widget id='HTML21' locked='false' title='Featured Video' type='HTML' version='2' visible='true'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[<iframe width="100%" height="500px" src="https://www.youtube.com/embed/iQ-XHbzs4Ag?si=3FTFdHC8aMw73LwC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>]]></b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
 <b:include name='widget-title'/>
 <div class='widget-content'><data:content/></div>
 </b:includable>
-</b:widget>
+  </b:widget>
 </b:section>
 <b:section id='signature-message' maxwidgets='1' name='Custom Message and Image - Edit in Layout' showaddelement='yes'>
-<b:widget id='HTML22' locked='false' title='A Message From Suman' type='HTML' version='2' visible='true'>
-<b:widget-settings>
-<b:widget-setting name='content'><![CDATA[<section class="signature-intro">
+  <b:widget id='HTML22' locked='false' title='A Message From Suman' type='HTML' version='2' visible='true'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[<section class="signature-intro">
   <div class="signature-intro-copy">
     <span class="signature-kicker">WELCOME TO MY LEARNING SPACE</span>
     <h2>Learn. Understand. Grow.</h2>
@@ -464,17 +448,17 @@ loadCSS("https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");l
     <img src="https://blogger.googleusercontent.com/img/a/AVvXsEggOb0YhGTFG0pGdfE_anT6VMKF7Mimoc1ADajwLSteQtSjAlP6SHexw5lgUNwbAfY_PgmDSeoe6kfTakX6AxHoWvb6FZgQ8POTuTpQ9-MPWxF0DoI3CLftoToE8R8leZnfzWJt6E47xPo6AanLFeA-hPc4Uien6ZCATrcPGma7IepQe1_jvlNlwr16mAI=s1600" alt="Add your own image here"/>
   </div>
 </section>]]></b:widget-setting>
-</b:widget-settings>
-<b:includable id='main'>
+    </b:widget-settings>
+    <b:includable id='main'>
 <b:include name='widget-title'/>
 <div class='widget-content'><data:content/></div>
 </b:includable>
-</b:widget>
+  </b:widget>
 </b:section>
 <b:section id='signature-network' maxwidgets='1' name='Other Blogs and Websites - Edit in Layout' showaddelement='yes'>
-<b:widget id='HTML23' locked='false' title='Explore My Blogs' type='HTML' version='2' visible='true'>
-<b:widget-settings>
-<b:widget-setting name='content'><![CDATA[<div class="signature-network">
+  <b:widget id='HTML23' locked='false' title='Explore My Blogs' type='HTML' version='2' visible='true'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[<div class="signature-network">
   <div class="signature-section-heading">
     <span>EXPLORE THE NETWORK</span>
     <h2>More from Suman</h2>
@@ -501,12 +485,12 @@ loadCSS("https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");l
 
   </div>
 </div>]]></b:widget-setting>
-</b:widget-settings>
-<b:includable id='main'>
+    </b:widget-settings>
+    <b:includable id='main'>
 <b:include name='widget-title'/>
 <div class='widget-content'><data:content/></div>
 </b:includable>
-</b:widget>
+  </b:widget>
 </b:section>
 </div>
 </div>
@@ -519,15 +503,15 @@ loadCSS("https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");l
 <div id='post-wrapper'>
 <div class='post-inner'>
 <b:section class='main' id='main' maxwidgets='30' showaddelement='yes'>
-<b:widget id='Label2' locked='false' title='Semester Wise Posts' type='Label'>
-<b:widget-settings>
-<b:widget-setting name='sorting'>ALPHA</b:widget-setting>
-<b:widget-setting name='display'>LIST</b:widget-setting>
-<b:widget-setting name='selectedLabelsList'/>
-<b:widget-setting name='showType'>ALL</b:widget-setting>
-<b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
-</b:widget-settings>
-<b:includable id='main'>
+  <b:widget id='Label2' locked='false' title='Semester Wise Posts' type='Label' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
+      <b:widget-setting name='display'>LIST</b:widget-setting>
+      <b:widget-setting name='selectedLabelsList'/>
+      <b:widget-setting name='showType'>ALL</b:widget-setting>
+      <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
 <b:if cond='data:title != &quot;&quot;'>
 <h2><data:title/></h2>
 </b:if>
@@ -564,29 +548,29 @@ loadCSS("https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");l
 <b:include name='quickedit'/>
 </div>
 </b:includable>
-</b:widget>
-<b:widget id='Blog1' locked='false' title='Blog Posts' type='Blog' version='1'>
-<b:widget-settings>
-<b:widget-setting name='showDateHeader'>true</b:widget-setting>
-<b:widget-setting name='commentLabel'>Comments had been done yet</b:widget-setting>
-<b:widget-setting name='showShareButtons'>true</b:widget-setting>
-<b:widget-setting name='authorLabel'>By</b:widget-setting>
-<b:widget-setting name='showCommentLink'>true</b:widget-setting>
-<b:widget-setting name='showAuthor'>false</b:widget-setting>
-<b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
-<b:widget-setting name='reactionsLabel'/>
-<b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
-<b:widget-setting name='style.layout'>1x1</b:widget-setting>
-<b:widget-setting name='showLabels'>true</b:widget-setting>
-<b:widget-setting name='showLocation'>false</b:widget-setting>
-<b:widget-setting name='postLabelsLabel'>Find Related Post to</b:widget-setting>
-<b:widget-setting name='showTimestamp'>true</b:widget-setting>
-<b:widget-setting name='postsPerAd'>1</b:widget-setting>
-<b:widget-setting name='showBacklinks'>false</b:widget-setting>
-<b:widget-setting name='showInlineAds'>false</b:widget-setting>
-<b:widget-setting name='showReactions'>false</b:widget-setting>
-</b:widget-settings>
-<b:includable id='main' var='top'>
+  </b:widget>
+  <b:widget id='Blog1' locked='false' title='Blog Posts' type='Blog' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='showDateHeader'>true</b:widget-setting>
+      <b:widget-setting name='commentLabel'>Comments had been done yet</b:widget-setting>
+      <b:widget-setting name='showShareButtons'>true</b:widget-setting>
+      <b:widget-setting name='authorLabel'>By</b:widget-setting>
+      <b:widget-setting name='showCommentLink'>true</b:widget-setting>
+      <b:widget-setting name='showAuthor'>false</b:widget-setting>
+      <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+      <b:widget-setting name='reactionsLabel'/>
+      <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+      <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+      <b:widget-setting name='showLabels'>true</b:widget-setting>
+      <b:widget-setting name='showLocation'>false</b:widget-setting>
+      <b:widget-setting name='postLabelsLabel'>Find Related Post to</b:widget-setting>
+      <b:widget-setting name='showTimestamp'>true</b:widget-setting>
+      <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+      <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+      <b:widget-setting name='showInlineAds'>false</b:widget-setting>
+      <b:widget-setting name='showReactions'>false</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main' var='top'>
 <b:include data='posts' name='breadcrumb'/>
 <b:if cond='data:mobile == &quot;false&quot;'>
 <b:if cond='data:blog.pageType == &quot;index&quot;'>
@@ -676,14 +660,14 @@ loadCSS("https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");l
 <data:top.dummyBootstrap/>
 </b:if>
 </b:includable>
-<b:includable id='backlinkDeleteIcon' var='backlink'>
+    <b:includable id='backlinkDeleteIcon' var='backlink'>
 <span expr:class='&quot;item-control &quot; + data:backlink.adminClass'>
 <a expr:href='data:backlink.deleteUrl' expr:title='data:top.deleteBacklinkMsg'>
 <img src='//www.blogger.com/img/icon_delete13.gif'/>
 </a>
 </span>
 </b:includable>
-<b:includable id='backlinks' var='post'>
+    <b:includable id='backlinks' var='post'>
 <a name='links'/><h4><data:post.backlinksLabel/></h4>
 <b:if cond='data:post.numBacklinks != 0'>
 <dl class='comments-block' id='comments-block'>
@@ -717,7 +701,7 @@ loadCSS("https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");l
 <a class='comment-link' expr:href='data:post.createLinkUrl' expr:id='data:widget.instanceId + &quot;_backlinks-create-link&quot;' target='_blank'><data:post.createLinkLabel/></a>
 </p>
 </b:includable>
-<b:includable id='breadcrumb' var='posts'>
+    <b:includable id='breadcrumb' var='posts'>
 <b:if cond='data:blog.homepageUrl != data:blog.url'>
 <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
 <div class='breadcrumbs'><span><a expr:href='data:blog.homepageUrl' rel='nofollow'/></span>
@@ -769,7 +753,7 @@ loadCSS("https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");l
 </b:if>
 </b:if>
 </b:includable>
-<b:includable id='comment-form' var='post'>
+    <b:includable id='comment-form' var='post'>
 <div class='comment-form'>
 <a name='comment-form'/>
 <b:if cond='data:mobile'>
@@ -793,7 +777,7 @@ loadCSS("https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");l
     </script>
   </div>
 </b:includable>
-<b:includable id='commentDeleteIcon' var='comment'>
+    <b:includable id='commentDeleteIcon' var='comment'>
 <span expr:class='&quot;item-control &quot; + data:comment.adminClass'>
 <b:if cond='data:showCmtPopup'>
 <div class='goog-toggle-button'>
@@ -804,7 +788,7 @@ loadCSS("https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");l
 </b:if>
 </span>
 </b:includable>
-<b:includable id='comment_count_picker' var='post'>
+    <b:includable id='comment_count_picker' var='post'>
 <b:if cond='data:post.commentSource == 1'>
 <span class='cmt_count_iframe_holder' expr:data-count='data:post.numComments' expr:data-onclick='data:post.addCommentOnclick' expr:data-post-url='data:post.url' expr:data-url='data:post.canonicalUrl'>
 </span>
@@ -814,7 +798,7 @@ loadCSS("https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");l
     </a>
 </b:if>
 </b:includable>
-<b:includable id='comment_picker' var='post'>
+    <b:includable id='comment_picker' var='post'>
 <b:if cond='data:post.commentSource == 1'>
 <b:include data='post' name='iframe_comments'/>
 <b:else/>
@@ -825,7 +809,7 @@ loadCSS("https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");l
 </b:if>
 </b:if>
 </b:includable>
-<b:includable id='comments' var='post'>
+    <b:includable id='comments' var='post'>
 <b:if cond='data:comment.authorUrl'>
 <a expr:href='data:comment.authorUrl' expr:title='data:comment.author' rel='nofollow' target='_blank'><data:comment.author/></a>
 <b:else/>
@@ -1022,7 +1006,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 //]]>
 </script>
 </b:includable>
-<b:includable id='feedLinks'>
+    <b:includable id='feedLinks'>
 <b:if cond='data:blog.pageType != &quot;item&quot;'> <!-- Blog feed links -->
     <b:if cond='data:feedLinks'>
 <div class='blog-feeds'>
@@ -1041,7 +1025,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 </div>
 </b:if>
 </b:includable>
-<b:includable id='feedLinksBody' var='links'>
+    <b:includable id='feedLinksBody' var='links'>
 <div class='feed-links'>
 <data:feedLinksMsg/>
 <b:loop values='data:links' var='f'>
@@ -1049,7 +1033,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 </b:loop>
 </div>
 </b:includable>
-<b:includable id='iframe_comments' var='post'>
+    <b:includable id='iframe_comments' var='post'>
 <b:if cond='data:post.allowIframeComments'>
     <script expr:src='data:post.iframeCommentSrc' type='text/javascript'/>
     <div class='cmt_iframe_holder' expr:data-href='data:post.canonicalUrl' expr:data-viewtype='data:post.viewType'/>
@@ -1058,7 +1042,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
     </b:if>
   </b:if>
 </b:includable>
-      <b:includable id='mobile-index-post' var='post'>
+    <b:includable id='mobile-index-post' var='post'>
   <div class='mobile-date-outer date-outer'>
     <b:if cond='data:post.dateHeader'>
       <div class='date-header'>
@@ -1091,7 +1075,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
     </div>
   </div>
 </b:includable>
-      <b:includable id='mobile-main' var='top'>
+    <b:includable id='mobile-main' var='top'>
     <!-- posts -->
     <div class='blog-posts hfeed'>
       <b:include data='top' name='status-message'/>
@@ -1107,7 +1091,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
     </div>
    <b:include name='mobile-nextprev'/>
 </b:includable>
-      <b:includable id='mobile-nextprev'>
+    <b:includable id='mobile-nextprev'>
 <!-- Mobile Page -->
   <div class='blog-pager' id='blog-pager'>
     <b:if cond='data:newerPageUrl'>
@@ -1129,7 +1113,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
   </div>
   <div class='clear'/>
 </b:includable>
-      <b:includable id='mobile-post' var='post'>
+    <b:includable id='mobile-post' var='post'>
   <div class='date-outer'>
     <b:if cond='data:post.dateHeader'>
       <h2 class='date-header'><span><data:post.dateHeader/></span></h2>
@@ -1209,7 +1193,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
     </div>
   </div>
 </b:includable>
-      <b:includable id='nextprev'>
+    <b:includable id='nextprev'>
 <b:if cond='data:blog.pageType != &quot;item&quot;'>
 <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
       <div class='blog-pager' id='blog-pager'>
@@ -1234,7 +1218,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 </b:if>
   <div class='clear'/>
 </b:includable>
-      <b:includable id='post' var='post'>
+    <b:includable id='post' var='post'>
   <article class='post hentry'>
 <b:if cond='data:post.title'>
    <b:if cond='data:blog.pageType != &quot;item&quot;'>
@@ -1367,11 +1351,11 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
     <a expr:href='data:post.url'>
       <div class='simple-thumbnail'>
         <b:if cond='data:post.firstImageUrl'>
-          <img expr:alt='data:post.title' expr:src='data:post.firstImageUrl' expr:title='data:post.title' loading='lazy' decoding='async'/>
+          <img decoding='async' expr:alt='data:post.title' expr:src='data:post.firstImageUrl' expr:title='data:post.title' loading='lazy'/>
         <b:elseif cond='data:post.thumbnailUrl'/>
-          <img expr:alt='data:post.title' expr:src='data:post.thumbnailUrl' expr:title='data:post.title' loading='lazy' decoding='async'/>
+          <img decoding='async' expr:alt='data:post.title' expr:src='data:post.thumbnailUrl' expr:title='data:post.title' loading='lazy'/>
         <b:else/>
-          <img expr:alt='data:post.title' expr:title='data:post.title' src='https://foe.tu.edu.np/assets/logo.png' loading='lazy' decoding='async'/>
+          <img decoding='async' expr:alt='data:post.title' expr:title='data:post.title' loading='lazy' src='https://foe.tu.edu.np/assets/logo.png'/>
         </b:if>
       </div>
     </a>
@@ -1418,7 +1402,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 </b:if>		
 </article> 
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
-<div class='tombol-berbagi-simple' aria-label='Share this post'>
+<div aria-label='Share this post' class='tombol-berbagi-simple'>
 <div class='tombol-berbagi-simple-fb'>
 <a class='tombol-berbagi-fb-label' expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:post.url' rel='nofollow noopener noreferrer' target='_blank'>Share on Facebook</a>
 </div>
@@ -1505,7 +1489,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 </div>
 </b:if>
 </b:includable>
-      <b:includable id='postQuickEdit' var='post'>
+    <b:includable id='postQuickEdit' var='post'>
   <b:if cond='data:post.editUrl'>
     <span expr:class='&quot;item-control &quot; + data:post.adminClass'>
       <a expr:href='data:post.editUrl' expr:title='data:top.editPostMsg'>
@@ -1514,10 +1498,10 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
     </span>
   </b:if>
 </b:includable>
-      <b:includable id='shareButtons' var='post'>
+    <b:includable id='shareButtons' var='post'>
   <b:if cond='data:top.showEmailButton'><a class='goog-inline-block share-button sb-email' expr:href='data:post.sharePostUrl + &quot;&amp;target=email&quot;' expr:title='data:top.emailThisMsg' target='_blank'><span class='share-button-link-text'><data:top.emailThisMsg/></span></a></b:if><b:if cond='data:top.showBlogThisButton'><a class='goog-inline-block share-button sb-blog' expr:href='data:post.sharePostUrl + &quot;&amp;target=blog&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=270,width=475\&quot;); return false;&quot;' expr:title='data:top.blogThisMsg' target='_blank'><span class='share-button-link-text'><data:top.blogThisMsg/></span></a></b:if><b:if cond='data:top.showTwitterButton'><a class='goog-inline-block share-button sb-twitter' expr:href='data:post.sharePostUrl + &quot;&amp;target=twitter&quot;' expr:title='data:top.shareToTwitterMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToTwitterMsg/></span></a></b:if><b:if cond='data:top.showFacebookButton'><a class='goog-inline-block share-button sb-facebook' expr:href='data:post.sharePostUrl + &quot;&amp;target=facebook&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' expr:title='data:top.shareToFacebookMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToFacebookMsg/></span></a></b:if><b:if cond='data:top.showPinterestButton'><a class='goog-inline-block share-button sb-pinterest' expr:href='data:post.sharePostUrl + &quot;&amp;target=pinterest&quot;' expr:title='data:top.shareToPinterestMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToPinterestMsg/></span></a></b:if><b:if cond='data:top.showDummy'><div class='goog-inline-block dummy-container'><data:post.dummyTag/></div></b:if>
 </b:includable>
-      <b:includable id='status-message'>
+    <b:includable id='status-message'>
   <b:if cond='data:navMessage'>
   <div class='status-msg-wrap'>
     <div class='status-msg-body'>
@@ -1532,7 +1516,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
   <div style='clear: both;'/>
   </b:if>
 </b:includable>
-      <b:includable id='threaded-comment-form' var='post'>
+    <b:includable id='threaded-comment-form' var='post'>
   <div class='comment-form'>
     <a name='comment-form'/>
     <b:if cond='data:mobile'>
@@ -1553,7 +1537,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
     </script>
   </div>
 </b:includable>
-<b:includable id='threaded_comment_js' var='post'>
+    <b:includable id='threaded_comment_js' var='post'>
   <script async='async' expr:src='data:post.commentSrc' type='text/javascript'/>
   <script type='text/javascript'>
     (function() {
@@ -1734,7 +1718,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 // ]]>
   </script>
 </b:includable>
-<b:includable id='threaded_comments' var='post'>
+    <b:includable id='threaded_comments' var='post'>
 <div class='comments' id='comments'>
 <a name='comments'/>
 <h4><data:post.commentLabelFull/></h4>
@@ -1764,7 +1748,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 </div>
 </div>
 </b:includable>
-</b:widget>
+  </b:widget>
 </b:section>
 </div>
 <div class='clear'/>
@@ -1772,19 +1756,19 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 <aside id='sidebar-wrapper' itemscope='itemscope' itemtype='https://schema.org/WPSideBar'>
 <div class='sidebar-inner'>
 <b:section class='sidebar section' id='sidebar' preferred='yes'>
-<b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive'>
-<b:widget-settings>
-<b:widget-setting name='showStyle'>FLAT</b:widget-setting>
-<b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
-<b:widget-setting name='showWeekEnd'>true</b:widget-setting>
-<b:widget-setting name='monthPattern'>MMMM yyyy</b:widget-setting>
-<b:widget-setting name='dayPattern'>MMM dd</b:widget-setting>
-<b:widget-setting name='weekPattern'>MM/dd</b:widget-setting>
-<b:widget-setting name='chronological'>false</b:widget-setting>
-<b:widget-setting name='showPosts'>true</b:widget-setting>
-<b:widget-setting name='frequency'>MONTHLY</b:widget-setting>
-</b:widget-settings>
-<b:includable id='main'>
+  <b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='showStyle'>FLAT</b:widget-setting>
+      <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
+      <b:widget-setting name='showWeekEnd'>true</b:widget-setting>
+      <b:widget-setting name='monthPattern'>MMMM yyyy</b:widget-setting>
+      <b:widget-setting name='dayPattern'>MMM dd</b:widget-setting>
+      <b:widget-setting name='weekPattern'>MM/dd</b:widget-setting>
+      <b:widget-setting name='chronological'>false</b:widget-setting>
+      <b:widget-setting name='showPosts'>true</b:widget-setting>
+      <b:widget-setting name='frequency'>MONTHLY</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
 <b:if cond='data:title != &quot;&quot;'>
 <h2><data:title/></h2>
 </b:if>
@@ -1799,7 +1783,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 <b:include name='quickedit'/>
 </div>
 </b:includable>
-<b:includable id='flat' var='data'>
+    <b:includable id='flat' var='data'>
 <ul class='flat'>
 <b:loop values='data:data' var='i'>
 <li class='archivedate'>
@@ -1808,7 +1792,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 </b:loop>
 </ul>
 </b:includable>
-<b:includable id='interval' var='intervalData'>
+    <b:includable id='interval' var='intervalData'>
 <b:loop values='data:intervalData' var='interval'>
 <ul class='hierarchy'>
 <li expr:class='&quot;archivedate &quot; + data:interval.expclass'>
@@ -1823,7 +1807,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 </ul>
 </b:loop>
 </b:includable>
-<b:includable id='menu' var='data'>
+    <b:includable id='menu' var='data'>
 <select expr:id='data:widget.instanceId + &quot;_ArchiveMenu&quot;'>
 <option value=''><data:title/></option>
 <b:loop values='data:data' var='i'>
@@ -1831,14 +1815,14 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 </b:loop>
 </select>
 </b:includable>
-<b:includable id='posts' var='posts'>
+    <b:includable id='posts' var='posts'>
 <ul class='posts'>
 <b:loop values='data:posts' var='post'>
 <li><a expr:href='data:post.url'><data:post.title/></a></li>
 </b:loop>
 </ul>
 </b:includable>
-<b:includable id='toggle' var='interval'>
+    <b:includable id='toggle' var='interval'>
 <a class='toggle' href='javascript:void(0)'>
 <span expr:class='&quot;zippy&quot; + (data:interval.expclass == &quot;expanded&quot; ? &quot; toggle-open&quot; : &quot;&quot;)'>
 <b:if cond='data:interval.expclass == &quot;expanded&quot;'>
@@ -1851,9 +1835,9 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 </span>
 </a>
 </b:includable>
-</b:widget>
-<b:widget id='BlogSearch1' locked='false' title='Search This Blog' type='BlogSearch'>
-<b:includable id='main'>
+  </b:widget>
+  <b:widget id='BlogSearch1' locked='false' title='Search This Blog' type='BlogSearch' version='1'>
+    <b:includable id='main'>
     <!-- only display title if it's non-empty -->
     <b:if cond='data:title != &quot;&quot;'>
 <h2 class='title'><data:title/></h2>
@@ -1879,18 +1863,18 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 </div>
 <b:include name='quickedit'/>
 </b:includable>
-</b:widget>
-<b:widget id='ReportAbuse1' locked='false' title='' type='ReportAbuse'>
-<b:includable id='main'>
+  </b:widget>
+  <b:widget id='ReportAbuse1' locked='false' title='' type='ReportAbuse' version='1'>
+    <b:includable id='main'>
 <b:include name='reportAbuse'/>
 </b:includable>
-</b:widget>
-<b:widget id='PageList1' locked='false' title='Pages' type='PageList'>
-<b:widget-settings>
-<b:widget-setting name='pageListJson'><![CDATA[{"home":{"href":"https://www.ksumanadhikari.com.np/","position":0,"title":"Home"}}]]></b:widget-setting>
-<b:widget-setting name='homeTitle'>Home</b:widget-setting>
-</b:widget-settings>
-<b:includable id='main'>
+  </b:widget>
+  <b:widget id='PageList1' locked='false' title='Pages' type='PageList' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='pageListJson'><![CDATA[{"home":{"href":"https://www.ksumanadhikari.com.np/","position":0,"title":"Home"}}]]></b:widget-setting>
+      <b:widget-setting name='homeTitle'>Home</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
 <b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>
 <div class='widget-content'>
 <b:if cond='data:mobile'>
@@ -1922,13 +1906,13 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 <b:include name='quickedit'/>
 </div>
 </b:includable>
-</b:widget>
-<b:widget id='Profile1' locked='false' title='Contributors' type='Profile'>
-<b:widget-settings>
-<b:widget-setting name='showaboutme'>true</b:widget-setting>
-<b:widget-setting name='showlocation'>false</b:widget-setting>
-</b:widget-settings>
-<b:includable id='main'>
+  </b:widget>
+  <b:widget id='Profile1' locked='false' title='Contributors' type='Profile' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='showaboutme'>true</b:widget-setting>
+      <b:widget-setting name='showlocation'>false</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
 <b:if cond='data:title != &quot;&quot;'>
 <h2><data:title/></h2>
 </b:if>
@@ -1960,16 +1944,16 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 <b:include name='quickedit'/>
 </div>
 </b:includable>
-</b:widget>
-<b:widget id='FeaturedPost1' locked='false' title='Featured Post' type='FeaturedPost'>
-<b:widget-settings>
-<b:widget-setting name='showSnippet'>true</b:widget-setting>
-<b:widget-setting name='showPostTitle'>true</b:widget-setting>
-<b:widget-setting name='postId'>4767326668272679352</b:widget-setting>
-<b:widget-setting name='showFirstImage'>true</b:widget-setting>
-<b:widget-setting name='useMostRecentPost'>true</b:widget-setting>
-</b:widget-settings>
-<b:includable id='main'>
+  </b:widget>
+  <b:widget id='FeaturedPost1' locked='false' title='Featured Post' type='FeaturedPost' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='showSnippet'>true</b:widget-setting>
+      <b:widget-setting name='showPostTitle'>true</b:widget-setting>
+      <b:widget-setting name='postId'>4767326668272679352</b:widget-setting>
+      <b:widget-setting name='showFirstImage'>true</b:widget-setting>
+      <b:widget-setting name='useMostRecentPost'>true</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
   <!-- Only display title if it's non-empty -->
   <b:if cond='data:title != &quot;&quot;'>
 <h2 class='title'><data:title/></h2>
@@ -1977,7 +1961,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 <b:include name='content'/>
 <b:include name='quickedit'/>
 </b:includable>
-<b:includable id='content'>
+    <b:includable id='content'>
 <div class='post-summary'>
 <b:if cond='data:showPostTitle and data:postTitle != &quot;&quot;'>
 <h3><a expr:href='data:postUrl'><data:postTitle/></a></h3>
@@ -1998,18 +1982,18 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
     }
   </style>
 </b:includable>
-</b:widget>
-<b:widget id='LinkList1' locked='false' title='Main Menu' type='LinkList' version='2' visible='true'>
-<b:widget-settings>
-<b:widget-setting name='sorting'>NONE</b:widget-setting>
-<b:widget-setting name='text-1'>Contact Us</b:widget-setting>
-<b:widget-setting name='link-1'>https://www.ksumanadhikari.com.np/p/qr.html</b:widget-setting>
-<b:widget-setting name='text-0'>Home Page</b:widget-setting>
-<b:widget-setting name='link-2'>https://www.ksumanadhikari.com.np/p/bio.html</b:widget-setting>
-<b:widget-setting name='link-0'>https://www.ksumanadhikari.com.np</b:widget-setting>
-<b:widget-setting name='text-2'>About Us</b:widget-setting>
-</b:widget-settings>
-<b:includable id='main'>
+  </b:widget>
+  <b:widget id='LinkList1' locked='false' title='Main Menu' type='LinkList' version='2' visible='true'>
+    <b:widget-settings>
+      <b:widget-setting name='sorting'>NONE</b:widget-setting>
+      <b:widget-setting name='text-1'>Contact Us</b:widget-setting>
+      <b:widget-setting name='link-1'>https://www.ksumanadhikari.com.np/p/qr.html</b:widget-setting>
+      <b:widget-setting name='text-0'>Home Page</b:widget-setting>
+      <b:widget-setting name='link-2'>https://www.ksumanadhikari.com.np/p/bio.html</b:widget-setting>
+      <b:widget-setting name='link-0'>https://www.ksumanadhikari.com.np</b:widget-setting>
+      <b:widget-setting name='text-2'>About Us</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
 <ul>
 <b:loop values='data:links' var='link'>
 <li>
@@ -2020,7 +2004,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 </b:loop>
 </ul>
 </b:includable>
-<b:includable id='content'>
+    <b:includable id='content'>
 <div class='widget-content'>
 <ul>
 <b:loop values='data:links' var='link'>
@@ -2029,10 +2013,10 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 </ul>
 </div>
 </b:includable>
-</b:widget>
-<b:widget id='HTML3' locked='false' title='Explore My Blogs' type='HTML' version='2' visible='true'>
-<b:widget-settings>
-<b:widget-setting name='content'><![CDATA[<div class="blog-links">
+  </b:widget>
+  <b:widget id='HTML3' locked='false' title='Explore My Blogs' type='HTML' version='2' visible='true'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[<div class="blog-links">
 
               <a class="blog-card" href="https://c.ksumanadhikari.com.np/">
                 <div class="blog-card-image">C</div>
@@ -2055,32 +2039,32 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
               </a>
 
             </div>]]></b:widget-setting>
-</b:widget-settings>
-<b:includable id='main'>
+    </b:widget-settings>
+    <b:includable id='main'>
 <div class='widget-content'>
 <data:content/>
 </div>
 </b:includable>
-</b:widget>
-<b:widget id='HTML2' locked='false' title='A Message From Suman' type='HTML' version='2' visible='true'>
-<b:widget-settings>
-<b:widget-setting name='content'><![CDATA[<div class="message-area">
+  </b:widget>
+  <b:widget id='HTML2' locked='false' title='A Message From Suman' type='HTML' version='2' visible='true'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[<div class="message-area">
                 <div class="message-image">IMAGE</div>
                 <div>
                   <h2>Hello, I'm Suman.</h2>
                   <p>Welcome to my personal website. Explore my work, learning resources and projects.</p>
                 </div>
               </div>]]></b:widget-setting>
-</b:widget-settings>
-<b:includable id='main'>
+    </b:widget-settings>
+    <b:includable id='main'>
 <div class='widget-content'>
 <data:content/>
 </div>
 </b:includable>
-</b:widget>
-<b:widget id='HTML1' locked='false' title='Featured Video' type='HTML' version='2' visible='true'>
-<b:widget-settings>
-<b:widget-setting name='content'><![CDATA[<div class="video-frame">
+  </b:widget>
+  <b:widget id='HTML1' locked='false' title='Featured Video' type='HTML' version='2' visible='true'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[<div class="video-frame">
                 <iframe
                   src="https://www.youtube.com/embed/VIDEO_ID"
                   title="Featured video"
@@ -2088,34 +2072,34 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
                 
               </iframe
 ></div>]]></b:widget-setting>
-</b:widget-settings>
-<b:includable id='main'>
+    </b:widget-settings>
+    <b:includable id='main'>
 <div class='widget-content'>
 <data:content/>
 </div>
 </b:includable>
-</b:widget>
-<b:widget id='AdSense1' locked='false' title='' type='AdSense'>
-<b:includable id='main'>
+  </b:widget>
+  <b:widget id='AdSense1' locked='false' title='' type='AdSense' version='1'>
+    <b:includable id='main'>
 <div class='widget-content'>
 <data:adCode/>
 <b:include name='quickedit'/>
 </div>
 </b:includable>
-</b:widget>
-<b:widget id='AdSense2' locked='false' title='' type='AdSense'>
-<b:includable id='main'>
+  </b:widget>
+  <b:widget id='AdSense2' locked='false' title='' type='AdSense' version='1'>
+    <b:includable id='main'>
 <div class='widget-content'>
 <data:adCode/>
 <b:include name='quickedit'/>
 </div>
 </b:includable>
-</b:widget>
-<b:widget id='Attribution1' locked='false' title='' type='Attribution'>
-<b:widget-settings>
-<b:widget-setting name='copyright'/>
-</b:widget-settings>
-<b:includable id='main'>
+  </b:widget>
+  <b:widget id='Attribution1' locked='false' title='' type='Attribution' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='copyright'/>
+    </b:widget-settings>
+    <b:includable id='main'>
 <div class='widget-content' style='text-align: center;'>
 <b:if cond='data:attribution != &quot;&quot;'>
 <data:attribution/>
@@ -2123,7 +2107,7 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 </div>
 <b:include name='quickedit'/>
 </b:includable>
-</b:widget>
+  </b:widget>
 </b:section>
 </div>
 </aside>
@@ -2136,15 +2120,15 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 <div id='footer-sgwidget'>
 <div class='footer-widget' id='footx1'>
 <b:section class='footer' id='footer1'>
-<b:widget id='Label1' locked='false' title='Explore Topics' type='Label' version='1'>
-<b:widget-settings>
-<b:widget-setting name='sorting'>ALPHA</b:widget-setting>
-<b:widget-setting name='display'>LIST</b:widget-setting>
-<b:widget-setting name='selectedLabelsList'/>
-<b:widget-setting name='showType'>ALL</b:widget-setting>
-<b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
-</b:widget-settings>
-<b:includable id='main'>
+  <b:widget id='Label1' locked='false' title='Label' type='Label' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
+      <b:widget-setting name='display'>LIST</b:widget-setting>
+      <b:widget-setting name='selectedLabelsList'/>
+      <b:widget-setting name='showType'>ALL</b:widget-setting>
+      <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
 <b:if cond='data:title'>
 <h2><data:title/></h2>
 </b:if>
@@ -2180,19 +2164,19 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 </b:if>
 </div>
 </b:includable>
-</b:widget>
+  </b:widget>
 </b:section>
 </div>
 <div class='footer-widget' id='footx2'>
 <b:section class='footer' id='footer2'>
-<b:widget id='PopularPosts1' locked='false' title='Popular' type='PopularPosts' version='1'>
-<b:widget-settings>
-<b:widget-setting name='numItemsToShow'>3</b:widget-setting>
-<b:widget-setting name='showThumbnails'>true</b:widget-setting>
-<b:widget-setting name='showSnippets'>true</b:widget-setting>
-<b:widget-setting name='timeRange'>LAST_YEAR</b:widget-setting>
-</b:widget-settings>
-<b:includable id='main'>
+  <b:widget id='PopularPosts1' locked='false' title='Popular' type='PopularPosts' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='numItemsToShow'>3</b:widget-setting>
+      <b:widget-setting name='showThumbnails'>true</b:widget-setting>
+      <b:widget-setting name='showSnippets'>true</b:widget-setting>
+      <b:widget-setting name='timeRange'>LAST_YEAR</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
 <b:if cond='data:title'><h3><data:title/></h3></b:if>
 <div class='widget-content popular-posts'>
 <ul>
@@ -2242,40 +2226,17 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 </ul>
 </div>
 </b:includable>
-</b:widget>
+  </b:widget>
 </b:section>
 </div>
 <div class='footer-widget' id='footx3'>
-<b:section class='footer' id='footer3'>
-<b:widget id='HTML4' locked='false' title='About &amp; Connect' type='HTML' version='2' visible='true'>
-<b:widget-settings>
-<b:widget-setting name='content'><![CDATA[
-<div class="footer-about">
-  <div class="footer-brand-mark">SA<span>.</span></div>
-  <h3>Suman Adhikari</h3>
-  <p>Computer education, programming tutorials and practical learning resources to help you learn, build and grow.</p>
-  <div class="footer-connect-links">
-    <a href="https://www.ksumanadhikari.com.np/" rel="noopener">Main Website</a>
-    <a href="https://www.youtube.com/@ksumanadhikari" rel="noopener" target="_blank">YouTube</a>
-    <a href="https://x.com/ksumanadhikari" rel="noopener" target="_blank">X / Twitter</a>
-  </div>
-</div>
-]]></b:widget-setting>
-</b:widget-settings>
-<b:includable id='main'>
-<div class='widget-content'>
-<data:content/>
-</div>
-</b:includable>
-</b:widget>
-</b:section>
+<b:section class='footer' id='footer3'/>
 </div>
 </div>
 </div>
 <div id='footer-credit'>
-<div class='footer-credit-inner'>
-<span>© <data:blog.title/>. All rights reserved.</span>
-<span>Designed &amp; maintained by <a href='https://www.ksumanadhikari.com.np/' rel='noopener'>Suman Adhikari</a></span>
+<div class='tscredit' id='tscredit'>
+@ksumanadhikari
 </div>
 </div>
 </footer>
