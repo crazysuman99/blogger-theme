@@ -499,3 +499,29 @@ a.blog-pager-newer-link,a.blog-pager-older-link,a.home-link{font-family:Fontawes
       height: auto;
       object-fit: scale-down;
     }
+
+
+/* =========================================================
+   POST CARD + THUMBNAIL POLISH
+   Applies to the homepage/archive card grid only.
+   ========================================================= */
+.blog-posts.all-posts-one-page{align-items:stretch!important;gap:26px!important}
+.blog-posts.all-posts-one-page .post-outer{min-width:0;height:100%;overflow:hidden;background:#fff;border:1px solid #e5eaf1!important;border-radius:14px;box-shadow:0 3px 14px rgba(20,35,60,.055);transition:transform .24s ease,box-shadow .24s ease,border-color .24s ease}
+.blog-posts.all-posts-one-page .post-outer:hover{transform:translateY(-5px);border-color:#d2dbe8!important;box-shadow:0 14px 30px rgba(20,35,60,.13)}
+.blog-posts.all-posts-one-page .post{display:flex;flex-direction:column;height:100%;margin:0!important;padding:0!important;background:transparent}
+.blog-posts.all-posts-one-page .post-title{order:0;margin:17px 18px 10px!important;padding:0!important;text-align:left!important;font-size:clamp(17px,1.45vw,21px)!important;line-height:1.35!important;letter-spacing:0!important;text-transform:none!important;overflow-wrap:anywhere}
+.blog-posts.all-posts-one-page .post-title a{color:#172033!important;text-decoration:none;transition:color .2s ease}
+.blog-posts.all-posts-one-page .post-title a:hover{color:#e94335!important}
+.blog-posts.all-posts-one-page .post-information{order:1;margin:0 18px 12px!important;padding:8px 0!important;border-top:1px solid #edf0f4!important;border-bottom:1px solid #edf0f4!important;text-align:left!important;font-size:11px!important;line-height:1.5;color:#7b8494}
+.blog-posts.all-posts-one-page .simple-thumbnail{order:-1;position:relative;display:block;width:100%;aspect-ratio:16/9;margin:0!important;overflow:hidden;border:0!important;border-radius:0!important;background:linear-gradient(135deg,#edf1f6,#dfe6ef)}
+.blog-posts.all-posts-one-page .simple-thumbnail:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(15,23,42,0) 58%,rgba(15,23,42,.13));opacity:.7;transition:opacity .25s ease}
+.blog-posts.all-posts-one-page .simple-thumbnail img{display:block!important;width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;margin:0!important;padding:0!important;object-fit:cover!important;object-position:center;border:0!important;border-radius:0!important;background:#edf1f6;transform:scale(1.001);transition:transform .55s cubic-bezier(.2,.65,.3,1),filter .35s ease}
+.blog-posts.all-posts-one-page .post-outer:hover .simple-thumbnail img{transform:scale(1.065);filter:saturate(1.06)}
+.blog-posts.all-posts-one-page .post-outer:hover .simple-thumbnail:after{opacity:1}
+.blog-posts.all-posts-one-page .post-body{order:2;flex:1 0 auto;margin:0 18px 19px!important;padding:0!important;max-width:none!important;color:#667085;font-size:13px;line-height:1.7!important;text-align:left}
+.blog-posts.all-posts-one-page .post-body.entry-content{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;overflow:hidden}
+.blog-posts.all-posts-one-page .post-body img,.blog-posts.all-posts-one-page .post-body iframe{display:none!important}
+.blog-posts.all-posts-one-page .post-header,.blog-posts.all-posts-one-page .post-footer{display:none!important}
+@media(max-width:960px){.blog-posts.all-posts-one-page{gap:20px!important}.blog-posts.all-posts-one-page .post-title{font-size:18px!important}}
+@media(max-width:560px){.blog-posts.all-posts-one-page{gap:17px!important}.blog-posts.all-posts-one-page .post-outer{border-radius:12px}.blog-posts.all-posts-one-page .post-title{margin:14px 14px 8px!important;font-size:18px!important}.blog-posts.all-posts-one-page .post-information{margin:0 14px 10px!important}.blog-posts.all-posts-one-page .post-body{margin:0 14px 15px!important;font-size:13px}}
+@media(prefers-reduced-motion:reduce){.blog-posts.all-posts-one-page .post-outer,.blog-posts.all-posts-one-page .simple-thumbnail img,.blog-posts.all-posts-one-page .simple-thumbnail:after{transition:none!important}.blog-posts.all-posts-one-page .post-outer:hover{transform:none}}
