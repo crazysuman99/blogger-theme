@@ -837,3 +837,120 @@ body.item #sidebar-wrapper .profile-img{
     gap:14px;
   }
 }
+
+
+/* =========================================================
+   NAV SEARCH + SINGLE POST SIDEBAR FIX
+   Keep the search field inside the page and style sidebar widgets.
+   ========================================================= */
+@media (min-width:701px){
+  #nav{
+    display:flex!important;
+    flex-wrap:wrap!important;
+    align-items:center!important;
+    width:100%!important;
+    box-sizing:border-box!important;
+    overflow:visible!important;
+  }
+  #nav .main-menu-section{
+    display:block!important;
+    flex:1 1 100%!important;
+    width:100%!important;
+    min-width:0!important;
+  }
+  #nav .shnav{
+    display:flex!important;
+    flex-wrap:wrap!important;
+    float:none!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+  }
+  #nav .shnav>li{float:none!important;flex:0 0 auto!important;min-width:0!important}
+  #nav #search-form{
+    display:block!important;
+    float:none!important;
+    flex:0 1 280px!important;
+    width:280px!important;
+    max-width:100%!important;
+    min-width:0!important;
+    margin:8px 12px 10px auto!important;
+    box-sizing:border-box!important;
+  }
+  #nav #search-form table{display:block!important;width:100%!important;table-layout:fixed!important}
+  #nav #search-form td.search-box{display:block!important;width:100%!important;box-sizing:border-box!important}
+  #nav #search-form input#search-box{display:block!important;width:100%!important;max-width:none!important;min-width:0!important;box-sizing:border-box!important;padding:10px 76px 10px 12px!important;border:1px solid #dfe3e8!important;border-radius:7px!important;background:#f8fafc!important}
+  #nav #search-form input#search-button{right:4px!important;top:4px!important;padding:7px 10px!important;border-radius:5px!important;background:#e94335!important;color:#fff!important}
+}
+@media(max-width:700px){
+  #nav{display:block!important;width:100%!important;max-width:100%!important;box-sizing:border-box!important;overflow:hidden!important}
+  #nav #search-form{display:block!important;float:none!important;width:100%!important;max-width:100%!important;margin:10px 0!important;padding:0 10px!important;box-sizing:border-box!important}
+  #nav #search-form table{width:100%!important;table-layout:fixed!important;margin:0!important}
+  #nav #search-form td.search-box{width:100%!important;box-sizing:border-box!important}
+  #nav #search-form input#search-box{width:100%!important;max-width:none!important;min-width:0!important;box-sizing:border-box!important;padding:10px 76px 10px 12px!important}
+  #nav #search-form input#search-button{right:4px!important;top:4px!important;padding:7px 10px!important}
+}
+
+/* Single-post article and sidebar columns */
+body.item #content-wrapper{display:flow-root;box-sizing:border-box;width:100%;max-width:100%;overflow:visible}
+body.item #post-wrapper{box-sizing:border-box;float:left;width:70%;max-width:70%;margin:10px 0;padding:0 20px}
+body.item #sidebar-wrapper{
+  box-sizing:border-box;display:block!important;float:right;width:30%;max-width:30%;
+  height:auto!important;min-height:1px;margin:10px 0;padding:16px;
+  opacity:1!important;visibility:visible!important;background:#f8fafc;
+  border-left:1px solid #e5e9f0;overflow:hidden
+}
+body.item #sidebar-wrapper .widget{
+  display:block!important;box-sizing:border-box;width:100%;min-width:0;
+  margin:0 0 18px!important;padding:16px!important;
+  background:#fff;border:1px solid #e5e9f0;border-radius:10px;
+  box-shadow:0 3px 12px rgba(23,32,51,.045)
+}
+body.item #sidebar-wrapper .widget h2,
+body.item #sidebar-wrapper .widget h3{
+  margin:0 0 12px!important;padding:0 0 10px!important;
+  color:#172033;font-size:15px;line-height:1.35;
+  border-bottom:1px solid #e8ecf2;position:relative
+}
+body.item #sidebar-wrapper .widget h2:after,
+body.item #sidebar-wrapper .widget h3:after{
+  content:"";position:absolute;left:0;bottom:-1px;width:42px;height:2px;background:#e94335
+}
+body.item #sidebar-wrapper .widget-content{min-width:0;color:#596579;font-size:13px;line-height:1.7}
+body.item #sidebar-wrapper .widget-content ul{
+  list-style:none!important;margin:8px 0 0!important;padding:0!important
+}
+body.item #sidebar-wrapper .widget-content ul li{
+  display:block;margin:0!important;padding:8px 2px 8px 17px!important;
+  position:relative;border-bottom:1px dashed #e5e9f0;line-height:1.55
+}
+body.item #sidebar-wrapper .widget-content ul li:last-child{border-bottom:0}
+body.item #sidebar-wrapper .widget-content ul li:before{
+  content:"";position:absolute;left:2px;top:15px;width:6px;height:6px;
+  border-radius:50%;background:#e94335
+}
+body.item #sidebar-wrapper .widget-content a{color:#344054;text-decoration:none;overflow-wrap:anywhere}
+body.item #sidebar-wrapper .widget-content a:hover{color:#e94335}
+body.item #sidebar-wrapper #BlogSearch1_form,
+body.item #sidebar-wrapper .BlogSearch .widget-content,
+body.item #sidebar-wrapper .BlogSearch form{width:100%;max-width:100%;min-width:0;box-sizing:border-box}
+body.item #sidebar-wrapper .BlogSearch table{display:block;width:100%;max-width:100%;table-layout:fixed;margin:0!important}
+body.item #sidebar-wrapper .BlogSearch tbody,
+body.item #sidebar-wrapper .BlogSearch tr{display:block;width:100%}
+body.item #sidebar-wrapper .BlogSearch td.gsc-input{display:block;width:100%;padding:0 0 9px!important;box-sizing:border-box}
+body.item #sidebar-wrapper .BlogSearch td.gsc-search-button{display:block;width:100%;padding:0!important;box-sizing:border-box}
+body.item #sidebar-wrapper .BlogSearch input.gsc-input{
+  display:block;width:100%!important;max-width:100%;min-width:0;box-sizing:border-box;
+  height:40px;padding:8px 10px;border:1px solid #dfe3e8;border-radius:6px;background:#fff
+}
+body.item #sidebar-wrapper .BlogSearch input.gsc-search-button{
+  display:block;width:100%;height:38px;box-sizing:border-box;border:0;border-radius:6px;
+  background:#e94335;color:#fff;cursor:pointer
+}
+@media(max-width:768px){
+  body.item #post-wrapper{float:none;width:100%;max-width:100%;padding:0 12px}
+  body.item #sidebar-wrapper{
+    clear:both;float:none;width:100%;max-width:100%;margin:20px 0 0;
+    padding:12px;border-left:0;border-top:1px solid #e5e9f0
+  }
+}
