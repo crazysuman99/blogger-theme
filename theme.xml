@@ -121,7 +121,7 @@ body#layout #banner .add_widget,#layout #banner2 .add_widget{width:80%;margin:5p
 ]]>
 </b:template-skin>
 <!-- External overall CSS via jsDelivr -->
-<link href='https://cdn.jsdelivr.net/gh/crazysuman99/blogger-theme@dfb7366004d78fcda2fff0f68cd35fb2a772221f/css/overall.css' rel='stylesheet' type='text/css'/>
+<link href='https://cdn.jsdelivr.net/gh/crazysuman99/blogger-theme@1e5cce9c5a96990c102a3c1c79bb765aa050475c/css/overall.css' rel='stylesheet' type='text/css'/>
 <!-- Dedicated homepage/archive post card styles -->
 <link href='https://cdn.jsdelivr.net/gh/crazysuman99/blogger-theme@563c33f3ec73565cb41a8548444b98d8cafc87f3/css/post-cards.css' rel='stylesheet' type='text/css'/>
 
@@ -1402,18 +1402,15 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 </b:if>		
 </article> 
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
-<div class='tombol-berbagi-simple'>
+<div class='tombol-berbagi-simple' aria-label='Share this post'>
 <div class='tombol-berbagi-simple-fb'>
-<a class='tombol-berbagi-fb' expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:post.url + &quot;&amp;title=&quot; + data:post.title' rel='nofollow' target='_blank'/>
-<a class='tombol-berbagi-fb-label' expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:post.url + &quot;&amp;title=&quot; + data:post.title' rel='nofollow' target='_blank'> Share on Facebook</a>
+<a class='tombol-berbagi-fb-label' expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:post.url' rel='nofollow noopener noreferrer' target='_blank'>Share on Facebook</a>
 </div>
 <div class='tombol-berbagi-simple-tw'>
-<a class='tombol-berbagi-tw' expr:data-text='data:post.title' expr:data-url='data:post.url' href='https://twitter.com/share' rel='nofollow' target='_blank'/>
-<a class='tombol-berbagi-tw-label' expr:data-text='data:post.title' expr:data-url='data:post.url' href='https://twitter.com/share' rel='nofollow' target='_blank'>Share on Twitter</a>
+<a class='tombol-berbagi-tw-label' expr:href='&quot;https://twitter.com/intent/tweet?url=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title' rel='nofollow noopener noreferrer' target='_blank'>Share on X</a>
 </div>
 <div class='tombol-berbagi'>
-<a class='tombol-berbagi-lin' expr:href='&quot;https://www.linkedin.com/shareArticle?mini=true&amp;amp;url=&quot; + data:post.url + &quot;&amp;amp;title=&quot; + data:post.title + &quot;&amp;amp;summary=&quot; + data:post.snippets' rel='nofollow' target='_blank'/>
-<a class='tombol-berbagi-lin-label' expr:href='&quot;https://www.linkedin.com/shareArticle?mini=true&amp;amp;url=&quot; + data:post.url + &quot;&amp;amp;title=&quot; + data:post.title + &quot;&amp;amp;summary=&quot; + data:post.snippets' rel='nofollow' target='_blank'>Share on LinkedIn</a>
+<a class='tombol-berbagi-lin-label' expr:href='&quot;https://www.linkedin.com/sharing/share-offsite/?url=&quot; + data:post.url' rel='nofollow noopener noreferrer' target='_blank'>Share on LinkedIn</a>
 </div>
 </div>
 <div style='clear:both;'/>
