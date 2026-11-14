@@ -1346,24 +1346,17 @@ $(this).show().attr('src', ava.replace(/\/s[0-9]+(\-c)?\//,"/s55-c/"));
 
 <b:if cond='data:blog.pageType != &quot;item&quot;'>
   <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
-    <b:if cond='data:post.thumbnailUrl'>
-      <a expr:href='data:post.url'>
-        <div class='simple-thumbnail'>
-          <img expr:alt='data:post.title' expr:src='data:post.thumbnailUrl' expr:title='data:post.title'/>
-        </div>
-      </a>
-    <b:else/>
-      <a expr:href='data:post.url'>
-     
-        
-        
-        <div class='simple-thumbnail'>
-  <img expr:alt='data:post.title' expr:title='data:post.title' src='https://foe.tu.edu.np/assets/logo.png'/>
-</div>
-        
-        
-      </a>
-    </b:if>
+    <a expr:href='data:post.url'>
+      <div class='simple-thumbnail'>
+        <b:if cond='data:post.firstImageUrl'>
+          <img expr:alt='data:post.title' expr:src='data:post.firstImageUrl' expr:title='data:post.title' loading='lazy' decoding='async'/>
+        <b:elseif cond='data:post.thumbnailUrl'/>
+          <img expr:alt='data:post.title' expr:src='data:post.thumbnailUrl' expr:title='data:post.title' loading='lazy' decoding='async'/>
+        <b:else/>
+          <img expr:alt='data:post.title' expr:title='data:post.title' src='https://foe.tu.edu.np/assets/logo.png' loading='lazy' decoding='async'/>
+        </b:if>
+      </div>
+    </a>
   </b:if>
 </b:if>
 	<b:if cond='data:blog.pageType != &quot;item&quot;'>
